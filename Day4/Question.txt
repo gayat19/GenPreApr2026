@@ -1,0 +1,116 @@
+ Basic
+
+1. List all customers from USA.
+   Hint: Customers, WHERE
+
+2. List all products where UnitPrice is greater than 20.
+   Hint: Products, WHERE
+
+3. List all orders placed after 1997-01-01.
+   Hint: Orders, WHERE
+
+4. Display customers ordered by Country and then CompanyName.
+   Hint: Customers, ORDER BY
+
+5. List products ordered by highest UnitPrice first.
+   Hint: Products, ORDER BY
+
+ Group By
+
+6. Count how many customers are there in each country.
+   Hint: Customers, GROUP BY
+
+7. Find the number of products in each category.
+   Hint: Products, GROUP BY
+
+8. Find the total number of orders handled by each employee.
+   Hint: Orders, GROUP BY
+
+9. Find the average freight amount for each customer.
+   Hint: Orders, GROUP BY
+
+10. Find the maximum unit price in each category.
+    Hint: Products, GROUP BY
+
+ Having
+
+11. Show countries having more than 5 customers.
+    Hint: Customers, GROUP BY, HAVING
+
+12. Show employees who handled more than 50 orders.
+    Hint: Orders, GROUP BY, HAVING
+
+13. Show customers whose average freight is greater than 50.
+    Hint: Orders, GROUP BY, HAVING
+
+14. Show categories where the average product price is greater than 30.
+    Hint: Products, GROUP BY, HAVING
+
+15. Show ship countries having more than 20 orders.
+    Hint: Orders, GROUP BY, HAVING
+
+ Joins
+
+16. List each order with customer company name.
+    Hint: Orders, Customers, JOIN
+
+17. List each order with employee first name and last name.
+    Hint: Orders, Employees, JOIN
+
+18. List products with their category name.
+    Hint: Products, Categories, JOIN
+
+19. List products with supplier company name.
+    Hint: Products, Suppliers, JOIN
+
+20. List orders with shipper company name.
+    Hint: Orders, Shippers, JOIN
+
+ Medium
+
+21. Find total orders per customer and display customer company name.
+    Hint: Customers, Orders, JOIN, GROUP BY
+
+22. Find total products supplied by each supplier.
+    Hint: Suppliers, Products, JOIN, GROUP BY
+
+23. Find average product price per category with category name.
+    Hint: Categories, Products, JOIN, GROUP BY
+
+24. Find total freight per customer and order by highest total freight.
+    Hint: Customers, Orders, JOIN, GROUP BY, ORDER BY
+
+25. Find employees who handled more than 25 orders.
+    Hint: Employees, Orders, JOIN, GROUP BY, HAVING
+
+ Advanced
+
+26. Find total sales amount per order.
+    Hint: Orders, Order Details, JOIN, GROUP BY
+
+27. Find total sales amount per customer.
+    Hint: Customers, Orders, Order Details, JOIN, GROUP BY
+
+28. Find top 10 products by total quantity sold.
+    Hint: Products, Order Details, JOIN, GROUP BY, ORDER BY
+
+29. Find categories whose total sales are greater than 50000.
+    Hint: Categories, Products, Order Details, JOIN, GROUP BY, HAVING
+
+30. Find employees whose total sales are greater than 100000.
+    Hint: Employees, Orders, Order Details, JOIN, GROUP BY, HAVING
+
+31. Find total sales per country based on customer country.
+    Hint: Customers, Orders, Order Details, JOIN, GROUP BY
+
+32. Find suppliers whose products generated sales above 30000.
+    Hint: Suppliers, Products, Order Details, JOIN, GROUP BY, HAVING
+
+33. Find customers who placed more than 10 orders and sort by order count descending.
+    Hint: Customers, Orders, JOIN, GROUP BY, HAVING, ORDER BY
+
+34. Find monthly order count for each year and month.
+    Hint: Orders, GROUP BY, ORDER BY
+
+35. Find monthly sales amount ordered by year and month.
+    Hint: Orders, Order Details, JOIN, GROUP BY, ORDER BY
