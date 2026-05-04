@@ -1,0 +1,15 @@
+C:\Corp\Genspark\Presidio\2026\Participants\Day6\UnderstandingTypesApp\bin\Debug\net8.0\UnderstandingTypesApp.exe
+C:\Corp\Genspark\Presidio\2026\Participants\Day6\UnderstandingTypesApp\bin\Debug\net8.0\UnderstandingTypesApp.deps.json
+C:\Corp\Genspark\Presidio\2026\Participants\Day6\UnderstandingTypesApp\bin\Debug\net8.0\UnderstandingTypesApp.runtimeconfig.json
+C:\Corp\Genspark\Presidio\2026\Participants\Day6\UnderstandingTypesApp\bin\Debug\net8.0\UnderstandingTypesApp.dll
+C:\Corp\Genspark\Presidio\2026\Participants\Day6\UnderstandingTypesApp\bin\Debug\net8.0\UnderstandingTypesApp.pdb
+C:\Corp\Genspark\Presidio\2026\Participants\Day6\UnderstandingTypesApp\obj\Debug\net8.0\UnderstandingTypesApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Corp\Genspark\Presidio\2026\Participants\Day6\UnderstandingTypesApp\obj\Debug\net8.0\UnderstandingTypesApp.AssemblyInfoInputs.cache
+C:\Corp\Genspark\Presidio\2026\Participants\Day6\UnderstandingTypesApp\obj\Debug\net8.0\UnderstandingTypesApp.AssemblyInfo.cs
+C:\Corp\Genspark\Presidio\2026\Participants\Day6\UnderstandingTypesApp\obj\Debug\net8.0\UnderstandingTypesApp.csproj.CoreCompileInputs.cache
+C:\Corp\Genspark\Presidio\2026\Participants\Day6\UnderstandingTypesApp\obj\Debug\net8.0\UnderstandingTypesApp.sourcelink.json
+C:\Corp\Genspark\Presidio\2026\Participants\Day6\UnderstandingTypesApp\obj\Debug\net8.0\UnderstandingTypesApp.dll
+C:\Corp\Genspark\Presidio\2026\Participants\Day6\UnderstandingTypesApp\obj\Debug\net8.0\refint\UnderstandingTypesApp.dll
+C:\Corp\Genspark\Presidio\2026\Participants\Day6\UnderstandingTypesApp\obj\Debug\net8.0\UnderstandingTypesApp.pdb
+C:\Corp\Genspark\Presidio\2026\Participants\Day6\UnderstandingTypesApp\obj\Debug\net8.0\UnderstandingTypesApp.genruntimeconfig.cache
+C:\Corp\Genspark\Presidio\2026\Participants\Day6\UnderstandingTypesApp\obj\Debug\net8.0\ref\UnderstandingTypesApp.dll

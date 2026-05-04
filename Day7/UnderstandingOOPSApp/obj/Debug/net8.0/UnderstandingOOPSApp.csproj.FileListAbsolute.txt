@@ -1,0 +1,15 @@
+C:\Corp\Genspark\Presidio\2026\Participants\Day7\UnderstandingOOPSApp\bin\Debug\net8.0\UnderstandingOOPSApp.exe
+C:\Corp\Genspark\Presidio\2026\Participants\Day7\UnderstandingOOPSApp\bin\Debug\net8.0\UnderstandingOOPSApp.deps.json
+C:\Corp\Genspark\Presidio\2026\Participants\Day7\UnderstandingOOPSApp\bin\Debug\net8.0\UnderstandingOOPSApp.runtimeconfig.json
+C:\Corp\Genspark\Presidio\2026\Participants\Day7\UnderstandingOOPSApp\bin\Debug\net8.0\UnderstandingOOPSApp.dll
+C:\Corp\Genspark\Presidio\2026\Participants\Day7\UnderstandingOOPSApp\bin\Debug\net8.0\UnderstandingOOPSApp.pdb
+C:\Corp\Genspark\Presidio\2026\Participants\Day7\UnderstandingOOPSApp\obj\Debug\net8.0\UnderstandingOOPSApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Corp\Genspark\Presidio\2026\Participants\Day7\UnderstandingOOPSApp\obj\Debug\net8.0\UnderstandingOOPSApp.AssemblyInfoInputs.cache
+C:\Corp\Genspark\Presidio\2026\Participants\Day7\UnderstandingOOPSApp\obj\Debug\net8.0\UnderstandingOOPSApp.AssemblyInfo.cs
+C:\Corp\Genspark\Presidio\2026\Participants\Day7\UnderstandingOOPSApp\obj\Debug\net8.0\UnderstandingOOPSApp.csproj.CoreCompileInputs.cache
+C:\Corp\Genspark\Presidio\2026\Participants\Day7\UnderstandingOOPSApp\obj\Debug\net8.0\UnderstandingOOPSApp.sourcelink.json
+C:\Corp\Genspark\Presidio\2026\Participants\Day7\UnderstandingOOPSApp\obj\Debug\net8.0\UnderstandingOOPSApp.dll
+C:\Corp\Genspark\Presidio\2026\Participants\Day7\UnderstandingOOPSApp\obj\Debug\net8.0\refint\UnderstandingOOPSApp.dll
+C:\Corp\Genspark\Presidio\2026\Participants\Day7\UnderstandingOOPSApp\obj\Debug\net8.0\UnderstandingOOPSApp.pdb
+C:\Corp\Genspark\Presidio\2026\Participants\Day7\UnderstandingOOPSApp\obj\Debug\net8.0\UnderstandingOOPSApp.genruntimeconfig.cache
+C:\Corp\Genspark\Presidio\2026\Participants\Day7\UnderstandingOOPSApp\obj\Debug\net8.0\ref\UnderstandingOOPSApp.dll

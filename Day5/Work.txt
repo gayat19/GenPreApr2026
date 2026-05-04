@@ -1,0 +1,145 @@
+select companyname,contactname,orderdate from Customers left outer  join Orders
+on Customers.customerid = Orders.customerId
+
+select * from customers where customerId not in 
+(select distinct customerId from orders)
+
+select * from Customers natural join Orders
+
+--print the product name with the order number and quantity ordered
+select o.orderid,p.productname,o.quantity from 
+products p join order_details o 
+ON p.productid = o.productid ;
+
+select productname, orderdate, quantity
+from products p join order_details od
+on p.productid = od.productid
+join orders o 
+on o.orderid = od.orderid
+
+select * from products where productid not in
+(select distinct productid from order_details)
+
+
+--print the same details but print the products that were never ordered too
+select productname, orderdate, quantity
+from products p left join order_details od
+on p.productid = od.productid
+left join orders o 
+on o.orderid = od.orderid
+--or
+select productname, orderdate, quantity
+from order_details od join orders o
+on o.orderid = od.orderid
+right outer join products p
+on od.productid = p.productid
+
+select * from employees
+select employeeid,reportsto from employees
+
+select emp.employeeid, concat(emp.firstname,' ',emp.lastname) employee_fullname,
+emp.reportsto, concat(mgr.firstname,' ',mgr.lastname) manager_name 
+from employees emp left outer join employees mgr
+on emp.reportsto = mgr.employeeid
+
+create procedure proc_greet()
+language plpgsql
+as $$
+begin
+   raise notice 'Hello World!';
+end;
+$$;
+
+
+create or replace procedure proc_greet_name(cname varchar(100))
+language plpgsql
+as $$
+begin
+   Raise notice 'Hello %',cname;
+end;
+$$;
+
+
+call proc_greet()
+
+call proc_greet_name('Ramu')
+
+
+create or replace procedure proc_Get_Emplopyee_details()
+language plpgsql
+as $$
+begin
+   CREATE TEMP TABLE tmp_emp AS
+   select emp.employeeid, concat(emp.firstname,' ',emp.lastname) employee_fullname,
+	emp.reportsto, concat(mgr.firstname,' ',mgr.lastname) manager_name 
+	from employees emp left outer join employees mgr
+	on emp.reportsto = mgr.employeeid;
+end;
+$$;
+
+call proc_Get_Emplopyee_details();
+
+select * from tmp_emp;
+
+create or replace function get_Employee_and_Manager_Details()
+returns table(employeeid int,employee_fullname text,reportsto int,manager_name text)
+language plpgsql
+as $$
+begin
+	return query 
+	select emp.employeeid, concat(emp.firstname,' ',emp.lastname) employee_fullname,
+	emp.reportsto, concat(mgr.firstname,' ',mgr.lastname) manager_name 
+	from employees emp left outer join employees mgr
+	on emp.reportsto = mgr.employeeid;
+end;
+$$;
+
+drop function get_Employee_and_Manager_Details()
+
+select * from get_Employee_and_Manager_Details()
+
+--Print the manager name and the number of employee reporting to him/her
+select concat(mgr.firstname,' ',mgr.lastname) manager_name , count(emp.employeeid) number_of_employees
+	from employees emp  join employees mgr
+	on emp.reportsto = mgr.employeeid
+	group by concat(mgr.firstname,' ',mgr.lastname)
+
+--print products and the total quantity ordered
+SELECT od.productid,p.productname,SUM(od.quantity) total_orders FROM products p 
+INNER JOIN order_details od ON p.productid=od.productid
+GROUP BY od.productid,p.productname
+
+
+create table account(aacno int,balance float);
+create table trans(id int primary key,fromacc int,toacc int, amount float);
+
+insert into account values(1,1000),(2,2000),(3,500);
+
+insert into trans values(1,1,2,0);
+
+create or replace procedure proc_transact(fromacc int,toacc int,amount float)
+language plpgsql
+as $$
+begin
+   DECLARE
+    current_balance float;
+	tarnid int;
+	begin
+	 	select balance into current_balance from account where aacno = fromacc;
+		 select max(id) into tarnid from trans;
+		insert into trans values((tarnid+1),fromacc,toacc,amount);
+	  	update account set balance = balance - amount where aacno = fromacc;
+	  	update account set balance = balance + amount where aacno = toacc;
+		if (current_balance - amount) > 500 then
+	  		commit;
+		else
+		    rollback;
+		end if;
+	end;
+end;
+$$;
+
+ call proc_transact(3,1,500);
+
+ select * from account;
+ select * from trans;
