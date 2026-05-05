@@ -10,10 +10,9 @@ namespace UnderstandingOOPSApp.Models
     {
         SavingAccount =1,CurrentAccount=2
     }
-    internal class Account 
+    internal partial class Account 
     {
         
-
         public  string AccountNumber { get; set; } =string.Empty;
         public string NameOnAccount { get; set; } = string.Empty;
         public DateTime DateOfBirth { get; set; }
@@ -35,10 +34,6 @@ namespace UnderstandingOOPSApp.Models
             Phone = phone;
             Balance = balance;
         }
-        public override string ToString()
-        {
-            return $"Account Number : {AccountNumber}\nAccountType : {AccountType}\nAccount Holder Name : {NameOnAccount}\nPhone Number : {Phone}\n" +
-                $"Email : {Email}\nBalance : ${Balance}";
-        }
+       
     }
 }

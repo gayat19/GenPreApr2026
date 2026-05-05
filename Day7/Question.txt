@@ -1,0 +1,62 @@
+
+
+ Assignment: Simple Notification System
+
+ Scenario
+
+Create a console application for a company that wants to send notifications to users.
+
+The company currently supports:
+
+* Email notification
+* SMS notification
+
+In the future, they may add WhatsApp notification.
+
+---
+
+ Requirements
+
+Create an application where:
+
+1. A user has:
+
+   * Name
+   * Email
+   * Phone number
+
+2. A notification should have:
+
+   * Message
+   * Sent date
+
+3. The system should be able to send a notification using:
+
+   * Email
+   * SMS
+
+4. Use an **interface** to define common notification behavior.
+
+5. Create separate classes for:
+
+   * Email notification
+   * SMS notification
+   * User
+   * Notification service
+
+6. The notification service should interact with the notification classes and send the message.
+
+---
+
+ Expected Concepts
+
+The solution should show:
+
+* Interface
+* Class
+* Object creation
+* Interaction between classes
+* Basic polymorphism
+
+---
+
