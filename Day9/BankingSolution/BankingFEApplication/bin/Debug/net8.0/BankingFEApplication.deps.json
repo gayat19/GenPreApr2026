@@ -1,0 +1,71 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "BankingFEApplication/1.0.0": {
+        "dependencies": {
+          "BankingBLLibrary": "1.0.0"
+        },
+        "runtime": {
+          "BankingFEApplication.dll": {}
+        }
+      },
+      "BankingBLLibrary/1.0.0": {
+        "dependencies": {
+          "BankingDALLibrary": "1.0.0"
+        },
+        "runtime": {
+          "BankingBLLibrary.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "BankingDALLibrary/1.0.0": {
+        "dependencies": {
+          "BankingModelLibrary": "1.0.0"
+        },
+        "runtime": {
+          "BankingDALLibrary.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "BankingModelLibrary/1.0.0": {
+        "runtime": {
+          "BankingModelLibrary.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "BankingFEApplication/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BankingBLLibrary/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BankingDALLibrary/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BankingModelLibrary/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

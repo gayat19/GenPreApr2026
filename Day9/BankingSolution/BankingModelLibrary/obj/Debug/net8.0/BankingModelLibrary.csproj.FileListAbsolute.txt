@@ -1,0 +1,12 @@
+C:\Corp\Genspark\Presidio\2026\Participants\Day9\BankingSolution\BankingModelLibrary\bin\Debug\net8.0\BankingModelLibrary.deps.json
+C:\Corp\Genspark\Presidio\2026\Participants\Day9\BankingSolution\BankingModelLibrary\bin\Debug\net8.0\BankingModelLibrary.dll
+C:\Corp\Genspark\Presidio\2026\Participants\Day9\BankingSolution\BankingModelLibrary\bin\Debug\net8.0\BankingModelLibrary.pdb
+C:\Corp\Genspark\Presidio\2026\Participants\Day9\BankingSolution\BankingModelLibrary\obj\Debug\net8.0\BankingModelLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Corp\Genspark\Presidio\2026\Participants\Day9\BankingSolution\BankingModelLibrary\obj\Debug\net8.0\BankingModelLibrary.AssemblyInfoInputs.cache
+C:\Corp\Genspark\Presidio\2026\Participants\Day9\BankingSolution\BankingModelLibrary\obj\Debug\net8.0\BankingModelLibrary.AssemblyInfo.cs
+C:\Corp\Genspark\Presidio\2026\Participants\Day9\BankingSolution\BankingModelLibrary\obj\Debug\net8.0\BankingModelLibrary.csproj.CoreCompileInputs.cache
+C:\Corp\Genspark\Presidio\2026\Participants\Day9\BankingSolution\BankingModelLibrary\obj\Debug\net8.0\BankingModelLibrary.sourcelink.json
+C:\Corp\Genspark\Presidio\2026\Participants\Day9\BankingSolution\BankingModelLibrary\obj\Debug\net8.0\BankingModelLibrary.dll
+C:\Corp\Genspark\Presidio\2026\Participants\Day9\BankingSolution\BankingModelLibrary\obj\Debug\net8.0\refint\BankingModelLibrary.dll
+C:\Corp\Genspark\Presidio\2026\Participants\Day9\BankingSolution\BankingModelLibrary\obj\Debug\net8.0\BankingModelLibrary.pdb
+C:\Corp\Genspark\Presidio\2026\Participants\Day9\BankingSolution\BankingModelLibrary\obj\Debug\net8.0\ref\BankingModelLibrary.dll

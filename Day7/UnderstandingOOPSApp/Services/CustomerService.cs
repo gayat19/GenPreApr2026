@@ -2,25 +2,50 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using UnderstandingOOPSApp.Exceptions;
 using UnderstandingOOPSApp.Interfaces;
 using UnderstandingOOPSApp.Models;
+using UnderstandingOOPSApp.Repositories;
 
 namespace UnderstandingOOPSApp.Services
 {
     internal class CustomerService : ICustomerInteract
     {
-        List<Account> accounts = new List<Account>();
-        static string lastAccountNumber = "9990001000";
+        IRepository<string, Account> accountRespository;
+
         public Account OpensAccount()
         {
-            Account account = TakeCustomerDetails();
-            TakeInitialDeposit(account);
-            long accNum = Convert.ToInt64(lastAccountNumber);
-            account.AccountNumber =  (++accNum).ToString();
-            lastAccountNumber = accNum.ToString();
-            accounts.Add(account);
-            return account;
+            try
+            {
+                accountRespository = new AccountRepository();
+                var account = TakeCustomerDetails();
+                Regex regex = new Regex("^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$\r\n");
+                //if (!regex.IsMatch(account.Email))
+                //    throw new InvalidContactDetailException("Invalid Email");
+                account = accountRespository.Create(account);
+                return account;
+            }
+            catch (FormatException fe)
+            {
+                Console.WriteLine("The input for teh account details was not in proper format");
+            }
+            catch (OverflowException ofe)
+            {
+                Console.WriteLine("Unable to genereate account n ow");
+                Console.WriteLine(ofe.Message);
+            }
+            catch (InvalidContactDetailException ipne)
+            {
+                Console.WriteLine("Unable to create account since the contact details(Email or phone) you entered seems to be invalid");
+                Console.WriteLine(ipne.Message);
+            }
+            finally
+            {
+                Console.WriteLine("Repository released");
+            }
+            return null;
         }
 
         private void TakeInitialDeposit(Account account)
@@ -60,21 +85,21 @@ namespace UnderstandingOOPSApp.Services
 
         public void PrintAccountDetails(string accountNumber)
         {
-            Account account = null;
-            foreach (var item in accounts)
-            {
-                if(item.AccountNumber == accountNumber)
-                {
-                    account = item;
-                    break;
-                }
-            }
-            if (account != null)
-            {
-                PrintAccount(account);
-                return;
-            }
-            Console.WriteLine("No account with the given number is present with us");
+            //Account account = null;
+            //foreach (var item in accounts)
+            //{
+            //    if(item.AccountNumber == accountNumber)
+            //    {
+            //        account = item;
+            //        break;
+            //    }
+            //}
+            //if (account != null)
+            //{
+            //    PrintAccount(account);
+            //    return;
+            //}
+            //Console.WriteLine("No account with the given number is present with us");
             
         }
 

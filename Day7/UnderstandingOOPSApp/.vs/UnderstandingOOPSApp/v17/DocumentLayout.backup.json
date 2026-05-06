@@ -3,10 +3,6 @@
   "WorkspaceRootPath": "C:\\Corp\\Genspark\\Presidio\\2026\\Participants\\Day7\\UnderstandingOOPSApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E4D55776-4647-4C81-9882-913D5CB830DF}|UnderstandingOOPSApp.csproj|c:\\corp\\genspark\\presidio\\2026\\participants\\day7\\understandingoopsapp\\models\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E4D55776-4647-4C81-9882-913D5CB830DF}|UnderstandingOOPSApp.csproj|solutionrelative:models\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E4D55776-4647-4C81-9882-913D5CB830DF}|UnderstandingOOPSApp.csproj|c:\\corp\\genspark\\presidio\\2026\\participants\\day7\\understandingoopsapp\\models\\account1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E4D55776-4647-4C81-9882-913D5CB830DF}|UnderstandingOOPSApp.csproj|solutionrelative:models\\account1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -15,28 +11,24 @@
       "RelativeMoniker": "D:0:0:{E4D55776-4647-4C81-9882-913D5CB830DF}|UnderstandingOOPSApp.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{E4D55776-4647-4C81-9882-913D5CB830DF}|UnderstandingOOPSApp.csproj|c:\\corp\\genspark\\presidio\\2026\\participants\\day7\\understandingoopsapp\\services\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4D55776-4647-4C81-9882-913D5CB830DF}|UnderstandingOOPSApp.csproj|solutionrelative:services\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E4D55776-4647-4C81-9882-913D5CB830DF}|UnderstandingOOPSApp.csproj|c:\\corp\\genspark\\presidio\\2026\\participants\\day7\\understandingoopsapp\\repositories\\accountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E4D55776-4647-4C81-9882-913D5CB830DF}|UnderstandingOOPSApp.csproj|solutionrelative:repositories\\accountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4D55776-4647-4C81-9882-913D5CB830DF}|UnderstandingOOPSApp.csproj|c:\\corp\\genspark\\presidio\\2026\\participants\\day7\\understandingoopsapp\\exceptions\\invalidcontactdetailexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4D55776-4647-4C81-9882-913D5CB830DF}|UnderstandingOOPSApp.csproj|solutionrelative:exceptions\\invalidcontactdetailexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E4D55776-4647-4C81-9882-913D5CB830DF}|UnderstandingOOPSApp.csproj|c:\\corp\\genspark\\presidio\\2026\\participants\\day7\\understandingoopsapp\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E4D55776-4647-4C81-9882-913D5CB830DF}|UnderstandingOOPSApp.csproj|solutionrelative:interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E4D55776-4647-4C81-9882-913D5CB830DF}|UnderstandingOOPSApp.csproj|c:\\corp\\genspark\\presidio\\2026\\participants\\day7\\understandingoopsapp\\services\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E4D55776-4647-4C81-9882-913D5CB830DF}|UnderstandingOOPSApp.csproj|solutionrelative:services\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E4D55776-4647-4C81-9882-913D5CB830DF}|UnderstandingOOPSApp.csproj|c:\\corp\\genspark\\presidio\\2026\\participants\\day7\\understandingoopsapp\\interfaces\\icustomerinteract.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E4D55776-4647-4C81-9882-913D5CB830DF}|UnderstandingOOPSApp.csproj|solutionrelative:interfaces\\icustomerinteract.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E4D55776-4647-4C81-9882-913D5CB830DF}|UnderstandingOOPSApp.csproj|c:\\corp\\genspark\\presidio\\2026\\participants\\day7\\understandingoopsapp\\models\\savingaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E4D55776-4647-4C81-9882-913D5CB830DF}|UnderstandingOOPSApp.csproj|solutionrelative:models\\savingaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E4D55776-4647-4C81-9882-913D5CB830DF}|UnderstandingOOPSApp.csproj|c:\\corp\\genspark\\presidio\\2026\\participants\\day7\\understandingoopsapp\\models\\currentaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E4D55776-4647-4C81-9882-913D5CB830DF}|UnderstandingOOPSApp.csproj|solutionrelative:models\\currentaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E4D55776-4647-4C81-9882-913D5CB830DF}|UnderstandingOOPSApp.csproj|c:\\corp\\genspark\\presidio\\2026\\participants\\day7\\understandingoopsapp\\repositories\\abstractrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4D55776-4647-4C81-9882-913D5CB830DF}|UnderstandingOOPSApp.csproj|solutionrelative:repositories\\abstractrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,30 +38,70 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Corp\\Genspark\\Presidio\\2026\\Participants\\Day7\\UnderstandingOOPSApp\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Corp\\Genspark\\Presidio\\2026\\Participants\\Day7\\UnderstandingOOPSApp\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAuwB4AAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-04T04:39:39.93Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "InvalidContactDetailException.cs",
+              "DocumentMoniker": "C:\\Corp\\Genspark\\Presidio\\2026\\Participants\\Day7\\UnderstandingOOPSApp\\Exceptions\\InvalidContactDetailException.cs",
+              "RelativeDocumentMoniker": "Exceptions\\InvalidContactDetailException.cs",
+              "ToolTip": "C:\\Corp\\Genspark\\Presidio\\2026\\Participants\\Day7\\UnderstandingOOPSApp\\Exceptions\\InvalidContactDetailException.cs",
+              "RelativeToolTip": "Exceptions\\InvalidContactDetailException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-06T05:20:07.08Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AbstractRepository.cs",
+              "DocumentMoniker": "C:\\Corp\\Genspark\\Presidio\\2026\\Participants\\Day7\\UnderstandingOOPSApp\\Repositories\\AbstractRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\AbstractRepository.cs",
+              "ToolTip": "C:\\Corp\\Genspark\\Presidio\\2026\\Participants\\Day7\\UnderstandingOOPSApp\\Repositories\\AbstractRepository.cs",
+              "RelativeToolTip": "Repositories\\AbstractRepository.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwA0AAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T07:08:40.756Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "Account1.cs",
               "DocumentMoniker": "C:\\Corp\\Genspark\\Presidio\\2026\\Participants\\Day7\\UnderstandingOOPSApp\\Models\\Account1.cs",
               "RelativeDocumentMoniker": "Models\\Account1.cs",
               "ToolTip": "C:\\Corp\\Genspark\\Presidio\\2026\\Participants\\Day7\\UnderstandingOOPSApp\\Models\\Account1.cs",
               "RelativeToolTip": "Models\\Account1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-05T06:53:24.42Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "CustomerService.cs",
               "DocumentMoniker": "C:\\Corp\\Genspark\\Presidio\\2026\\Participants\\Day7\\UnderstandingOOPSApp\\Services\\CustomerService.cs",
               "RelativeDocumentMoniker": "Services\\CustomerService.cs",
               "ToolTip": "C:\\Corp\\Genspark\\Presidio\\2026\\Participants\\Day7\\UnderstandingOOPSApp\\Services\\CustomerService.cs",
               "RelativeToolTip": "Services\\CustomerService.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAAwBQAAAAyAAAAAAAAAA==",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAWwDEAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-05T05:13:16.825Z",
               "EditorCaption": ""
@@ -82,85 +114,22 @@
               "RelativeDocumentMoniker": "Repositories\\AccountRepository.cs",
               "ToolTip": "C:\\Corp\\Genspark\\Presidio\\2026\\Participants\\Day7\\UnderstandingOOPSApp\\Repositories\\AccountRepository.cs",
               "RelativeToolTip": "Repositories\\AccountRepository.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAgwBIAAAArAAAAAAAAAA==",
+              "ViewState": "AgIAABEAAAAAAAAAAAD4vyUAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-05T04:32:41.281Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "IRepository.cs",
               "DocumentMoniker": "C:\\Corp\\Genspark\\Presidio\\2026\\Participants\\Day7\\UnderstandingOOPSApp\\Interfaces\\IRepository.cs",
               "RelativeDocumentMoniker": "Interfaces\\IRepository.cs",
               "ToolTip": "C:\\Corp\\Genspark\\Presidio\\2026\\Participants\\Day7\\UnderstandingOOPSApp\\Interfaces\\IRepository.cs",
               "RelativeToolTip": "Interfaces\\IRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-05T04:21:01.93Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ICustomerInteract.cs",
-              "DocumentMoniker": "C:\\Corp\\Genspark\\Presidio\\2026\\Participants\\Day7\\UnderstandingOOPSApp\\Interfaces\\ICustomerInteract.cs",
-              "RelativeDocumentMoniker": "Interfaces\\ICustomerInteract.cs",
-              "ToolTip": "C:\\Corp\\Genspark\\Presidio\\2026\\Participants\\Day7\\UnderstandingOOPSApp\\Interfaces\\ICustomerInteract.cs",
-              "RelativeToolTip": "Interfaces\\ICustomerInteract.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-04T06:10:39.872Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "CurrentAccount.cs",
-              "DocumentMoniker": "C:\\Corp\\Genspark\\Presidio\\2026\\Participants\\Day7\\UnderstandingOOPSApp\\Models\\CurrentAccount.cs",
-              "RelativeDocumentMoniker": "Models\\CurrentAccount.cs",
-              "ToolTip": "C:\\Corp\\Genspark\\Presidio\\2026\\Participants\\Day7\\UnderstandingOOPSApp\\Models\\CurrentAccount.cs",
-              "RelativeToolTip": "Models\\CurrentAccount.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-04T05:14:22.995Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "SavingAccount.cs",
-              "DocumentMoniker": "C:\\Corp\\Genspark\\Presidio\\2026\\Participants\\Day7\\UnderstandingOOPSApp\\Models\\SavingAccount.cs",
-              "RelativeDocumentMoniker": "Models\\SavingAccount.cs",
-              "ToolTip": "C:\\Corp\\Genspark\\Presidio\\2026\\Participants\\Day7\\UnderstandingOOPSApp\\Models\\SavingAccount.cs",
-              "RelativeToolTip": "Models\\SavingAccount.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-04T05:14:10.293Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Account.cs",
-              "DocumentMoniker": "C:\\Corp\\Genspark\\Presidio\\2026\\Participants\\Day7\\UnderstandingOOPSApp\\Models\\Account.cs",
-              "RelativeDocumentMoniker": "Models\\Account.cs",
-              "ToolTip": "C:\\Corp\\Genspark\\Presidio\\2026\\Participants\\Day7\\UnderstandingOOPSApp\\Models\\Account.cs",
-              "RelativeToolTip": "Models\\Account.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAowAkAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-04T04:40:08.287Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Corp\\Genspark\\Presidio\\2026\\Participants\\Day7\\UnderstandingOOPSApp\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Corp\\Genspark\\Presidio\\2026\\Participants\\Day7\\UnderstandingOOPSApp\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAADwvx4AAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-04T04:39:39.93Z",
               "EditorCaption": ""
             }
           ]

@@ -1,0 +1,16 @@
+C:\Corp\Genspark\Presidio\2026\Participants\Day9\BankingSolution\BankingDALLibrary\bin\Debug\net8.0\BankingDALLibrary.deps.json
+C:\Corp\Genspark\Presidio\2026\Participants\Day9\BankingSolution\BankingDALLibrary\bin\Debug\net8.0\BankingDALLibrary.dll
+C:\Corp\Genspark\Presidio\2026\Participants\Day9\BankingSolution\BankingDALLibrary\bin\Debug\net8.0\BankingDALLibrary.pdb
+C:\Corp\Genspark\Presidio\2026\Participants\Day9\BankingSolution\BankingDALLibrary\bin\Debug\net8.0\BankingModelLibrary.dll
+C:\Corp\Genspark\Presidio\2026\Participants\Day9\BankingSolution\BankingDALLibrary\bin\Debug\net8.0\BankingModelLibrary.pdb
+C:\Corp\Genspark\Presidio\2026\Participants\Day9\BankingSolution\BankingDALLibrary\obj\Debug\net8.0\BankingDALLibrary.csproj.AssemblyReference.cache
+C:\Corp\Genspark\Presidio\2026\Participants\Day9\BankingSolution\BankingDALLibrary\obj\Debug\net8.0\BankingDALLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Corp\Genspark\Presidio\2026\Participants\Day9\BankingSolution\BankingDALLibrary\obj\Debug\net8.0\BankingDALLibrary.AssemblyInfoInputs.cache
+C:\Corp\Genspark\Presidio\2026\Participants\Day9\BankingSolution\BankingDALLibrary\obj\Debug\net8.0\BankingDALLibrary.AssemblyInfo.cs
+C:\Corp\Genspark\Presidio\2026\Participants\Day9\BankingSolution\BankingDALLibrary\obj\Debug\net8.0\BankingDALLibrary.csproj.CoreCompileInputs.cache
+C:\Corp\Genspark\Presidio\2026\Participants\Day9\BankingSolution\BankingDALLibrary\obj\Debug\net8.0\BankingDALLibrary.sourcelink.json
+C:\Corp\Genspark\Presidio\2026\Participants\Day9\BankingSolution\BankingDALLibrary\obj\Debug\net8.0\BankingD.6274F896.Up2Date
+C:\Corp\Genspark\Presidio\2026\Participants\Day9\BankingSolution\BankingDALLibrary\obj\Debug\net8.0\BankingDALLibrary.dll
+C:\Corp\Genspark\Presidio\2026\Participants\Day9\BankingSolution\BankingDALLibrary\obj\Debug\net8.0\refint\BankingDALLibrary.dll
+C:\Corp\Genspark\Presidio\2026\Participants\Day9\BankingSolution\BankingDALLibrary\obj\Debug\net8.0\BankingDALLibrary.pdb
+C:\Corp\Genspark\Presidio\2026\Participants\Day9\BankingSolution\BankingDALLibrary\obj\Debug\net8.0\ref\BankingDALLibrary.dll

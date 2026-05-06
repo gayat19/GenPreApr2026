@@ -1,4 +1,5 @@
-﻿using UnderstandingOOPSApp.Interfaces;
+﻿using UnderstandingOOPSApp.Exceptions;
+using UnderstandingOOPSApp.Interfaces;
 using UnderstandingOOPSApp.Models;
 using UnderstandingOOPSApp.Repositories;
 using UnderstandingOOPSApp.Services;
@@ -23,13 +24,22 @@ namespace UnderstandingOOPSApp
         }
         static void Main(string[] args)
         {
-            //new Program().DoBanking();
-            Account acc1 = new Account("1234", "Ramu",  new DateTime(), "", "9876543210", 2344.4f);
-            Account acc2 = new Account("1234", "Ramu", new DateTime(), "", "9876543210", 2344.4f);
-            if(acc1==acc2)
-                Console.WriteLine("Same");
-            else
-                Console.WriteLine("Not same");
+           ICustomerInteract customerService = new CustomerService();
+            try
+            {
+                var result = customerService.OpensAccount();
+                if(result != null)
+                {
+                    Console.WriteLine("Account created");
+                    Console.WriteLine(result);
+                }
+            }
+            catch (InvalidContactDetailException ipne)
+            {
+                Console.WriteLine("Unable to create account since the contact details(Email or phone) you entered seems to be invalid");
+                Console.WriteLine(ipne.Message);
+            }
+            Console.WriteLine("Bye bye");
         }
     }
 }
