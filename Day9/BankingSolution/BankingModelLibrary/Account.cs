@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BankingModelLibrary.Misc;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -33,6 +34,7 @@ namespace BankingModelLibrary
             Email = email;
             Phone = phone;
             Balance = balance;
+            Console.WriteLine(NameOnAccount.CountWords(' ') );
         }
        
     }
