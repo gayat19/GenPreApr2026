@@ -1,0 +1,191 @@
+Here is the **3-Tier version** of your assignment with business logic added.
+
+---
+
+ Assignment: Simple Notification System Using 3-Tier Architecture
+
+ Scenario
+
+A company wants to build a console-based notification system to send messages to users.
+
+Currently, the company supports:
+
+* Email Notification
+* SMS Notification
+
+In the future, the company may add:
+
+* WhatsApp Notification
+
+The application must be designed using **3-Tier Architecture** so that the code is clean, reusable, and easy to extend.
+
+---
+
+ Requirements
+
+ 1. Presentation Layer
+
+Create a console menu that allows the user to:
+
+1. Add user details
+2. Choose notification type
+
+   * Email
+   * SMS
+3. Enter notification message
+4. Send notification
+5. Display sent notification details
+
+---
+
+ 2. Business Logic Layer
+
+Create business rules before sending notification:
+
+1. Message should not be empty.
+2. Message length should be at least 5 characters.
+3. Email notification should be sent only if the user has a valid email.
+4. SMS notification should be sent only if the user has a valid phone number.
+5. SMS message should not exceed 160 characters.
+6. A sent date should be added automatically.
+7. The system should decide which notification class to use based on the selected notification type.
+
+---
+
+ 3. Data Access Layer
+
+Since this is a console application, no database is required.
+
+Create a data access class that stores sent notifications in a collection such as:
+
+```csharp
+List<Notification>
+```
+
+The data layer should support:
+
+1. Save notification
+2. Get all sent notifications
+
+---
+
+ Classes to Create
+
+ Entity / Model Classes
+
+Create the following classes:
+
+* `User`
+* `Notification`
+
+---
+
+ Interface
+
+Create an interface:
+
+```csharp
+INotificationSender
+```
+
+It should define common behavior such as:
+
+```csharp
+void Send(User user, Notification notification);
+```
+
+---
+
+ Notification Classes
+
+Create separate classes:
+
+* `EmailNotificationSender`
+* `SmsNotificationSender`
+
+Both classes should implement `INotificationSender`.
+
+---
+
+ Business Layer Classes
+
+Create a class:
+
+```csharp
+NotificationService
+```
+
+This class should:
+
+* Validate the user details
+* Validate the message
+* Apply notification rules
+* Call the correct notification sender class
+* Save notification details using the data access layer
+
+---
+
+ Data Access Layer Classes
+
+Create a class:
+
+```csharp
+NotificationRepository
+```
+
+This class should:
+
+* Store sent notifications
+* Return all sent notifications
+
+---
+
+ Expected Concepts
+
+The solution should demonstrate:
+
+* 3-Tier Architecture
+* Interface
+* Class and object creation
+* Encapsulation
+* Interaction between layers
+* Basic polymorphism
+* Business logic validation
+* Collection usage
+* Future extensibility
+
+---
+
+ Expected Folder Structure
+
+```text
+SimpleNotificationSystem
+│
+├── Presentation
+│   └── Program.cs
+│
+├── BusinessLayer
+│   └── NotificationService.cs
+│
+├── DataAccessLayer
+│   └── NotificationRepository.cs
+│
+├── Models
+│   ├── User.cs
+│   └── Notification.cs
+│
+├── Interfaces
+│   └── INotificationSender.cs
+│
+└── NotificationSenders
+    ├── EmailNotificationSender.cs
+    └── SmsNotificationSender.cs
+```
+
+---
+
+ Student Task
+
+Develop a C console application using 3-Tier Architecture for the notification system.
+
+The application should allow the user to enter customer details, choose a notification type, enter a message, validate the input using business logic, send the notification using polymorphism, and store the sent notification details in memory.
