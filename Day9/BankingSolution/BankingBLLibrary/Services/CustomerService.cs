@@ -17,11 +17,15 @@ namespace BankingBLLibrary.Services
     {
         IRepository<string, Account> accountRespository;
 
+        public CustomerService()
+        {
+            accountRespository = new AccountRepository();
+        }
         public Account OpensAccount()
         {
             try
             {
-                accountRespository = new AccountRepository();
+               
                 var account = TakeCustomerDetails();
                 Regex regex = new Regex("^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$\r\n");
                 //if (!regex.IsMatch(account.Email))
@@ -72,37 +76,18 @@ namespace BankingBLLibrary.Services
                 account = new SavingAccount();
             if(typeChoice == 2)
                 account = new CurrentAccount();
-            Console.WriteLine("Please enter your full name");
-            account.NameOnAccount = Console.ReadLine()??"";
-            Console.WriteLine("Please enter your Date of birth in yyyy-mm--dd format");
-            DateTime dob;
-            while(!DateTime.TryParse(Console.ReadLine(),out dob ) && dob>DateTime.Today)
-                Console.WriteLine("Invalid entry for date. Please try again");
-            Console.WriteLine("Please enter your email address");
-            account.Email = Console.ReadLine() ?? "";
-            Console.WriteLine("Please enter your phone number");
-            account.Phone = Console.ReadLine() ?? "";
+           
+           
             return account;
 
         }
 
         public void PrintAccountDetails(string accountNumber)
         {
-            //Account account = null;
-            //foreach (var item in accounts)
-            //{
-            //    if(item.AccountNumber == accountNumber)
-            //    {
-            //        account = item;
-            //        break;
-            //    }
-            //}
-            //if (account != null)
-            //{
-            //    PrintAccount(account);
-            //    return;
-            //}
-            //Console.WriteLine("No account with the given number is present with us");
+            var account = accountRespository.Get(accountNumber);
+            if (account == null)
+                throw new Exception("NO account found");
+            PrintAccount(account);
             
         }
 

@@ -1,4 +1,5 @@
-﻿using BankingDALLibrary.Interfaces;
+﻿using BankingDALLibrary.Contexts;
+using BankingDALLibrary.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,37 +12,43 @@ namespace BankingDALLibrary.Repositories
 {
     public abstract class AbstractRepository<K, T> : IRepository<K, T> where T : class
     {
-        protected Dictionary<K, T> _items;
-        public abstract T Create(T item);
-
-
-        public T? Delete(K key)
+        protected BankingContext context;
+        protected AbstractRepository()
         {
-            var item = _items[key];
-            if (item == null)
-                return null;
+            context = new BankingContext();
+        }
+
+        public T Create(T item)
+        {
+            context.Add(item);
+            context.SaveChanges();
             return item;
         }
 
-        public  T? GetAccount(K key)
+        public T? Delete(K key)
         {
-            if(_items.ContainsKey(key))
-                return _items[key];
-            return null;
+            var item = Get(key);
+            if (item == null)
+                throw new Exception("No Such item for delete");
+            context.Remove(item);
+            context.SaveChanges();
+            return item;
         }
 
-        public  List<T>? GetAccounts()
+        public abstract T? Get(K key);
+        
+        public List<T>? GetAll()
         {
-            if(_items.Count == 0) return null;
-            var list = _items.Values.ToList();
-            return list;
-
+            return context.Set<T>().ToList();
         }
+
         public T? Update(K key, T item)
         {
-            if(_items[key] == null)
-                return null;
-            _items[key] = item;
+            var myItem = Get(key);
+            if (myItem == null)
+                throw new Exception("No such item for update");
+            context.Update(item);
+            context.SaveChanges();
             return item;
         }
     }

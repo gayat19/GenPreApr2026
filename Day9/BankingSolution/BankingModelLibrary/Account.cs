@@ -7,20 +7,20 @@ using System.Threading.Tasks;
 
 namespace BankingModelLibrary
 {
-    public enum AccType
-    {
-        SavingAccount =1,CurrentAccount=2
-    }
+
     public partial class Account 
     {
         
         public  string AccountNumber { get; set; } =string.Empty;
-        public string NameOnAccount { get; set; } = string.Empty;
-        public DateTime DateOfBirth { get; set; }
-        public string Email { get; set; } = string.Empty;
-        public string Phone { get; set; } = string.Empty;
+
+
         public float Balance { get; set; }
-        public AccType AccountType { get; set; }
+        public string AccountType { get; set; }
+
+        public int CustomerId { get; set; }
+        public Customer? Customer { get; set; }
+
+        public string Status { get; set; }
         public Account()
         {
             
@@ -29,12 +29,7 @@ namespace BankingModelLibrary
         public Account(string accountNumber, string nameOnAccount, DateTime dateOfBirth, string email, string phone, float balance)
         {
             AccountNumber = accountNumber;
-            NameOnAccount = nameOnAccount;
-            DateOfBirth = dateOfBirth;
-            Email = email;
-            Phone = phone;
             Balance = balance;
-            Console.WriteLine(NameOnAccount.CountWords(' ') );
         }
        
     }

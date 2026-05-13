@@ -11,8 +11,7 @@ namespace BankingModelLibrary
        
         public override string ToString()
         {
-            return $"Account Number : {AccountNumber}\nAccountType : {AccountType}\nAccount Holder Name : {NameOnAccount}\nPhone Number : {Phone}\n" +
-                $"Email : {Email}\nBalance : ${Balance}";
+            return $"Account Number : {AccountNumber}\nAccountType : {AccountType}\nBalance : ${Balance}\nCustomer Details as follows\n{Customer}";
         }
 
         public int CompareTo(Account? other)

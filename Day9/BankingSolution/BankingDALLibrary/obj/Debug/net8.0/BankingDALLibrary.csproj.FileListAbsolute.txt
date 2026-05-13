@@ -14,3 +14,5 @@ C:\Corp\Genspark\Presidio\2026\Participants\Day9\BankingSolution\BankingDALLibra
 C:\Corp\Genspark\Presidio\2026\Participants\Day9\BankingSolution\BankingDALLibrary\obj\Debug\net8.0\refint\BankingDALLibrary.dll
 C:\Corp\Genspark\Presidio\2026\Participants\Day9\BankingSolution\BankingDALLibrary\obj\Debug\net8.0\BankingDALLibrary.pdb
 C:\Corp\Genspark\Presidio\2026\Participants\Day9\BankingSolution\BankingDALLibrary\obj\Debug\net8.0\ref\BankingDALLibrary.dll
+C:\Corp\Genspark\Presidio\2026\Participants\Day9\BankingSolution\BankingDALLibrary\bin\Debug\net8.0\BankingDALLibrary.runtimeconfig.json
+C:\Corp\Genspark\Presidio\2026\Participants\Day9\BankingSolution\BankingDALLibrary\obj\Debug\net8.0\BankingDALLibrary.genruntimeconfig.cache

@@ -7,35 +7,19 @@ using System.Security.Principal;
 using System.Text;
 using System.Threading.Tasks;
 using BankingModelLibrary.Exceptions;
+using Microsoft.EntityFrameworkCore;
 
 
 namespace BankingDALLibrary.Repositories
 {
-    public class AccountRepository : AbstractRepository<string,Account>
+    public class AccountRepository : AbstractRepository<string, Account>
     {
-        public AccountRepository()
+        public override Account? Get(string key)
         {
-            _items = new Dictionary<string, Account>();
+            var account = context.Accounts
+                .Include(a=>a.Customer)//includes teh custoemr data while loading teh account data
+                .SingleOrDefault(a => a.AccountNumber == key);
+            return account;
         }
-
-        public Account this[string index]
-        {
-            get { return _items[index]; }
-            set { _items[index] = value; }
-        }
-        static string lastAccountNumber = "9990001000";
-        public override Account Create(Account item)
-        {
-            if (item.Phone == null || item.Phone.Length < 10 )
-                throw new InvalidContactDetailException("Phone number "+item.Phone);
-            if (item.Email == null || item.Email.Length < 5)
-                throw new InvalidContactDetailException("Email " + item.Email);
-            long accNum = Convert.ToInt64(lastAccountNumber);
-            item.AccountNumber = (++accNum).ToString();
-            lastAccountNumber = accNum.ToString();
-            _items.Add(lastAccountNumber, item);
-            return item;
-        }
-       
     }
 }

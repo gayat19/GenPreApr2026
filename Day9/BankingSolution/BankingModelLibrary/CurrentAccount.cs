@@ -10,7 +10,7 @@ namespace BankingModelLibrary
     {
         public CurrentAccount()
         {
-            AccountType = AccType.CurrentAccount;
+            
             Balance = 0.0f;
         }
        

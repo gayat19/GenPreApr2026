@@ -45,6 +45,16 @@ namespace UnderstandingEfCoreApp.Migrations
                     b.HasIndex("CustomerId");
 
                     b.ToTable("accounts");
+
+                    b.HasData(
+                        new
+                        {
+                            AccountNumber = "0009998877",
+                            Balance = 134.3m,
+                            CustomerId = 101,
+                            LastAccessed = new DateTime(2026, 5, 13, 10, 18, 28, 344, DateTimeKind.Local).AddTicks(7675),
+                            Status = "Active"
+                        });
                 });
 
             modelBuilder.Entity("UnderstandingEfCoreApp.Models.Customer", b =>
@@ -77,17 +87,34 @@ namespace UnderstandingEfCoreApp.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("customers");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 101,
+                            DateOfBirth = new DateTime(2026, 5, 13, 10, 18, 28, 344, DateTimeKind.Local).AddTicks(5186),
+                            Email = "ramu@gmail.com",
+                            Name = "Ramu",
+                            Phone = "9876543210",
+                            Status = "Active"
+                        });
                 });
 
             modelBuilder.Entity("UnderstandingEfCoreApp.Models.Account", b =>
                 {
                     b.HasOne("UnderstandingEfCoreApp.Models.Customer", "Customer")
-                        .WithMany()
+                        .WithMany("Accounts")
                         .HasForeignKey("CustomerId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired()
+                        .HasConstraintName("FK_Account_Customer");
 
                     b.Navigation("Customer");
+                });
+
+            modelBuilder.Entity("UnderstandingEfCoreApp.Models.Customer", b =>
+                {
+                    b.Navigation("Accounts");
                 });
 #pragma warning restore 612, 618
         }

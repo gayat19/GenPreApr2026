@@ -3,36 +3,24 @@
   "WorkspaceRootPath": "C:\\Corp\\Genspark\\Presidio\\2026\\Participants\\Day13\\UnderstandingEfCoreApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CACF993E-8BF4-474B-ABD0-BB6136BC9AFC}|UnderstandingEfCoreApp\\UnderstandingEfCoreApp.csproj|c:\\corp\\genspark\\presidio\\2026\\participants\\day13\\understandingefcoreapp\\understandingefcoreapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CACF993E-8BF4-474B-ABD0-BB6136BC9AFC}|UnderstandingEfCoreApp\\UnderstandingEfCoreApp.csproj|solutionrelative:understandingefcoreapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CACF993E-8BF4-474B-ABD0-BB6136BC9AFC}|UnderstandingEfCoreApp\\UnderstandingEfCoreApp.csproj|c:\\corp\\genspark\\presidio\\2026\\participants\\day13\\understandingefcoreapp\\understandingefcoreapp\\models\\partials\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CACF993E-8BF4-474B-ABD0-BB6136BC9AFC}|UnderstandingEfCoreApp\\UnderstandingEfCoreApp.csproj|solutionrelative:understandingefcoreapp\\models\\partials\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CACF993E-8BF4-474B-ABD0-BB6136BC9AFC}|UnderstandingEfCoreApp\\UnderstandingEfCoreApp.csproj|c:\\corp\\genspark\\presidio\\2026\\participants\\day13\\understandingefcoreapp\\understandingefcoreapp\\contexts\\bankingcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CACF993E-8BF4-474B-ABD0-BB6136BC9AFC}|UnderstandingEfCoreApp\\UnderstandingEfCoreApp.csproj|solutionrelative:understandingefcoreapp\\contexts\\bankingcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CACF993E-8BF4-474B-ABD0-BB6136BC9AFC}|UnderstandingEfCoreApp\\UnderstandingEfCoreApp.csproj|c:\\corp\\genspark\\presidio\\2026\\participants\\day13\\understandingefcoreapp\\understandingefcoreapp\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CACF993E-8BF4-474B-ABD0-BB6136BC9AFC}|UnderstandingEfCoreApp\\UnderstandingEfCoreApp.csproj|solutionrelative:understandingefcoreapp\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Corp\\Genspark\\Presidio\\2026\\Participants\\Day13\\UnderstandingEfCoreApp\\UnderstandingEfCoreApp\\Migrations\\20260512072133_DateTypeChange.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:UnderstandingEfCoreApp\\Migrations\\20260512072133_DateTypeChange.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{CACF993E-8BF4-474B-ABD0-BB6136BC9AFC}|UnderstandingEfCoreApp\\UnderstandingEfCoreApp.csproj|c:\\corp\\genspark\\presidio\\2026\\participants\\day13\\understandingefcoreapp\\understandingefcoreapp\\models\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CACF993E-8BF4-474B-ABD0-BB6136BC9AFC}|UnderstandingEfCoreApp\\UnderstandingEfCoreApp.csproj|solutionrelative:understandingefcoreapp\\models\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Corp\\Genspark\\Presidio\\2026\\Participants\\Day13\\UnderstandingEfCoreApp\\UnderstandingEfCoreApp\\Migrations\\20260512065238_AccountModelAdded.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:UnderstandingEfCoreApp\\Migrations\\20260512065238_AccountModelAdded.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Corp\\Genspark\\Presidio\\2026\\Participants\\Day13\\UnderstandingEfCoreApp\\UnderstandingEfCoreApp\\Migrations\\20260513044828_CustomerWithAccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:UnderstandingEfCoreApp\\Migrations\\20260513044828_CustomerWithAccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Corp\\Genspark\\Presidio\\2026\\Participants\\Day13\\UnderstandingEfCoreApp\\UnderstandingEfCoreApp\\Migrations\\20260512065139_AccountModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:UnderstandingEfCoreApp\\Migrations\\20260512065139_AccountModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CACF993E-8BF4-474B-ABD0-BB6136BC9AFC}|UnderstandingEfCoreApp\\UnderstandingEfCoreApp.csproj|c:\\corp\\genspark\\presidio\\2026\\participants\\day13\\understandingefcoreapp\\understandingefcoreapp\\contexts\\bankingcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CACF993E-8BF4-474B-ABD0-BB6136BC9AFC}|UnderstandingEfCoreApp\\UnderstandingEfCoreApp.csproj|solutionrelative:understandingefcoreapp\\contexts\\bankingcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CACF993E-8BF4-474B-ABD0-BB6136BC9AFC}|UnderstandingEfCoreApp\\UnderstandingEfCoreApp.csproj|c:\\corp\\genspark\\presidio\\2026\\participants\\day13\\understandingefcoreapp\\understandingefcoreapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CACF993E-8BF4-474B-ABD0-BB6136BC9AFC}|UnderstandingEfCoreApp\\UnderstandingEfCoreApp.csproj|solutionrelative:understandingefcoreapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,108 +30,69 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Customer.cs",
-              "DocumentMoniker": "C:\\Corp\\Genspark\\Presidio\\2026\\Participants\\Day13\\UnderstandingEfCoreApp\\UnderstandingEfCoreApp\\Models\\Partials\\Customer.cs",
-              "RelativeDocumentMoniker": "UnderstandingEfCoreApp\\Models\\Partials\\Customer.cs",
-              "ToolTip": "C:\\Corp\\Genspark\\Presidio\\2026\\Participants\\Day13\\UnderstandingEfCoreApp\\UnderstandingEfCoreApp\\Models\\Partials\\Customer.cs",
-              "RelativeToolTip": "UnderstandingEfCoreApp\\Models\\Partials\\Customer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-12T07:28:53.255Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "20260512072133_DateTypeChange.cs",
-              "DocumentMoniker": "C:\\Corp\\Genspark\\Presidio\\2026\\Participants\\Day13\\UnderstandingEfCoreApp\\UnderstandingEfCoreApp\\Migrations\\20260512072133_DateTypeChange.cs",
-              "RelativeDocumentMoniker": "UnderstandingEfCoreApp\\Migrations\\20260512072133_DateTypeChange.cs",
-              "ToolTip": "C:\\Corp\\Genspark\\Presidio\\2026\\Participants\\Day13\\UnderstandingEfCoreApp\\UnderstandingEfCoreApp\\Migrations\\20260512072133_DateTypeChange.cs",
-              "RelativeToolTip": "UnderstandingEfCoreApp\\Migrations\\20260512072133_DateTypeChange.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAAAtAAAAAAAAAA==",
+              "Title": "20260513044828_CustomerWithAccount.cs",
+              "DocumentMoniker": "C:\\Corp\\Genspark\\Presidio\\2026\\Participants\\Day13\\UnderstandingEfCoreApp\\UnderstandingEfCoreApp\\Migrations\\20260513044828_CustomerWithAccount.cs",
+              "RelativeDocumentMoniker": "UnderstandingEfCoreApp\\Migrations\\20260513044828_CustomerWithAccount.cs",
+              "ToolTip": "C:\\Corp\\Genspark\\Presidio\\2026\\Participants\\Day13\\UnderstandingEfCoreApp\\UnderstandingEfCoreApp\\Migrations\\20260513044828_CustomerWithAccount.cs",
+              "RelativeToolTip": "UnderstandingEfCoreApp\\Migrations\\20260513044828_CustomerWithAccount.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAQwDsAAABSAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-12T07:21:34.115Z",
+              "WhenOpened": "2026-05-13T04:48:29.015Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "20260512065238_AccountModelAdded.cs",
-              "DocumentMoniker": "C:\\Corp\\Genspark\\Presidio\\2026\\Participants\\Day13\\UnderstandingEfCoreApp\\UnderstandingEfCoreApp\\Migrations\\20260512065238_AccountModelAdded.cs",
-              "RelativeDocumentMoniker": "UnderstandingEfCoreApp\\Migrations\\20260512065238_AccountModelAdded.cs",
-              "ToolTip": "C:\\Corp\\Genspark\\Presidio\\2026\\Participants\\Day13\\UnderstandingEfCoreApp\\UnderstandingEfCoreApp\\Migrations\\20260512065238_AccountModelAdded.cs",
-              "RelativeToolTip": "UnderstandingEfCoreApp\\Migrations\\20260512065238_AccountModelAdded.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAgAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-12T06:52:38.981Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "20260512065139_AccountModel.cs",
-              "DocumentMoniker": "C:\\Corp\\Genspark\\Presidio\\2026\\Participants\\Day13\\UnderstandingEfCoreApp\\UnderstandingEfCoreApp\\Migrations\\20260512065139_AccountModel.cs",
-              "RelativeDocumentMoniker": "UnderstandingEfCoreApp\\Migrations\\20260512065139_AccountModel.cs",
-              "ToolTip": "C:\\Corp\\Genspark\\Presidio\\2026\\Participants\\Day13\\UnderstandingEfCoreApp\\UnderstandingEfCoreApp\\Migrations\\20260512065139_AccountModel.cs",
-              "RelativeToolTip": "UnderstandingEfCoreApp\\Migrations\\20260512065139_AccountModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-12T06:51:39.999Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "Account.cs",
               "DocumentMoniker": "C:\\Corp\\Genspark\\Presidio\\2026\\Participants\\Day13\\UnderstandingEfCoreApp\\UnderstandingEfCoreApp\\Models\\Account.cs",
               "RelativeDocumentMoniker": "UnderstandingEfCoreApp\\Models\\Account.cs",
               "ToolTip": "C:\\Corp\\Genspark\\Presidio\\2026\\Participants\\Day13\\UnderstandingEfCoreApp\\UnderstandingEfCoreApp\\Models\\Account.cs",
               "RelativeToolTip": "UnderstandingEfCoreApp\\Models\\Account.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAgwBMAAAA6AAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAgwB4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-12T06:45:57.88Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 0,
               "Title": "BankingContext.cs",
               "DocumentMoniker": "C:\\Corp\\Genspark\\Presidio\\2026\\Participants\\Day13\\UnderstandingEfCoreApp\\UnderstandingEfCoreApp\\Contexts\\BankingContext.cs",
               "RelativeDocumentMoniker": "UnderstandingEfCoreApp\\Contexts\\BankingContext.cs",
               "ToolTip": "C:\\Corp\\Genspark\\Presidio\\2026\\Participants\\Day13\\UnderstandingEfCoreApp\\UnderstandingEfCoreApp\\Contexts\\BankingContext.cs",
               "RelativeToolTip": "UnderstandingEfCoreApp\\Contexts\\BankingContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAUwDQAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-12T04:53:33.033Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Customer.cs",
               "DocumentMoniker": "C:\\Corp\\Genspark\\Presidio\\2026\\Participants\\Day13\\UnderstandingEfCoreApp\\UnderstandingEfCoreApp\\Models\\Customer.cs",
               "RelativeDocumentMoniker": "UnderstandingEfCoreApp\\Models\\Customer.cs",
               "ToolTip": "C:\\Corp\\Genspark\\Presidio\\2026\\Participants\\Day13\\UnderstandingEfCoreApp\\UnderstandingEfCoreApp\\Models\\Customer.cs",
               "RelativeToolTip": "UnderstandingEfCoreApp\\Models\\Customer.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAA1wBkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-12T04:51:04.164Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Corp\\Genspark\\Presidio\\2026\\Participants\\Day13\\UnderstandingEfCoreApp\\UnderstandingEfCoreApp\\Program.cs",
               "RelativeDocumentMoniker": "UnderstandingEfCoreApp\\Program.cs",
-              "ToolTip": "C:\\Corp\\Genspark\\Presidio\\2026\\Participants\\Day13\\UnderstandingEfCoreApp\\UnderstandingEfCoreApp\\Program.cs*",
-              "RelativeToolTip": "UnderstandingEfCoreApp\\Program.cs*",
-              "ViewState": "AgIAABcAAAAAAAAAAAAgwCgAAAAmAAAAAAAAAA==",
+              "ToolTip": "C:\\Corp\\Genspark\\Presidio\\2026\\Participants\\Day13\\UnderstandingEfCoreApp\\UnderstandingEfCoreApp\\Program.cs",
+              "RelativeToolTip": "UnderstandingEfCoreApp\\Program.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAACfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-12T04:38:12.222Z",
               "EditorCaption": ""

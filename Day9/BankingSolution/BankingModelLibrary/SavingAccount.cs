@@ -10,7 +10,6 @@ namespace BankingModelLibrary
     {
         public SavingAccount()
         {
-            AccountType = AccType.SavingAccount;
             Balance = 100.0f;
         }
     }
