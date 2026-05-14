@@ -15,12 +15,12 @@
       "RelativeMoniker": "D:0:0:{CACF993E-8BF4-474B-ABD0-BB6136BC9AFC}|UnderstandingEfCoreApp\\UnderstandingEfCoreApp.csproj|solutionrelative:understandingefcoreapp\\models\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Corp\\Genspark\\Presidio\\2026\\Participants\\Day13\\UnderstandingEfCoreApp\\UnderstandingEfCoreApp\\Migrations\\20260513044828_CustomerWithAccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:UnderstandingEfCoreApp\\Migrations\\20260513044828_CustomerWithAccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{CACF993E-8BF4-474B-ABD0-BB6136BC9AFC}|UnderstandingEfCoreApp\\UnderstandingEfCoreApp.csproj|c:\\corp\\genspark\\presidio\\2026\\participants\\day13\\understandingefcoreapp\\understandingefcoreapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CACF993E-8BF4-474B-ABD0-BB6136BC9AFC}|UnderstandingEfCoreApp\\UnderstandingEfCoreApp.csproj|solutionrelative:understandingefcoreapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CACF993E-8BF4-474B-ABD0-BB6136BC9AFC}|UnderstandingEfCoreApp\\UnderstandingEfCoreApp.csproj|c:\\corp\\genspark\\presidio\\2026\\participants\\day13\\understandingefcoreapp\\understandingefcoreapp\\migrations\\20260513044828_customerwithaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CACF993E-8BF4-474B-ABD0-BB6136BC9AFC}|UnderstandingEfCoreApp\\UnderstandingEfCoreApp.csproj|solutionrelative:understandingefcoreapp\\migrations\\20260513044828_customerwithaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +34,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "20260513044828_CustomerWithAccount.cs",
               "DocumentMoniker": "C:\\Corp\\Genspark\\Presidio\\2026\\Participants\\Day13\\UnderstandingEfCoreApp\\UnderstandingEfCoreApp\\Migrations\\20260513044828_CustomerWithAccount.cs",
               "RelativeDocumentMoniker": "UnderstandingEfCoreApp\\Migrations\\20260513044828_CustomerWithAccount.cs",
@@ -42,8 +42,7 @@
               "RelativeToolTip": "UnderstandingEfCoreApp\\Migrations\\20260513044828_CustomerWithAccount.cs",
               "ViewState": "AgIAACsAAAAAAAAAAAAQwDsAAABSAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-13T04:48:29.015Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-13T04:48:29.015Z"
             },
             {
               "$type": "Document",
@@ -55,8 +54,7 @@
               "RelativeToolTip": "UnderstandingEfCoreApp\\Models\\Account.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAgwB4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-12T06:45:57.88Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-12T06:45:57.88Z"
             },
             {
               "$type": "Document",
@@ -81,12 +79,11 @@
               "RelativeToolTip": "UnderstandingEfCoreApp\\Models\\Customer.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAA1wBkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-12T04:51:04.164Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-12T04:51:04.164Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Corp\\Genspark\\Presidio\\2026\\Participants\\Day13\\UnderstandingEfCoreApp\\UnderstandingEfCoreApp\\Program.cs",
               "RelativeDocumentMoniker": "UnderstandingEfCoreApp\\Program.cs",
@@ -94,8 +91,7 @@
               "RelativeToolTip": "UnderstandingEfCoreApp\\Program.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAACfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-12T04:38:12.222Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-12T04:38:12.222Z"
             }
           ]
         }
