@@ -3,28 +3,44 @@
   "WorkspaceRootPath": "C:\\Corp\\Genspark\\Presidio\\2026\\Participants\\Day9\\BankingSolution\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1675A53F-6F87-4379-8889-8C0E0CAC3360}|BankingDALLibrary\\BankingDALLibrary.csproj|c:\\corp\\genspark\\presidio\\2026\\participants\\day9\\bankingsolution\\bankingdallibrary\\contexts\\bankingcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1675A53F-6F87-4379-8889-8C0E0CAC3360}|BankingDALLibrary\\BankingDALLibrary.csproj|solutionrelative:bankingdallibrary\\contexts\\bankingcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AFBB3603-1270-48E6-907A-4285484FEFEA}|BankingModelLibrary\\BankingModelLibrary.csproj|c:\\corp\\genspark\\presidio\\2026\\participants\\day9\\bankingsolution\\bankingmodellibrary\\savingaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AFBB3603-1270-48E6-907A-4285484FEFEA}|BankingModelLibrary\\BankingModelLibrary.csproj|solutionrelative:bankingmodellibrary\\savingaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8A42A543-0269-46BB-AACE-7FE5B5DEDD4F}|BankingFEApplication\\BankingFEApplication.csproj|c:\\corp\\genspark\\presidio\\2026\\participants\\day9\\bankingsolution\\bankingfeapplication\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8A42A543-0269-46BB-AACE-7FE5B5DEDD4F}|BankingFEApplication\\BankingFEApplication.csproj|solutionrelative:bankingfeapplication\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AFBB3603-1270-48E6-907A-4285484FEFEA}|BankingModelLibrary\\BankingModelLibrary.csproj|c:\\corp\\genspark\\presidio\\2026\\participants\\day9\\bankingsolution\\bankingmodellibrary\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AFBB3603-1270-48E6-907A-4285484FEFEA}|BankingModelLibrary\\BankingModelLibrary.csproj|solutionrelative:bankingmodellibrary\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AFBB3603-1270-48E6-907A-4285484FEFEA}|BankingModelLibrary\\BankingModelLibrary.csproj|c:\\corp\\genspark\\presidio\\2026\\participants\\day9\\bankingsolution\\bankingmodellibrary\\account1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AFBB3603-1270-48E6-907A-4285484FEFEA}|BankingModelLibrary\\BankingModelLibrary.csproj|solutionrelative:bankingmodellibrary\\account1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AFBB3603-1270-48E6-907A-4285484FEFEA}|BankingModelLibrary\\BankingModelLibrary.csproj|c:\\corp\\genspark\\presidio\\2026\\participants\\day9\\bankingsolution\\bankingmodellibrary\\currentaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AFBB3603-1270-48E6-907A-4285484FEFEA}|BankingModelLibrary\\BankingModelLibrary.csproj|solutionrelative:bankingmodellibrary\\currentaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AFBB3603-1270-48E6-907A-4285484FEFEA}|BankingModelLibrary\\BankingModelLibrary.csproj|c:\\corp\\genspark\\presidio\\2026\\participants\\day9\\bankingsolution\\bankingmodellibrary\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AFBB3603-1270-48E6-907A-4285484FEFEA}|BankingModelLibrary\\BankingModelLibrary.csproj|solutionrelative:bankingmodellibrary\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{1675A53F-6F87-4379-8889-8C0E0CAC3360}|BankingDALLibrary\\BankingDALLibrary.csproj|c:\\corp\\genspark\\presidio\\2026\\participants\\day9\\bankingsolution\\bankingdallibrary\\repositories\\accountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1675A53F-6F87-4379-8889-8C0E0CAC3360}|BankingDALLibrary\\BankingDALLibrary.csproj|solutionrelative:bankingdallibrary\\repositories\\accountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1675A53F-6F87-4379-8889-8C0E0CAC3360}|BankingDALLibrary\\BankingDALLibrary.csproj|c:\\corp\\genspark\\presidio\\2026\\participants\\day9\\bankingsolution\\bankingdallibrary\\repositories\\abstractrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1675A53F-6F87-4379-8889-8C0E0CAC3360}|BankingDALLibrary\\BankingDALLibrary.csproj|solutionrelative:bankingdallibrary\\repositories\\abstractrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1675A53F-6F87-4379-8889-8C0E0CAC3360}|BankingDALLibrary\\BankingDALLibrary.csproj|c:\\corp\\genspark\\presidio\\2026\\participants\\day9\\bankingsolution\\bankingdallibrary\\contexts\\bankingcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1675A53F-6F87-4379-8889-8C0E0CAC3360}|BankingDALLibrary\\BankingDALLibrary.csproj|solutionrelative:bankingdallibrary\\contexts\\bankingcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{17E99E40-5AA0-4A23-AAA3-7468B309D620}|BankingBLLibrary\\BankingBLLibrary.csproj|c:\\corp\\genspark\\presidio\\2026\\participants\\day9\\bankingsolution\\bankingbllibrary\\services\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{17E99E40-5AA0-4A23-AAA3-7468B309D620}|BankingBLLibrary\\BankingBLLibrary.csproj|solutionrelative:bankingbllibrary\\services\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AFBB3603-1270-48E6-907A-4285484FEFEA}|BankingModelLibrary\\BankingModelLibrary.csproj|c:\\corp\\genspark\\presidio\\2026\\participants\\day9\\bankingsolution\\bankingmodellibrary\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AFBB3603-1270-48E6-907A-4285484FEFEA}|BankingModelLibrary\\BankingModelLibrary.csproj|solutionrelative:bankingmodellibrary\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A42A543-0269-46BB-AACE-7FE5B5DEDD4F}|BankingFEApplication\\BankingFEApplication.csproj|c:\\corp\\genspark\\presidio\\2026\\participants\\day9\\bankingsolution\\bankingfeapplication\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A42A543-0269-46BB-AACE-7FE5B5DEDD4F}|BankingFEApplication\\BankingFEApplication.csproj|solutionrelative:bankingfeapplication\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AFBB3603-1270-48E6-907A-4285484FEFEA}|BankingModelLibrary\\BankingModelLibrary.csproj|c:\\corp\\genspark\\presidio\\2026\\participants\\day9\\bankingsolution\\bankingmodellibrary\\account1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AFBB3603-1270-48E6-907A-4285484FEFEA}|BankingModelLibrary\\BankingModelLibrary.csproj|solutionrelative:bankingmodellibrary\\account1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -39,6 +55,58 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "SavingAccount.cs",
+              "DocumentMoniker": "C:\\Corp\\Genspark\\Presidio\\2026\\Participants\\Day9\\BankingSolution\\BankingModelLibrary\\SavingAccount.cs",
+              "RelativeDocumentMoniker": "BankingModelLibrary\\SavingAccount.cs",
+              "ToolTip": "C:\\Corp\\Genspark\\Presidio\\2026\\Participants\\Day9\\BankingSolution\\BankingModelLibrary\\SavingAccount.cs",
+              "RelativeToolTip": "BankingModelLibrary\\SavingAccount.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-20T05:26:53.056Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CurrentAccount.cs",
+              "DocumentMoniker": "C:\\Corp\\Genspark\\Presidio\\2026\\Participants\\Day9\\BankingSolution\\BankingModelLibrary\\CurrentAccount.cs",
+              "RelativeDocumentMoniker": "BankingModelLibrary\\CurrentAccount.cs",
+              "ToolTip": "C:\\Corp\\Genspark\\Presidio\\2026\\Participants\\Day9\\BankingSolution\\BankingModelLibrary\\CurrentAccount.cs",
+              "RelativeToolTip": "BankingModelLibrary\\CurrentAccount.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-20T05:22:19.537Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AccountRepository.cs",
+              "DocumentMoniker": "C:\\Corp\\Genspark\\Presidio\\2026\\Participants\\Day9\\BankingSolution\\BankingDALLibrary\\Repositories\\AccountRepository.cs",
+              "RelativeDocumentMoniker": "BankingDALLibrary\\Repositories\\AccountRepository.cs",
+              "ToolTip": "C:\\Corp\\Genspark\\Presidio\\2026\\Participants\\Day9\\BankingSolution\\BankingDALLibrary\\Repositories\\AccountRepository.cs",
+              "RelativeToolTip": "BankingDALLibrary\\Repositories\\AccountRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-20T05:23:42.044Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AbstractRepository.cs",
+              "DocumentMoniker": "C:\\Corp\\Genspark\\Presidio\\2026\\Participants\\Day9\\BankingSolution\\BankingDALLibrary\\Repositories\\AbstractRepository.cs",
+              "RelativeDocumentMoniker": "BankingDALLibrary\\Repositories\\AbstractRepository.cs",
+              "ToolTip": "C:\\Corp\\Genspark\\Presidio\\2026\\Participants\\Day9\\BankingSolution\\BankingDALLibrary\\Repositories\\AbstractRepository.cs",
+              "RelativeToolTip": "BankingDALLibrary\\Repositories\\AbstractRepository.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAwAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-20T05:22:39.455Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "BankingContext.cs",
               "DocumentMoniker": "C:\\Corp\\Genspark\\Presidio\\2026\\Participants\\Day9\\BankingSolution\\BankingDALLibrary\\Contexts\\BankingContext.cs",
               "RelativeDocumentMoniker": "BankingDALLibrary\\Contexts\\BankingContext.cs",
@@ -51,19 +119,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "Customer.cs",
               "DocumentMoniker": "C:\\Corp\\Genspark\\Presidio\\2026\\Participants\\Day9\\BankingSolution\\BankingModelLibrary\\Customer.cs",
               "RelativeDocumentMoniker": "BankingModelLibrary\\Customer.cs",
               "ToolTip": "C:\\Corp\\Genspark\\Presidio\\2026\\Participants\\Day9\\BankingSolution\\BankingModelLibrary\\Customer.cs",
               "RelativeToolTip": "BankingModelLibrary\\Customer.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAxwBcAAABBAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABcAAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-13T06:58:25.39Z"
+              "WhenOpened": "2026-05-13T06:58:25.39Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 9,
               "Title": "Account1.cs",
               "DocumentMoniker": "C:\\Corp\\Genspark\\Presidio\\2026\\Participants\\Day9\\BankingSolution\\BankingModelLibrary\\Account1.cs",
               "RelativeDocumentMoniker": "BankingModelLibrary\\Account1.cs",
@@ -75,19 +144,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "Account.cs",
               "DocumentMoniker": "C:\\Corp\\Genspark\\Presidio\\2026\\Participants\\Day9\\BankingSolution\\BankingModelLibrary\\Account.cs",
               "RelativeDocumentMoniker": "BankingModelLibrary\\Account.cs",
               "ToolTip": "C:\\Corp\\Genspark\\Presidio\\2026\\Participants\\Day9\\BankingSolution\\BankingModelLibrary\\Account.cs",
               "RelativeToolTip": "BankingModelLibrary\\Account.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-13T06:57:22.94Z"
+              "WhenOpened": "2026-05-13T06:57:22.94Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "CustomerService.cs",
               "DocumentMoniker": "C:\\Corp\\Genspark\\Presidio\\2026\\Participants\\Day9\\BankingSolution\\BankingBLLibrary\\Services\\CustomerService.cs",
               "RelativeDocumentMoniker": "BankingBLLibrary\\Services\\CustomerService.cs",
@@ -95,17 +165,18 @@
               "RelativeToolTip": "BankingBLLibrary\\Services\\CustomerService.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAQwBUAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-13T06:56:19.125Z"
+              "WhenOpened": "2026-05-13T06:56:19.125Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 8,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Corp\\Genspark\\Presidio\\2026\\Participants\\Day9\\BankingSolution\\BankingFEApplication\\Program.cs",
               "RelativeDocumentMoniker": "BankingFEApplication\\Program.cs",
               "ToolTip": "C:\\Corp\\Genspark\\Presidio\\2026\\Participants\\Day9\\BankingSolution\\BankingFEApplication\\Program.cs",
               "RelativeToolTip": "BankingFEApplication\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-13T06:54:26.288Z",
               "EditorCaption": ""

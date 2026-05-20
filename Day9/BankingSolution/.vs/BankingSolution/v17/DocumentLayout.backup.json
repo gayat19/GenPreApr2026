@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Corp\\Genspark\\Presidio\\2026\\Participants\\Day9\\BankingSolution\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{1675A53F-6F87-4379-8889-8C0E0CAC3360}|BankingDALLibrary\\BankingDALLibrary.csproj|c:\\corp\\genspark\\presidio\\2026\\participants\\day9\\bankingsolution\\bankingdallibrary\\contexts\\bankingcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1675A53F-6F87-4379-8889-8C0E0CAC3360}|BankingDALLibrary\\BankingDALLibrary.csproj|solutionrelative:bankingdallibrary\\contexts\\bankingcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{8A42A543-0269-46BB-AACE-7FE5B5DEDD4F}|BankingFEApplication\\BankingFEApplication.csproj|c:\\corp\\genspark\\presidio\\2026\\participants\\day9\\bankingsolution\\bankingfeapplication\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8A42A543-0269-46BB-AACE-7FE5B5DEDD4F}|BankingFEApplication\\BankingFEApplication.csproj|solutionrelative:bankingfeapplication\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -30,11 +34,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "BankingContext.cs",
+              "DocumentMoniker": "C:\\Corp\\Genspark\\Presidio\\2026\\Participants\\Day9\\BankingSolution\\BankingDALLibrary\\Contexts\\BankingContext.cs",
+              "RelativeDocumentMoniker": "BankingDALLibrary\\Contexts\\BankingContext.cs",
+              "ToolTip": "C:\\Corp\\Genspark\\Presidio\\2026\\Participants\\Day9\\BankingSolution\\BankingDALLibrary\\Contexts\\BankingContext.cs",
+              "RelativeToolTip": "BankingDALLibrary\\Contexts\\BankingContext.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAAAiwBUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-13T07:04:19.445Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Customer.cs",
               "DocumentMoniker": "C:\\Corp\\Genspark\\Presidio\\2026\\Participants\\Day9\\BankingSolution\\BankingModelLibrary\\Customer.cs",
               "RelativeDocumentMoniker": "BankingModelLibrary\\Customer.cs",
@@ -42,12 +59,11 @@
               "RelativeToolTip": "BankingModelLibrary\\Customer.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAxwBcAAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-13T06:58:25.39Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-13T06:58:25.39Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Account1.cs",
               "DocumentMoniker": "C:\\Corp\\Genspark\\Presidio\\2026\\Participants\\Day9\\BankingSolution\\BankingModelLibrary\\Account1.cs",
               "RelativeDocumentMoniker": "BankingModelLibrary\\Account1.cs",
@@ -55,12 +71,11 @@
               "RelativeToolTip": "BankingModelLibrary\\Account1.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAACRAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-13T06:57:28.297Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-13T06:57:28.297Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Account.cs",
               "DocumentMoniker": "C:\\Corp\\Genspark\\Presidio\\2026\\Participants\\Day9\\BankingSolution\\BankingModelLibrary\\Account.cs",
               "RelativeDocumentMoniker": "BankingModelLibrary\\Account.cs",
@@ -68,12 +83,11 @@
               "RelativeToolTip": "BankingModelLibrary\\Account.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-13T06:57:22.94Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-13T06:57:22.94Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "CustomerService.cs",
               "DocumentMoniker": "C:\\Corp\\Genspark\\Presidio\\2026\\Participants\\Day9\\BankingSolution\\BankingBLLibrary\\Services\\CustomerService.cs",
               "RelativeDocumentMoniker": "BankingBLLibrary\\Services\\CustomerService.cs",
@@ -81,18 +95,17 @@
               "RelativeToolTip": "BankingBLLibrary\\Services\\CustomerService.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAQwBUAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-13T06:56:19.125Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-13T06:56:19.125Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Corp\\Genspark\\Presidio\\2026\\Participants\\Day9\\BankingSolution\\BankingFEApplication\\Program.cs",
               "RelativeDocumentMoniker": "BankingFEApplication\\Program.cs",
               "ToolTip": "C:\\Corp\\Genspark\\Presidio\\2026\\Participants\\Day9\\BankingSolution\\BankingFEApplication\\Program.cs",
               "RelativeToolTip": "BankingFEApplication\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-13T06:54:26.288Z",
               "EditorCaption": ""
