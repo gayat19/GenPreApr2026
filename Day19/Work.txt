@@ -1,0 +1,11 @@
+SOLID
+S - Single Responsibility
+O - Open and Close
+L - Liskov's Substitution
+I - Interface segregation
+D - Dependency Inversion
+
+
+Scoped  - one for each request
+Singleton - only one for service lifetime
+Transient - one for each injection

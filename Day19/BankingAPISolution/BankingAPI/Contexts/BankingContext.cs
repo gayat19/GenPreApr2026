@@ -24,6 +24,8 @@ namespace BankingAPI.Contexts
 
         public DbSet<CurrentAccount> CurrentAccounts { get; set; }
 
+        public DbSet<User> Users { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Customer>(c =>
@@ -64,6 +66,16 @@ namespace BankingAPI.Contexts
 
             modelBuilder.Entity<SavingAccount>();
             modelBuilder.Entity<CurrentAccount>();
+
+            modelBuilder.Entity<User>().HasKey(u => u.Username).HasName("PK_Username");
+
+            modelBuilder.Entity<Customer>()
+                .HasOne(c=>c.User)
+                .WithOne(u=>u.Customer)
+                .HasForeignKey<Customer>(c=>c.Username)
+                .HasConstraintName("FK_Customer_user")
+                .OnDelete(DeleteBehavior.Restrict); ;
+
 
         }
     }

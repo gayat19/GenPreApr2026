@@ -17,6 +17,10 @@ namespace BankingAPI.Models
 
         public DateTime DateOfBirth { get; set; }
 
+        public string? Username { get; set; }
+
+        public User? User { get; set; }
+
         public ICollection<Account>? Accounts { get; set; }
 
         public override string ToString()
