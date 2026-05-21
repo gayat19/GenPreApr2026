@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using BankingDALLibrary.Repositories;
 using BankingAPI.Interfaces;
 using BankingAPI.Models;
 using BankingAPI.Misc;
@@ -13,13 +12,24 @@ using BankingAPI.Models.DTOs;
 
 namespace BankingAPI.Services
 {
-    public class CustomerService : ICustomerInteract
+    public class CustomerService : ICustomerInteract, IAuthenticationService
     {
         readonly IRepository<string, Account> _accountRespository;
+        private readonly IRepository<string, User> _userRepository;
+        private readonly IRepository<int, Customer> _customerRepository;
 
-        public CustomerService(IRepository<string,Account> accountRepository)
+        public CustomerService(IRepository<string,Account> accountRepository,
+                                IRepository<string, User> userRepository,
+                                IRepository<int, Customer> customerRepository)
         {
             _accountRespository = accountRepository;
+            _userRepository = userRepository;
+            _customerRepository = customerRepository;
+        }
+
+        public LoginResponse Login(LoginRequest request)
+        {
+            throw new NotImplementedException();
         }
 
         public CreateAccountResponse OpensAccount(CreateAccountRequest account)
@@ -41,6 +51,11 @@ namespace BankingAPI.Services
                 Balance = result.Balance,
                 AccountType = result.AccountType
             };
+        }
+
+        public RegisterUserResponse Register(RegisterUserRequest request)
+        {
+            throw new NotImplementedException();
         }
 
         private string GenerateAccountNumber()

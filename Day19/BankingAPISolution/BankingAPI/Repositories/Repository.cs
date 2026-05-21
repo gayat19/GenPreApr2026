@@ -10,10 +10,10 @@ using System.Threading.Tasks;
 
 namespace BankingAPI.Repositories
 {
-    public abstract class AbstractRepository<K, T> : IRepository<K, T> where T : class
+    public class Repository<K, T> : IRepository<K, T> where T : class
     {
         protected  BankingContext _context;
-        protected AbstractRepository(BankingContext context)
+        protected Repository(BankingContext context)
         {
             _context = context;
         }
@@ -35,7 +35,11 @@ namespace BankingAPI.Repositories
             return item;
         }
 
-        public abstract T? Get(K key);
+        public  T? Get(K key)
+        {
+            var item = _context.Find<T>(key);
+            return item;
+        }
         
         public List<T>? GetAll()
         {

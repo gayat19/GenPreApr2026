@@ -1,9 +1,11 @@
 using BankingAPI.Contexts;
 using BankingAPI.Interfaces;
 using BankingAPI.Models;
+using BankingAPI.Repositories;
 using BankingAPI.Services;
 using BankingDALLibrary.Repositories;
 using Microsoft.EntityFrameworkCore;
+using System.Security.AccessControl;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -22,12 +24,15 @@ builder.Services.AddDbContext<BankingContext>(options =>
 #endregion
 
 #region Repositories
-builder.Services.AddScoped<IRepository<string, Account>, AccountRepository>();
+builder.Services.AddScoped<IRepository<string, Account>, Repository<string,Account>>();
+builder.Services.AddScoped<IRepository<int, Customer>, Repository<int, Customer>>();
+builder.Services.AddScoped<IRepository<string, User>, Repository<string, User>>();
 #endregion
 
 
 #region Services
 builder.Services.AddScoped<ICustomerInteract, CustomerService>();
+builder.Services.AddScoped<IAuthenticationService, CustomerService>();
 #endregion
 var app = builder.Build();
 
