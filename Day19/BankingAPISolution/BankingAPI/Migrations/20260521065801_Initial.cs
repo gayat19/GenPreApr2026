@@ -7,11 +7,25 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace BankingAPI.Migrations
 {
     /// <inheritdoc />
-    public partial class First : Migration
+    public partial class Initial : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.CreateTable(
+                name: "Users",
+                columns: table => new
+                {
+                    Username = table.Column<string>(type: "text", nullable: false),
+                    Password = table.Column<byte[]>(type: "bytea", nullable: false),
+                    HashKey = table.Column<byte[]>(type: "bytea", nullable: false),
+                    Role = table.Column<string>(type: "text", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Username", x => x.Username);
+                });
+
             migrationBuilder.CreateTable(
                 name: "Customers",
                 columns: table => new
@@ -22,11 +36,18 @@ namespace BankingAPI.Migrations
                     Email = table.Column<string>(type: "text", nullable: false),
                     Phone = table.Column<string>(type: "text", nullable: false),
                     Status = table.Column<string>(type: "text", nullable: false),
-                    DateOfBirth = table.Column<DateTime>(type: "timestamp without time zone", nullable: false)
+                    DateOfBirth = table.Column<DateTime>(type: "timestamp without time zone", nullable: false),
+                    Username = table.Column<string>(type: "text", nullable: true)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_CustomerId", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Customer_user",
+                        column: x => x.Username,
+                        principalTable: "Users",
+                        principalColumn: "Username",
+                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateTable(
@@ -52,8 +73,8 @@ namespace BankingAPI.Migrations
 
             migrationBuilder.InsertData(
                 table: "Customers",
-                columns: new[] { "Id", "DateOfBirth", "Email", "Name", "Phone", "Status" },
-                values: new object[] { 101, new DateTime(2000, 12, 12, 0, 0, 0, 0, DateTimeKind.Unspecified), "ramu@gmail.com", "Ramu", "9876543210", "Active" });
+                columns: new[] { "Id", "DateOfBirth", "Email", "Name", "Phone", "Status", "Username" },
+                values: new object[] { 101, new DateTime(2000, 12, 12, 0, 0, 0, 0, DateTimeKind.Unspecified), "ramu@gmail.com", "Ramu", "9876543210", "Active", null });
 
             migrationBuilder.InsertData(
                 table: "Accounts",
@@ -64,6 +85,12 @@ namespace BankingAPI.Migrations
                 name: "IX_Accounts_CustomerId",
                 table: "Accounts",
                 column: "CustomerId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Customers_Username",
+                table: "Customers",
+                column: "Username",
+                unique: true);
         }
 
         /// <inheritdoc />
@@ -74,6 +101,9 @@ namespace BankingAPI.Migrations
 
             migrationBuilder.DropTable(
                 name: "Customers");
+
+            migrationBuilder.DropTable(
+                name: "Users");
         }
     }
 }

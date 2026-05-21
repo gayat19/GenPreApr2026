@@ -13,7 +13,7 @@ namespace BankingAPI.Repositories
     public class Repository<K, T> : IRepository<K, T> where T : class
     {
         protected  BankingContext _context;
-        protected Repository(BankingContext context)
+        public Repository(BankingContext context)
         {
             _context = context;
         }

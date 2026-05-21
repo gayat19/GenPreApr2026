@@ -3,7 +3,6 @@ using BankingAPI.Interfaces;
 using BankingAPI.Models;
 using BankingAPI.Repositories;
 using BankingAPI.Services;
-using BankingDALLibrary.Repositories;
 using Microsoft.EntityFrameworkCore;
 using System.Security.AccessControl;
 

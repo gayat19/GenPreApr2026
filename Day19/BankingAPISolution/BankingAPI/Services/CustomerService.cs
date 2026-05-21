@@ -7,6 +7,7 @@ using BankingAPI.Interfaces;
 using BankingAPI.Models;
 using BankingAPI.Misc;
 using BankingAPI.Models.DTOs;
+using System.Security.Cryptography;
 
 
 
@@ -55,8 +56,44 @@ namespace BankingAPI.Services
 
         public RegisterUserResponse Register(RegisterUserRequest request)
         {
-            throw new NotImplementedException();
+            User user = MapUserObjectFromRequest(request);
+            Customer customer = MapCustomerObjectFromRequest(request);
+            user = _userRepository.Create(user);
+            customer.Username = user.Username;
+            customer = _customerRepository.Create(customer);
+            if (user != null && customer != null)
+                return new RegisterUserResponse
+                {
+                    CustomerId = customer.Id,
+                };
+            throw new UnableToCreateEntityException("User or customer object not created");
+
         }
+
+        private Customer MapCustomerObjectFromRequest(RegisterUserRequest request)
+        {
+            return  new Customer
+            {
+                Email = request.Email,
+                Phone = request.Phone,
+                Name = request.Name,
+                DateOfBirth = request.DateOfBirth,
+                Status = "Active"
+            };
+        }
+
+        private User MapUserObjectFromRequest(RegisterUserRequest request)
+        {
+            HMACSHA256 hMACSHA256 = new HMACSHA256();
+            User user = new User();
+            user.Username = request.Username;
+            user.Password = hMACSHA256.ComputeHash(Encoding.UTF8.GetBytes(user.Username.Substring(0,4)+"1234"));
+            user.HashKey = hMACSHA256.Key;
+            user.Role = "Customer";
+            return user;
+        }
+
+  
 
         private string GenerateAccountNumber()
         {
