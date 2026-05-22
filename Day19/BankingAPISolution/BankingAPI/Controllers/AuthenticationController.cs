@@ -3,6 +3,7 @@ using BankingAPI.Misc;
 using BankingAPI.Models.DTOs;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.Security.Authentication;
 
 namespace BankingAPI.Controllers
 {
@@ -32,6 +33,24 @@ namespace BankingAPI.Controllers
             catch (Exception ex) 
             { 
                 return BadRequest(ex.Message); 
+            }
+        }
+
+        [HttpPost("Login")]
+        public ActionResult<LoginResponse> CustomerLogin(LoginRequest request)
+        {
+            try
+            {
+                var result = _authenticationService.Login(request);
+                return Ok(result);
+            }
+            catch (InvalidCredentialException ex)
+            {
+                return Unauthorized(ex.Message);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
             }
         }
     }

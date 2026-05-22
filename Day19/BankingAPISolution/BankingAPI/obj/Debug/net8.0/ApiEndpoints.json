@@ -53,6 +53,32 @@
   },
   {
     "ContainingType": "BankingAPI.Controllers.AuthenticationController",
+    "Method": "CustomerLogin",
+    "RelativePath": "api/Authentication/Login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "BankingAPI.Models.DTOs.LoginRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BankingAPI.Models.DTOs.LoginResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BankingAPI.Controllers.AuthenticationController",
     "Method": "RegisterUser",
     "RelativePath": "api/Authentication/Register",
     "HttpMethod": "POST",

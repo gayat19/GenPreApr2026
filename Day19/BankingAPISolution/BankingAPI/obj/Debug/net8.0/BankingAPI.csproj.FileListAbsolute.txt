@@ -112,3 +112,11 @@ C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingAPI\
 C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingAPI\obj\Debug\net8.0\BankingAPI.pdb
 C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingAPI\obj\Debug\net8.0\BankingAPI.genruntimeconfig.cache
 C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingAPI\obj\Debug\net8.0\ref\BankingAPI.dll
+C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingAPI\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingAPI\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingAPI\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
