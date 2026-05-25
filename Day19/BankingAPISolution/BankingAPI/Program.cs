@@ -86,6 +86,7 @@ builder.Services.AddScoped<IRepository<string, User>, Repository<string, User>>(
 builder.Services.AddScoped<ICustomerInteract, CustomerService>();
 builder.Services.AddScoped<IAuthenticationService, CustomerService>();
 builder.Services.AddScoped<ITokenService,TokenService>();
+builder.Services.AddScoped<ITransact, TransactionService>();
 #endregion
 
 
