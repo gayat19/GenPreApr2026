@@ -24,6 +24,8 @@ namespace BankingAPI.Contexts
 
         public DbSet<CurrentAccount> CurrentAccounts { get; set; }
 
+        public DbSet<Transaction> Transactions { get; set; }
+
         public DbSet<User> Users { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -74,7 +76,24 @@ namespace BankingAPI.Contexts
                 .WithOne(u=>u.Customer)
                 .HasForeignKey<Customer>(c=>c.Username)
                 .HasConstraintName("FK_Customer_user")
-                .OnDelete(DeleteBehavior.Restrict); ;
+                .OnDelete(DeleteBehavior.Restrict);
+
+            modelBuilder.Entity<Transaction>().HasKey(t => t.TransactionReferenceNumber).HasName("PK_TransactionNumber");
+            modelBuilder.Entity<Transaction>().Property(c => c.TransactionDate).HasColumnType("timestamp without time zone");
+
+            modelBuilder.Entity<Transaction>()
+                .HasOne(t=>t.FromAccount)
+                .WithMany(a=>a.FromTransactions)
+                .HasForeignKey(t=>t.FromAccountNumber)
+                .HasConstraintName("FK_Transaction_FromAccount")
+                .OnDelete(DeleteBehavior.Restrict);
+
+            modelBuilder.Entity<Transaction>()
+                .HasOne(t => t.ToAccount)
+                .WithMany(a => a.ToTransactions)
+                .HasForeignKey(t => t.ToAccountNumber)
+                .HasConstraintName("FK_Transaction_ToAccount")
+                .OnDelete(DeleteBehavior.Restrict);
 
 
         }

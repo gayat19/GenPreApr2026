@@ -21,6 +21,12 @@ namespace BankingAPI.Models
         public Customer? Customer { get; set; }
 
         public string Status { get; set; }
+
+        public ICollection<Transaction> FromTransactions { get; set; }
+
+        public ICollection<Transaction> ToTransactions { get; set; }
+
+
         public Account()
         {
             

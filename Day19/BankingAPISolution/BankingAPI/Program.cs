@@ -87,6 +87,8 @@ builder.Services.AddScoped<ICustomerInteract, CustomerService>();
 builder.Services.AddScoped<IAuthenticationService, CustomerService>();
 builder.Services.AddScoped<ITokenService,TokenService>();
 #endregion
+
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
