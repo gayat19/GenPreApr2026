@@ -120,6 +120,9 @@ namespace BankingAPI.Services
         private async Task<string> GenerateAccountNumber()
         {
             string newAccountNumber = "";
+            var accounts = (await _accountRespository.GetAll()).Count;
+            if(accounts == 0)
+                return "0009990001";
             var maxAccountNumber = (await _accountRespository.GetAll()).OrderByDescending(a => a.AccountNumber).ToList()[0].AccountNumber;
             var number = Convert.ToInt64(maxAccountNumber);
             number++;

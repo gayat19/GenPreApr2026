@@ -62,5 +62,12 @@ namespace BankingApiTest
             Assert.That(result.Name, Is.EqualTo(customer.Name));
 
         }
+        [Test]
+        public async Task DeleteCustomerExceptionTest()
+        {
+            //Assert
+            Assert.ThrowsAsync<Exception>(async () => await customerRepository.Delete(100));
+        }
+
     }
 }

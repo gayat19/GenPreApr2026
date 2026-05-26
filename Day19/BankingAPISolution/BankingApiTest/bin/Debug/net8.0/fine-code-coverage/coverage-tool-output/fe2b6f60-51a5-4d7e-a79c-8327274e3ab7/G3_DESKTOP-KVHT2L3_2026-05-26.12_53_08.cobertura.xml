@@ -1,34 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<coverage line-rate="0.095170454545454544" branch-rate="0.025974025974025976" complexity="430" version="1.9" timestamp="1779776352" lines-covered="134" lines-valid="1408" branches-covered="4" branches-valid="154">
+<coverage line-rate="0.13826146475017112" branch-rate="0.070512820512820512" complexity="437" version="1.9" timestamp="1779780188" lines-covered="202" lines-valid="1461" branches-covered="11" branches-valid="156">
   <packages>
-    <package line-rate="1" branch-rate="1" complexity="3" name="BankingApiTest">
+    <package line-rate="0.54761904761904767" branch-rate="1" complexity="8" name="BankingApiTest">
       <classes>
-        <class line-rate="1" branch-rate="1" complexity="1" name="BankingApiTest.Tests" filename="C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingApiTest\RepositoryTest.cs">
+        <class line-rate="1" branch-rate="1" complexity="2" name="BankingApiTest.CustomerServiceTest" filename="C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingApiTest\CustomerServiceTest.cs">
           <methods>
             <method line-rate="1" branch-rate="1" complexity="1" name="Setup" signature="()">
               <lines>
-                <line number="16" hits="1" branch="False" />
-                <line number="17" hits="1" branch="False" />
-                <line number="18" hits="1" branch="False" />
-                <line number="19" hits="1" branch="False" />
-                <line number="20" hits="1" branch="False" />
-              </lines>
-            </method>
-          </methods>
-          <lines>
-            <line number="16" hits="1" branch="False" />
-            <line number="17" hits="1" branch="False" />
-            <line number="18" hits="1" branch="False" />
-            <line number="19" hits="1" branch="False" />
-            <line number="20" hits="1" branch="False" />
-          </lines>
-        </class>
-        <class line-rate="1" branch-rate="1" complexity="1" name="BankingApiTest.Tests.&lt;AddCustomerPassTest&gt;d__2" filename="C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingApiTest\RepositoryTest.cs">
-          <methods>
-            <method line-rate="1" branch-rate="1" complexity="1" name="MoveNext" signature="()">
-              <lines>
-                <line number="24" hits="1" branch="False" />
-                <line number="25" hits="1" branch="False" />
                 <line number="26" hits="1" branch="False" />
                 <line number="27" hits="1" branch="False" />
                 <line number="28" hits="1" branch="False" />
@@ -39,14 +17,29 @@
                 <line number="33" hits="1" branch="False" />
                 <line number="34" hits="1" branch="False" />
                 <line number="35" hits="1" branch="False" />
+                <line number="36" hits="1" branch="False" />
                 <line number="37" hits="1" branch="False" />
+                <line number="38" hits="1" branch="False" />
                 <line number="39" hits="1" branch="False" />
+                <line number="40" hits="1" branch="False" />
+                <line number="41" hits="1" branch="False" />
+                <line number="42" hits="1" branch="False" />
+                <line number="43" hits="1" branch="False" />
+                <line number="45" hits="1" branch="False" />
+                <line number="46" hits="1" branch="False" />
+              </lines>
+            </method>
+            <method line-rate="1" branch-rate="1" complexity="1" name="TearDown" signature="()">
+              <lines>
+                <line number="76" hits="1" branch="False" />
+                <line number="77" hits="1" branch="False" />
+                <line number="78" hits="1" branch="False" />
+                <line number="79" hits="1" branch="False" />
+                <line number="80" hits="1" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="24" hits="1" branch="False" />
-            <line number="25" hits="1" branch="False" />
             <line number="26" hits="1" branch="False" />
             <line number="27" hits="1" branch="False" />
             <line number="28" hits="1" branch="False" />
@@ -57,53 +50,204 @@
             <line number="33" hits="1" branch="False" />
             <line number="34" hits="1" branch="False" />
             <line number="35" hits="1" branch="False" />
+            <line number="36" hits="1" branch="False" />
             <line number="37" hits="1" branch="False" />
+            <line number="38" hits="1" branch="False" />
             <line number="39" hits="1" branch="False" />
+            <line number="40" hits="1" branch="False" />
+            <line number="41" hits="1" branch="False" />
+            <line number="42" hits="1" branch="False" />
+            <line number="43" hits="1" branch="False" />
+            <line number="45" hits="1" branch="False" />
+            <line number="46" hits="1" branch="False" />
+            <line number="76" hits="1" branch="False" />
+            <line number="77" hits="1" branch="False" />
+            <line number="78" hits="1" branch="False" />
+            <line number="79" hits="1" branch="False" />
+            <line number="80" hits="1" branch="False" />
           </lines>
         </class>
-        <class line-rate="1" branch-rate="1" complexity="1" name="BankingApiTest.Tests.&lt;GetCustomerPassTest&gt;d__3" filename="C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingApiTest\RepositoryTest.cs">
+        <class line-rate="0" branch-rate="1" complexity="1" name="BankingApiTest.Tests" filename="C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingApiTest\RepositoryTest.cs">
           <methods>
-            <method line-rate="1" branch-rate="1" complexity="1" name="MoveNext" signature="()">
+            <method line-rate="0" branch-rate="1" complexity="1" name="Setup" signature="()">
               <lines>
-                <line number="43" hits="1" branch="False" />
-                <line number="45" hits="1" branch="False" />
-                <line number="46" hits="1" branch="False" />
-                <line number="47" hits="1" branch="False" />
-                <line number="48" hits="1" branch="False" />
-                <line number="49" hits="1" branch="False" />
-                <line number="50" hits="1" branch="False" />
-                <line number="51" hits="1" branch="False" />
-                <line number="52" hits="1" branch="False" />
-                <line number="53" hits="1" branch="False" />
-                <line number="54" hits="1" branch="False" />
-                <line number="55" hits="1" branch="False" />
-                <line number="59" hits="1" branch="False" />
-                <line number="62" hits="1" branch="False" />
-                <line number="64" hits="1" branch="False" />
+                <line number="16" hits="0" branch="False" />
+                <line number="17" hits="0" branch="False" />
+                <line number="18" hits="0" branch="False" />
+                <line number="19" hits="0" branch="False" />
+                <line number="20" hits="0" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="43" hits="1" branch="False" />
-            <line number="45" hits="1" branch="False" />
-            <line number="46" hits="1" branch="False" />
-            <line number="47" hits="1" branch="False" />
-            <line number="48" hits="1" branch="False" />
-            <line number="49" hits="1" branch="False" />
-            <line number="50" hits="1" branch="False" />
+            <line number="16" hits="0" branch="False" />
+            <line number="17" hits="0" branch="False" />
+            <line number="18" hits="0" branch="False" />
+            <line number="19" hits="0" branch="False" />
+            <line number="20" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class line-rate="1" branch-rate="1" complexity="1" name="BankingApiTest.CustomerServiceTest.&lt;OpenAccountPassTest&gt;d__5" filename="C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingApiTest\CustomerServiceTest.cs">
+          <methods>
+            <method line-rate="1" branch-rate="1" complexity="1" name="MoveNext" signature="()">
+              <lines>
+                <line number="51" hits="1" branch="False" />
+                <line number="53" hits="1" branch="False" />
+                <line number="54" hits="1" branch="False" />
+                <line number="55" hits="1" branch="False" />
+                <line number="56" hits="1" branch="False" />
+                <line number="57" hits="1" branch="False" />
+                <line number="58" hits="1" branch="False" />
+                <line number="59" hits="1" branch="False" />
+                <line number="60" hits="1" branch="False" />
+                <line number="61" hits="1" branch="False" />
+                <line number="62" hits="1" branch="False" />
+                <line number="63" hits="1" branch="False" />
+                <line number="64" hits="1" branch="False" />
+                <line number="65" hits="1" branch="False" />
+                <line number="66" hits="1" branch="False" />
+                <line number="67" hits="1" branch="False" />
+                <line number="68" hits="1" branch="False" />
+                <line number="69" hits="1" branch="False" />
+                <line number="70" hits="1" branch="False" />
+                <line number="71" hits="1" branch="False" />
+                <line number="72" hits="1" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
             <line number="51" hits="1" branch="False" />
-            <line number="52" hits="1" branch="False" />
             <line number="53" hits="1" branch="False" />
             <line number="54" hits="1" branch="False" />
             <line number="55" hits="1" branch="False" />
+            <line number="56" hits="1" branch="False" />
+            <line number="57" hits="1" branch="False" />
+            <line number="58" hits="1" branch="False" />
             <line number="59" hits="1" branch="False" />
+            <line number="60" hits="1" branch="False" />
+            <line number="61" hits="1" branch="False" />
             <line number="62" hits="1" branch="False" />
+            <line number="63" hits="1" branch="False" />
             <line number="64" hits="1" branch="False" />
+            <line number="65" hits="1" branch="False" />
+            <line number="66" hits="1" branch="False" />
+            <line number="67" hits="1" branch="False" />
+            <line number="68" hits="1" branch="False" />
+            <line number="69" hits="1" branch="False" />
+            <line number="70" hits="1" branch="False" />
+            <line number="71" hits="1" branch="False" />
+            <line number="72" hits="1" branch="False" />
+          </lines>
+        </class>
+        <class line-rate="0" branch-rate="1" complexity="1" name="BankingApiTest.Tests.&lt;&lt;DeleteCustomerExceptionTest&gt;b__4_0&gt;d" filename="C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingApiTest\RepositoryTest.cs">
+          <methods>
+            <method line-rate="0" branch-rate="1" complexity="1" name="MoveNext" signature="()">
+              <lines>
+                <line number="69" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="69" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class line-rate="0" branch-rate="1" complexity="1" name="BankingApiTest.Tests.&lt;AddCustomerPassTest&gt;d__2" filename="C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingApiTest\RepositoryTest.cs">
+          <methods>
+            <method line-rate="0" branch-rate="1" complexity="1" name="MoveNext" signature="()">
+              <lines>
+                <line number="24" hits="0" branch="False" />
+                <line number="25" hits="0" branch="False" />
+                <line number="26" hits="0" branch="False" />
+                <line number="27" hits="0" branch="False" />
+                <line number="28" hits="0" branch="False" />
+                <line number="29" hits="0" branch="False" />
+                <line number="30" hits="0" branch="False" />
+                <line number="31" hits="0" branch="False" />
+                <line number="32" hits="0" branch="False" />
+                <line number="33" hits="0" branch="False" />
+                <line number="34" hits="0" branch="False" />
+                <line number="35" hits="0" branch="False" />
+                <line number="37" hits="0" branch="False" />
+                <line number="39" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="24" hits="0" branch="False" />
+            <line number="25" hits="0" branch="False" />
+            <line number="26" hits="0" branch="False" />
+            <line number="27" hits="0" branch="False" />
+            <line number="28" hits="0" branch="False" />
+            <line number="29" hits="0" branch="False" />
+            <line number="30" hits="0" branch="False" />
+            <line number="31" hits="0" branch="False" />
+            <line number="32" hits="0" branch="False" />
+            <line number="33" hits="0" branch="False" />
+            <line number="34" hits="0" branch="False" />
+            <line number="35" hits="0" branch="False" />
+            <line number="37" hits="0" branch="False" />
+            <line number="39" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class line-rate="0" branch-rate="1" complexity="1" name="BankingApiTest.Tests.&lt;DeleteCustomerExceptionTest&gt;d__4" filename="C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingApiTest\RepositoryTest.cs">
+          <methods>
+            <method line-rate="0" branch-rate="1" complexity="1" name="MoveNext" signature="()">
+              <lines>
+                <line number="67" hits="0" branch="False" />
+                <line number="69" hits="0" branch="False" />
+                <line number="70" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="67" hits="0" branch="False" />
+            <line number="69" hits="0" branch="False" />
+            <line number="70" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class line-rate="0" branch-rate="1" complexity="1" name="BankingApiTest.Tests.&lt;GetCustomerPassTest&gt;d__3" filename="C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingApiTest\RepositoryTest.cs">
+          <methods>
+            <method line-rate="0" branch-rate="1" complexity="1" name="MoveNext" signature="()">
+              <lines>
+                <line number="43" hits="0" branch="False" />
+                <line number="45" hits="0" branch="False" />
+                <line number="46" hits="0" branch="False" />
+                <line number="47" hits="0" branch="False" />
+                <line number="48" hits="0" branch="False" />
+                <line number="49" hits="0" branch="False" />
+                <line number="50" hits="0" branch="False" />
+                <line number="51" hits="0" branch="False" />
+                <line number="52" hits="0" branch="False" />
+                <line number="53" hits="0" branch="False" />
+                <line number="54" hits="0" branch="False" />
+                <line number="55" hits="0" branch="False" />
+                <line number="59" hits="0" branch="False" />
+                <line number="62" hits="0" branch="False" />
+                <line number="64" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="43" hits="0" branch="False" />
+            <line number="45" hits="0" branch="False" />
+            <line number="46" hits="0" branch="False" />
+            <line number="47" hits="0" branch="False" />
+            <line number="48" hits="0" branch="False" />
+            <line number="49" hits="0" branch="False" />
+            <line number="50" hits="0" branch="False" />
+            <line number="51" hits="0" branch="False" />
+            <line number="52" hits="0" branch="False" />
+            <line number="53" hits="0" branch="False" />
+            <line number="54" hits="0" branch="False" />
+            <line number="55" hits="0" branch="False" />
+            <line number="59" hits="0" branch="False" />
+            <line number="62" hits="0" branch="False" />
+            <line number="64" hits="0" branch="False" />
           </lines>
         </class>
       </classes>
     </package>
-    <package line-rate="0.072780203784570591" branch-rate="0.025974025974025976" complexity="427" name="BankingAPI">
+    <package line-rate="0.11328976034858387" branch-rate="0.070512820512820512" complexity="429" name="BankingAPI">
       <classes>
         <class line-rate="0" branch-rate="0" complexity="6" name="Program" filename="C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingAPI\Program.cs">
           <methods>
@@ -191,58 +335,58 @@
             <line number="110" hits="0" branch="False" />
           </lines>
         </class>
-        <class line-rate="0" branch-rate="1" complexity="1" name="BankingAPI.Services.CustomerService" filename="C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingAPI\Services\CustomerService.cs">
+        <class line-rate="1" branch-rate="1" complexity="1" name="BankingAPI.Services.CustomerService" filename="C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingAPI\Services\CustomerService.cs">
           <methods>
-            <method line-rate="0" branch-rate="1" complexity="1" name=".ctor" signature="(BankingAPI.Interfaces.IRepository&lt;string, BankingAPI.Models.Account&gt;, BankingAPI.Interfaces.IRepository&lt;string, BankingAPI.Models.User&gt;, BankingAPI.Interfaces.IRepository&lt;int, BankingAPI.Models.Customer&gt;, BankingAPI.Interfaces.ITokenService)">
+            <method line-rate="1" branch-rate="1" complexity="1" name=".ctor" signature="(BankingAPI.Interfaces.IRepository&lt;string, BankingAPI.Models.Account&gt;, BankingAPI.Interfaces.IRepository&lt;string, BankingAPI.Models.User&gt;, BankingAPI.Interfaces.IRepository&lt;int, BankingAPI.Models.Customer&gt;, BankingAPI.Interfaces.ITokenService)">
               <lines>
-                <line number="24" hits="0" branch="False" />
-                <line number="25" hits="0" branch="False" />
-                <line number="26" hits="0" branch="False" />
-                <line number="27" hits="0" branch="False" />
-                <line number="28" hits="0" branch="False" />
-                <line number="29" hits="0" branch="False" />
-                <line number="30" hits="0" branch="False" />
-                <line number="31" hits="0" branch="False" />
-                <line number="32" hits="0" branch="False" />
-                <line number="33" hits="0" branch="False" />
+                <line number="24" hits="1" branch="False" />
+                <line number="25" hits="1" branch="False" />
+                <line number="26" hits="1" branch="False" />
+                <line number="27" hits="1" branch="False" />
+                <line number="28" hits="1" branch="False" />
+                <line number="29" hits="1" branch="False" />
+                <line number="30" hits="1" branch="False" />
+                <line number="31" hits="1" branch="False" />
+                <line number="32" hits="1" branch="False" />
+                <line number="33" hits="1" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="24" hits="0" branch="False" />
-            <line number="25" hits="0" branch="False" />
-            <line number="26" hits="0" branch="False" />
-            <line number="27" hits="0" branch="False" />
-            <line number="28" hits="0" branch="False" />
-            <line number="29" hits="0" branch="False" />
-            <line number="30" hits="0" branch="False" />
-            <line number="31" hits="0" branch="False" />
-            <line number="32" hits="0" branch="False" />
-            <line number="33" hits="0" branch="False" />
+            <line number="24" hits="1" branch="False" />
+            <line number="25" hits="1" branch="False" />
+            <line number="26" hits="1" branch="False" />
+            <line number="27" hits="1" branch="False" />
+            <line number="28" hits="1" branch="False" />
+            <line number="29" hits="1" branch="False" />
+            <line number="30" hits="1" branch="False" />
+            <line number="31" hits="1" branch="False" />
+            <line number="32" hits="1" branch="False" />
+            <line number="33" hits="1" branch="False" />
           </lines>
         </class>
-        <class line-rate="0" branch-rate="0" complexity="7" name="BankingAPI.Services.TokenService" filename="C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingAPI\Services\TokenService.cs">
+        <class line-rate="0.2608695652173913" branch-rate="1" complexity="7" name="BankingAPI.Services.TokenService" filename="C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingAPI\Services\TokenService.cs">
           <methods>
-            <method line-rate="0" branch-rate="0" complexity="6" name=".ctor" signature="(Microsoft.Extensions.Configuration.IConfiguration)">
+            <method line-rate="1" branch-rate="1" complexity="6" name=".ctor" signature="(Microsoft.Extensions.Configuration.IConfiguration)">
               <lines>
-                <line number="15" hits="0" branch="False" />
-                <line number="16" hits="0" branch="False" />
-                <line number="17" hits="0" branch="True" condition-coverage="0% (0/2)">
+                <line number="15" hits="1" branch="False" />
+                <line number="16" hits="1" branch="False" />
+                <line number="17" hits="1" branch="True" condition-coverage="100% (2/2)">
                   <conditions>
-                    <condition number="0" type="jump" coverage="0%" />
+                    <condition number="0" type="jump" coverage="100%" />
                   </conditions>
                 </line>
-                <line number="18" hits="0" branch="True" condition-coverage="0% (0/2)">
+                <line number="18" hits="1" branch="True" condition-coverage="100% (2/2)">
                   <conditions>
-                    <condition number="0" type="jump" coverage="0%" />
+                    <condition number="0" type="jump" coverage="100%" />
                   </conditions>
                 </line>
-                <line number="19" hits="0" branch="True" condition-coverage="0% (0/2)">
+                <line number="19" hits="1" branch="True" condition-coverage="100% (2/2)">
                   <conditions>
-                    <condition number="0" type="jump" coverage="0%" />
+                    <condition number="0" type="jump" coverage="100%" />
                   </conditions>
                 </line>
-                <line number="20" hits="0" branch="False" />
+                <line number="20" hits="1" branch="False" />
               </lines>
             </method>
             <method line-rate="0" branch-rate="1" complexity="1" name="CreateNewToken" signature="(BankingAPI.Models.DTOs.TokenRequest)">
@@ -268,24 +412,24 @@
             </method>
           </methods>
           <lines>
-            <line number="15" hits="0" branch="False" />
-            <line number="16" hits="0" branch="False" />
-            <line number="17" hits="0" branch="True" condition-coverage="0% (0/2)">
+            <line number="15" hits="1" branch="False" />
+            <line number="16" hits="1" branch="False" />
+            <line number="17" hits="1" branch="True" condition-coverage="100% (2/2)">
               <conditions>
-                <condition number="0" type="jump" coverage="0%" />
+                <condition number="0" type="jump" coverage="100%" />
               </conditions>
             </line>
-            <line number="18" hits="0" branch="True" condition-coverage="0% (0/2)">
+            <line number="18" hits="1" branch="True" condition-coverage="100% (2/2)">
               <conditions>
-                <condition number="0" type="jump" coverage="0%" />
+                <condition number="0" type="jump" coverage="100%" />
               </conditions>
             </line>
-            <line number="19" hits="0" branch="True" condition-coverage="0% (0/2)">
+            <line number="19" hits="1" branch="True" condition-coverage="100% (2/2)">
               <conditions>
-                <condition number="0" type="jump" coverage="0%" />
+                <condition number="0" type="jump" coverage="100%" />
               </conditions>
             </line>
-            <line number="20" hits="0" branch="False" />
+            <line number="20" hits="1" branch="False" />
             <line number="22" hits="0" branch="False" />
             <line number="23" hits="0" branch="False" />
             <line number="24" hits="0" branch="False" />
@@ -341,11 +485,11 @@
             <line number="20" hits="1" branch="False" />
           </lines>
         </class>
-        <class line-rate="0.30769230769230771" branch-rate="1" complexity="18" name="BankingAPI.Models.Account" filename="C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingAPI\Models\Account.cs">
+        <class line-rate="0.5" branch-rate="1" complexity="18" name="BankingAPI.Models.Account" filename="C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingAPI\Models\Account.cs">
           <methods>
-            <method line-rate="0" branch-rate="1" complexity="1" name="get_AccountNumber" signature="()">
+            <method line-rate="1" branch-rate="1" complexity="1" name="get_AccountNumber" signature="()">
               <lines>
-                <line number="14" hits="0" branch="False" />
+                <line number="14" hits="1" branch="False" />
               </lines>
             </method>
             <method line-rate="1" branch-rate="1" complexity="1" name="set_AccountNumber" signature="(string)">
@@ -353,9 +497,9 @@
                 <line number="14" hits="1" branch="False" />
               </lines>
             </method>
-            <method line-rate="0" branch-rate="1" complexity="1" name="get_Balance" signature="()">
+            <method line-rate="1" branch-rate="1" complexity="1" name="get_Balance" signature="()">
               <lines>
-                <line number="17" hits="0" branch="False" />
+                <line number="17" hits="1" branch="False" />
               </lines>
             </method>
             <method line-rate="1" branch-rate="1" complexity="1" name="set_Balance" signature="(float)">
@@ -363,14 +507,14 @@
                 <line number="17" hits="1" branch="False" />
               </lines>
             </method>
-            <method line-rate="0" branch-rate="1" complexity="1" name="get_AccountType" signature="()">
+            <method line-rate="1" branch-rate="1" complexity="1" name="get_AccountType" signature="()">
               <lines>
-                <line number="18" hits="0" branch="False" />
+                <line number="18" hits="1" branch="False" />
               </lines>
             </method>
-            <method line-rate="0" branch-rate="1" complexity="1" name="set_AccountType" signature="(string)">
+            <method line-rate="1" branch-rate="1" complexity="1" name="set_AccountType" signature="(string)">
               <lines>
-                <line number="18" hits="0" branch="False" />
+                <line number="18" hits="1" branch="False" />
               </lines>
             </method>
             <method line-rate="0" branch-rate="1" complexity="1" name="get_CustomerId" signature="()">
@@ -393,9 +537,9 @@
                 <line number="21" hits="0" branch="False" />
               </lines>
             </method>
-            <method line-rate="0" branch-rate="1" complexity="1" name="get_Status" signature="()">
+            <method line-rate="1" branch-rate="1" complexity="1" name="get_Status" signature="()">
               <lines>
-                <line number="23" hits="0" branch="False" />
+                <line number="23" hits="1" branch="False" />
               </lines>
             </method>
             <method line-rate="1" branch-rate="1" complexity="1" name="set_Status" signature="(string)">
@@ -445,7 +589,7 @@
           <lines>
             <line number="14" hits="1" branch="False" />
             <line number="17" hits="1" branch="False" />
-            <line number="18" hits="0" branch="False" />
+            <line number="18" hits="1" branch="False" />
             <line number="20" hits="1" branch="False" />
             <line number="21" hits="0" branch="False" />
             <line number="23" hits="1" branch="False" />
@@ -515,7 +659,7 @@
             <line number="15" hits="0" branch="False" />
           </lines>
         </class>
-        <class line-rate="0.52" branch-rate="1" complexity="20" name="BankingAPI.Models.Customer" filename="C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingAPI\Models\Customer.cs">
+        <class line-rate="0.48" branch-rate="1" complexity="20" name="BankingAPI.Models.Customer" filename="C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingAPI\Models\Customer.cs">
           <methods>
             <method line-rate="1" branch-rate="1" complexity="1" name="get_Id" signature="()">
               <lines>
@@ -527,9 +671,9 @@
                 <line number="11" hits="1" branch="False" />
               </lines>
             </method>
-            <method line-rate="1" branch-rate="1" complexity="1" name="get_Name" signature="()">
+            <method line-rate="0" branch-rate="1" complexity="1" name="get_Name" signature="()">
               <lines>
-                <line number="12" hits="1" branch="False" />
+                <line number="12" hits="0" branch="False" />
               </lines>
             </method>
             <method line-rate="1" branch-rate="1" complexity="1" name="set_Name" signature="(string)">
@@ -824,55 +968,55 @@
             <line number="10" hits="0" branch="False" />
           </lines>
         </class>
-        <class line-rate="0" branch-rate="1" complexity="6" name="BankingAPI.Models.DTOs.CreateAccountRequest" filename="C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingAPI\Models\DTOs\CreateAccountRequest.cs">
+        <class line-rate="1" branch-rate="1" complexity="6" name="BankingAPI.Models.DTOs.CreateAccountRequest" filename="C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingAPI\Models\DTOs\CreateAccountRequest.cs">
           <methods>
-            <method line-rate="0" branch-rate="1" complexity="1" name="get_Balance" signature="()">
+            <method line-rate="1" branch-rate="1" complexity="1" name="get_Balance" signature="()">
               <lines>
-                <line number="5" hits="0" branch="False" />
+                <line number="5" hits="1" branch="False" />
               </lines>
             </method>
-            <method line-rate="0" branch-rate="1" complexity="1" name="set_Balance" signature="(float)">
+            <method line-rate="1" branch-rate="1" complexity="1" name="set_Balance" signature="(float)">
               <lines>
-                <line number="5" hits="0" branch="False" />
+                <line number="5" hits="1" branch="False" />
               </lines>
             </method>
-            <method line-rate="0" branch-rate="1" complexity="1" name="get_AccountType" signature="()">
+            <method line-rate="1" branch-rate="1" complexity="1" name="get_AccountType" signature="()">
               <lines>
-                <line number="6" hits="0" branch="False" />
+                <line number="6" hits="1" branch="False" />
               </lines>
             </method>
-            <method line-rate="0" branch-rate="1" complexity="1" name="set_AccountType" signature="(string)">
+            <method line-rate="1" branch-rate="1" complexity="1" name="set_AccountType" signature="(string)">
               <lines>
-                <line number="6" hits="0" branch="False" />
+                <line number="6" hits="1" branch="False" />
               </lines>
             </method>
-            <method line-rate="0" branch-rate="1" complexity="1" name="get_CustomerId" signature="()">
+            <method line-rate="1" branch-rate="1" complexity="1" name="get_CustomerId" signature="()">
               <lines>
-                <line number="8" hits="0" branch="False" />
+                <line number="8" hits="1" branch="False" />
               </lines>
             </method>
-            <method line-rate="0" branch-rate="1" complexity="1" name="set_CustomerId" signature="(int)">
+            <method line-rate="1" branch-rate="1" complexity="1" name="set_CustomerId" signature="(int)">
               <lines>
-                <line number="8" hits="0" branch="False" />
+                <line number="8" hits="1" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="5" hits="0" branch="False" />
-            <line number="6" hits="0" branch="False" />
-            <line number="8" hits="0" branch="False" />
+            <line number="5" hits="1" branch="False" />
+            <line number="6" hits="1" branch="False" />
+            <line number="8" hits="1" branch="False" />
           </lines>
         </class>
-        <class line-rate="0" branch-rate="1" complexity="11" name="BankingAPI.Models.DTOs.CreateAccountResponse" filename="C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingAPI\Models\DTOs\CreateAccountResponse.cs">
+        <class line-rate="0.54545454545454541" branch-rate="1" complexity="11" name="BankingAPI.Models.DTOs.CreateAccountResponse" filename="C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingAPI\Models\DTOs\CreateAccountResponse.cs">
           <methods>
-            <method line-rate="0" branch-rate="1" complexity="1" name="get_AccountNumber" signature="()">
+            <method line-rate="1" branch-rate="1" complexity="1" name="get_AccountNumber" signature="()">
               <lines>
-                <line number="5" hits="0" branch="False" />
+                <line number="5" hits="1" branch="False" />
               </lines>
             </method>
-            <method line-rate="0" branch-rate="1" complexity="1" name="set_AccountNumber" signature="(string)">
+            <method line-rate="1" branch-rate="1" complexity="1" name="set_AccountNumber" signature="(string)">
               <lines>
-                <line number="5" hits="0" branch="False" />
+                <line number="5" hits="1" branch="False" />
               </lines>
             </method>
             <method line-rate="0" branch-rate="1" complexity="1" name="get_Balance" signature="()">
@@ -880,9 +1024,9 @@
                 <line number="7" hits="0" branch="False" />
               </lines>
             </method>
-            <method line-rate="0" branch-rate="1" complexity="1" name="set_Balance" signature="(float)">
+            <method line-rate="1" branch-rate="1" complexity="1" name="set_Balance" signature="(float)">
               <lines>
-                <line number="7" hits="0" branch="False" />
+                <line number="7" hits="1" branch="False" />
               </lines>
             </method>
             <method line-rate="0" branch-rate="1" complexity="1" name="get_AccountType" signature="()">
@@ -890,9 +1034,9 @@
                 <line number="8" hits="0" branch="False" />
               </lines>
             </method>
-            <method line-rate="0" branch-rate="1" complexity="1" name="set_AccountType" signature="(string)">
+            <method line-rate="1" branch-rate="1" complexity="1" name="set_AccountType" signature="(string)">
               <lines>
-                <line number="8" hits="0" branch="False" />
+                <line number="8" hits="1" branch="False" />
               </lines>
             </method>
             <method line-rate="0" branch-rate="1" complexity="1" name="get_CustomerId" signature="()">
@@ -910,23 +1054,23 @@
                 <line number="12" hits="0" branch="False" />
               </lines>
             </method>
-            <method line-rate="0" branch-rate="1" complexity="1" name="set_Status" signature="(string)">
+            <method line-rate="1" branch-rate="1" complexity="1" name="set_Status" signature="(string)">
               <lines>
-                <line number="12" hits="0" branch="False" />
+                <line number="12" hits="1" branch="False" />
               </lines>
             </method>
-            <method line-rate="0" branch-rate="1" complexity="1" name=".ctor" signature="()">
+            <method line-rate="1" branch-rate="1" complexity="1" name=".ctor" signature="()">
               <lines>
-                <line number="5" hits="0" branch="False" />
+                <line number="5" hits="1" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="5" hits="0" branch="False" />
-            <line number="7" hits="0" branch="False" />
-            <line number="8" hits="0" branch="False" />
+            <line number="5" hits="1" branch="False" />
+            <line number="7" hits="1" branch="False" />
+            <line number="8" hits="1" branch="False" />
             <line number="10" hits="0" branch="False" />
-            <line number="12" hits="0" branch="False" />
+            <line number="12" hits="1" branch="False" />
           </lines>
         </class>
         <class line-rate="0" branch-rate="1" complexity="5" name="BankingAPI.Models.DTOs.DepositRequest" filename="C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingAPI\Models\DTOs\DepositRequest.cs">
@@ -2606,12 +2750,12 @@
           <methods>
             <method line-rate="0" branch-rate="1" complexity="1" name="&lt;GenerateAccountNumber&gt;b__10_0" signature="(BankingAPI.Models.Account)">
               <lines>
-                <line number="123" hits="0" branch="False" />
+                <line number="126" hits="0" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="123" hits="0" branch="False" />
+            <line number="126" hits="0" branch="False" />
           </lines>
         </class>
         <class line-rate="0" branch-rate="1" complexity="1" name="BankingAPI.Services.CustomerService.&lt;&gt;c__DisplayClass5_0" filename="C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingAPI\Services\CustomerService.cs">
@@ -2630,9 +2774,6 @@
           <methods>
             <method line-rate="0" branch-rate="1" complexity="1" name="MoveNext" signature="()">
               <lines>
-                <line number="134" hits="0" branch="False" />
-                <line number="135" hits="0" branch="False" />
-                <line number="136" hits="0" branch="False" />
                 <line number="137" hits="0" branch="False" />
                 <line number="138" hits="0" branch="False" />
                 <line number="139" hits="0" branch="False" />
@@ -2641,13 +2782,13 @@
                 <line number="142" hits="0" branch="False" />
                 <line number="143" hits="0" branch="False" />
                 <line number="144" hits="0" branch="False" />
+                <line number="145" hits="0" branch="False" />
+                <line number="146" hits="0" branch="False" />
+                <line number="147" hits="0" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="134" hits="0" branch="False" />
-            <line number="135" hits="0" branch="False" />
-            <line number="136" hits="0" branch="False" />
             <line number="137" hits="0" branch="False" />
             <line number="138" hits="0" branch="False" />
             <line number="139" hits="0" branch="False" />
@@ -2656,56 +2797,73 @@
             <line number="142" hits="0" branch="False" />
             <line number="143" hits="0" branch="False" />
             <line number="144" hits="0" branch="False" />
+            <line number="145" hits="0" branch="False" />
+            <line number="146" hits="0" branch="False" />
+            <line number="147" hits="0" branch="False" />
           </lines>
         </class>
-        <class line-rate="0" branch-rate="0" complexity="6" name="BankingAPI.Services.CustomerService.&lt;GenerateAccountNumber&gt;d__10" filename="C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingAPI\Services\CustomerService.cs">
+        <class line-rate="0.42857142857142855" branch-rate="0.125" complexity="8" name="BankingAPI.Services.CustomerService.&lt;GenerateAccountNumber&gt;d__10" filename="C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingAPI\Services\CustomerService.cs">
           <methods>
-            <method line-rate="0" branch-rate="0" complexity="6" name="MoveNext" signature="()">
+            <method line-rate="0.42857142857142855" branch-rate="0.125" complexity="8" name="MoveNext" signature="()">
               <lines>
-                <line number="121" hits="0" branch="False" />
-                <line number="122" hits="0" branch="False" />
-                <line number="123" hits="0" branch="False" />
-                <line number="124" hits="0" branch="False" />
-                <line number="125" hits="0" branch="False" />
-                <line number="126" hits="0" branch="True" condition-coverage="0% (0/2)">
+                <line number="121" hits="1" branch="False" />
+                <line number="122" hits="1" branch="False" />
+                <line number="123" hits="1" branch="False" />
+                <line number="124" hits="1" branch="True" condition-coverage="50% (1/2)">
+                  <conditions>
+                    <condition number="0" type="jump" coverage="50%" />
+                  </conditions>
+                </line>
+                <line number="125" hits="1" branch="False" />
+                <line number="126" hits="0" branch="False" />
+                <line number="127" hits="0" branch="False" />
+                <line number="128" hits="0" branch="False" />
+                <line number="129" hits="0" branch="True" condition-coverage="0% (0/2)">
                   <conditions>
                     <condition number="0" type="jump" coverage="0%" />
                   </conditions>
                 </line>
-                <line number="127" hits="0" branch="False" />
-                <line number="128" hits="0" branch="True" condition-coverage="0% (0/4)">
+                <line number="130" hits="0" branch="False" />
+                <line number="131" hits="0" branch="True" condition-coverage="0% (0/4)">
                   <conditions>
                     <condition number="0" type="jump" coverage="0%" />
                     <condition number="1" type="jump" coverage="0%" />
                   </conditions>
                 </line>
-                <line number="129" hits="0" branch="False" />
-                <line number="130" hits="0" branch="False" />
-                <line number="131" hits="0" branch="False" />
+                <line number="132" hits="0" branch="False" />
+                <line number="133" hits="0" branch="False" />
+                <line number="134" hits="1" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="121" hits="0" branch="False" />
-            <line number="122" hits="0" branch="False" />
-            <line number="123" hits="0" branch="False" />
-            <line number="124" hits="0" branch="False" />
-            <line number="125" hits="0" branch="False" />
-            <line number="126" hits="0" branch="True" condition-coverage="0% (0/2)">
+            <line number="121" hits="1" branch="False" />
+            <line number="122" hits="1" branch="False" />
+            <line number="123" hits="1" branch="False" />
+            <line number="124" hits="1" branch="True" condition-coverage="50% (1/2)">
+              <conditions>
+                <condition number="0" type="jump" coverage="50%" />
+              </conditions>
+            </line>
+            <line number="125" hits="1" branch="False" />
+            <line number="126" hits="0" branch="False" />
+            <line number="127" hits="0" branch="False" />
+            <line number="128" hits="0" branch="False" />
+            <line number="129" hits="0" branch="True" condition-coverage="0% (0/2)">
               <conditions>
                 <condition number="0" type="jump" coverage="0%" />
               </conditions>
             </line>
-            <line number="127" hits="0" branch="False" />
-            <line number="128" hits="0" branch="True" condition-coverage="0% (0/4)">
+            <line number="130" hits="0" branch="False" />
+            <line number="131" hits="0" branch="True" condition-coverage="0% (0/4)">
               <conditions>
                 <condition number="0" type="jump" coverage="0%" />
                 <condition number="1" type="jump" coverage="0%" />
               </conditions>
             </line>
-            <line number="129" hits="0" branch="False" />
-            <line number="130" hits="0" branch="False" />
-            <line number="131" hits="0" branch="False" />
+            <line number="132" hits="0" branch="False" />
+            <line number="133" hits="0" branch="False" />
+            <line number="134" hits="1" branch="False" />
           </lines>
         </class>
         <class line-rate="0" branch-rate="0" complexity="6" name="BankingAPI.Services.CustomerService.&lt;Login&gt;d__5" filename="C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingAPI\Services\CustomerService.cs">
@@ -2840,52 +2998,52 @@
             <line number="116" hits="0" branch="False" />
           </lines>
         </class>
-        <class line-rate="0" branch-rate="1" complexity="1" name="BankingAPI.Services.CustomerService.&lt;OpensAccount&gt;d__6" filename="C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingAPI\Services\CustomerService.cs">
+        <class line-rate="1" branch-rate="1" complexity="1" name="BankingAPI.Services.CustomerService.&lt;OpensAccount&gt;d__6" filename="C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingAPI\Services\CustomerService.cs">
           <methods>
-            <method line-rate="0" branch-rate="1" complexity="1" name="MoveNext" signature="()">
+            <method line-rate="1" branch-rate="1" complexity="1" name="MoveNext" signature="()">
               <lines>
-                <line number="59" hits="0" branch="False" />
-                <line number="60" hits="0" branch="False" />
-                <line number="61" hits="0" branch="False" />
-                <line number="62" hits="0" branch="False" />
-                <line number="63" hits="0" branch="False" />
-                <line number="64" hits="0" branch="False" />
-                <line number="65" hits="0" branch="False" />
-                <line number="66" hits="0" branch="False" />
-                <line number="67" hits="0" branch="False" />
-                <line number="68" hits="0" branch="False" />
-                <line number="69" hits="0" branch="False" />
-                <line number="70" hits="0" branch="False" />
-                <line number="71" hits="0" branch="False" />
-                <line number="72" hits="0" branch="False" />
-                <line number="73" hits="0" branch="False" />
-                <line number="74" hits="0" branch="False" />
-                <line number="75" hits="0" branch="False" />
-                <line number="76" hits="0" branch="False" />
-                <line number="77" hits="0" branch="False" />
+                <line number="59" hits="1" branch="False" />
+                <line number="60" hits="1" branch="False" />
+                <line number="61" hits="1" branch="False" />
+                <line number="62" hits="1" branch="False" />
+                <line number="63" hits="1" branch="False" />
+                <line number="64" hits="1" branch="False" />
+                <line number="65" hits="1" branch="False" />
+                <line number="66" hits="1" branch="False" />
+                <line number="67" hits="1" branch="False" />
+                <line number="68" hits="1" branch="False" />
+                <line number="69" hits="1" branch="False" />
+                <line number="70" hits="1" branch="False" />
+                <line number="71" hits="1" branch="False" />
+                <line number="72" hits="1" branch="False" />
+                <line number="73" hits="1" branch="False" />
+                <line number="74" hits="1" branch="False" />
+                <line number="75" hits="1" branch="False" />
+                <line number="76" hits="1" branch="False" />
+                <line number="77" hits="1" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="59" hits="0" branch="False" />
-            <line number="60" hits="0" branch="False" />
-            <line number="61" hits="0" branch="False" />
-            <line number="62" hits="0" branch="False" />
-            <line number="63" hits="0" branch="False" />
-            <line number="64" hits="0" branch="False" />
-            <line number="65" hits="0" branch="False" />
-            <line number="66" hits="0" branch="False" />
-            <line number="67" hits="0" branch="False" />
-            <line number="68" hits="0" branch="False" />
-            <line number="69" hits="0" branch="False" />
-            <line number="70" hits="0" branch="False" />
-            <line number="71" hits="0" branch="False" />
-            <line number="72" hits="0" branch="False" />
-            <line number="73" hits="0" branch="False" />
-            <line number="74" hits="0" branch="False" />
-            <line number="75" hits="0" branch="False" />
-            <line number="76" hits="0" branch="False" />
-            <line number="77" hits="0" branch="False" />
+            <line number="59" hits="1" branch="False" />
+            <line number="60" hits="1" branch="False" />
+            <line number="61" hits="1" branch="False" />
+            <line number="62" hits="1" branch="False" />
+            <line number="63" hits="1" branch="False" />
+            <line number="64" hits="1" branch="False" />
+            <line number="65" hits="1" branch="False" />
+            <line number="66" hits="1" branch="False" />
+            <line number="67" hits="1" branch="False" />
+            <line number="68" hits="1" branch="False" />
+            <line number="69" hits="1" branch="False" />
+            <line number="70" hits="1" branch="False" />
+            <line number="71" hits="1" branch="False" />
+            <line number="72" hits="1" branch="False" />
+            <line number="73" hits="1" branch="False" />
+            <line number="74" hits="1" branch="False" />
+            <line number="75" hits="1" branch="False" />
+            <line number="76" hits="1" branch="False" />
+            <line number="77" hits="1" branch="False" />
           </lines>
         </class>
         <class line-rate="0" branch-rate="0" complexity="4" name="BankingAPI.Services.CustomerService.&lt;Register&gt;d__7" filename="C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingAPI\Services\CustomerService.cs">
@@ -3586,38 +3744,38 @@
             <line number="37" hits="0" branch="False" />
           </lines>
         </class>
-        <class line-rate="1" branch-rate="1" complexity="1" name="BankingAPI.Repositories.Repository.&lt;Get&gt;d__4&lt;K, T&gt;" filename="C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingAPI\Repositories\Repository.cs">
-          <methods>
-            <method line-rate="1" branch-rate="1" complexity="1" name="MoveNext" signature="()">
-              <lines>
-                <line number="40" hits="1" branch="False" />
-                <line number="41" hits="1" branch="False" />
-                <line number="42" hits="1" branch="False" />
-                <line number="43" hits="1" branch="False" />
-              </lines>
-            </method>
-          </methods>
-          <lines>
-            <line number="40" hits="1" branch="False" />
-            <line number="41" hits="1" branch="False" />
-            <line number="42" hits="1" branch="False" />
-            <line number="43" hits="1" branch="False" />
-          </lines>
-        </class>
-        <class line-rate="0" branch-rate="1" complexity="1" name="BankingAPI.Repositories.Repository.&lt;GetAll&gt;d__5&lt;K, T&gt;" filename="C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingAPI\Repositories\Repository.cs">
+        <class line-rate="0" branch-rate="1" complexity="1" name="BankingAPI.Repositories.Repository.&lt;Get&gt;d__4&lt;K, T&gt;" filename="C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingAPI\Repositories\Repository.cs">
           <methods>
             <method line-rate="0" branch-rate="1" complexity="1" name="MoveNext" signature="()">
               <lines>
-                <line number="46" hits="0" branch="False" />
-                <line number="47" hits="0" branch="False" />
-                <line number="48" hits="0" branch="False" />
+                <line number="40" hits="0" branch="False" />
+                <line number="41" hits="0" branch="False" />
+                <line number="42" hits="0" branch="False" />
+                <line number="43" hits="0" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="46" hits="0" branch="False" />
-            <line number="47" hits="0" branch="False" />
-            <line number="48" hits="0" branch="False" />
+            <line number="40" hits="0" branch="False" />
+            <line number="41" hits="0" branch="False" />
+            <line number="42" hits="0" branch="False" />
+            <line number="43" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class line-rate="1" branch-rate="1" complexity="1" name="BankingAPI.Repositories.Repository.&lt;GetAll&gt;d__5&lt;K, T&gt;" filename="C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingAPI\Repositories\Repository.cs">
+          <methods>
+            <method line-rate="1" branch-rate="1" complexity="1" name="MoveNext" signature="()">
+              <lines>
+                <line number="46" hits="1" branch="False" />
+                <line number="47" hits="1" branch="False" />
+                <line number="48" hits="1" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="46" hits="1" branch="False" />
+            <line number="47" hits="1" branch="False" />
+            <line number="48" hits="1" branch="False" />
           </lines>
         </class>
         <class line-rate="0" branch-rate="0" complexity="2" name="BankingAPI.Repositories.Repository.&lt;Update&gt;d__6&lt;K, T&gt;" filename="C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingAPI\Repositories\Repository.cs">
