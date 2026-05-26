@@ -1,5 +1,6 @@
 ﻿using BankingAPI.Contexts;
 using BankingAPI.Interfaces;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,41 +19,41 @@ namespace BankingAPI.Repositories
             _context = context;
         }
 
-        public T Create(T item)
+        public async Task<T> Create(T item)
         {
             _context.Add(item);
-            _context.SaveChanges();
+            await _context.SaveChangesAsync();
             return item;
         }
 
-        public T? Delete(K key)
+        public async Task<T?> Delete(K key)
         {
-            var item = Get(key);
+            var item = await Get(key);
             if (item == null)
                 throw new Exception("No Such item for delete");
             _context.Remove(item);
-            _context.SaveChanges();
+            await _context.SaveChangesAsync();
             return item;
         }
 
-        public  T? Get(K key)
+        public async Task<T?> Get(K key)
         {
-            var item = _context.Find<T>(key);
+            var item = await _context.FindAsync<T>(key);
             return item;
         }
-        
-        public List<T>? GetAll()
+
+        public async Task<List<T>?> GetAll()
         {
-            return _context.Set<T>().ToList();
+            return (await _context.Set<T>().ToListAsync());
         }
 
-        public T? Update(K key, T item)
+        public async Task<T?> Update(K key, T item)
         {
-            var myItem = Get(key);
+            var myItem = await Get(key);
             if (myItem == null)
                 throw new Exception("No such item for update");
             _context.Update(item);
-            _context.SaveChanges();
+            await _context.SaveChangesAsync();
             return item;
         }
     }

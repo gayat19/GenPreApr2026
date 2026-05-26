@@ -5,11 +5,12 @@ namespace BankingAPI.Interfaces
 {
     public interface ITransact
     {
-        TransactionResponse Deposit(DepositRequest request);
-        TransactionResponse Withdraw(WithdrawRequest request);
-        TransactionResponse Transfer(TransferRequest request);
+        Task<TransactionResponse> Deposit(DepositRequest request);
+        Task<TransactionResponse> Withdraw(WithdrawRequest request);
+        Task<TransactionResponse> Transfer(TransferRequest request);
 
-        IEnumerable<TransactionResponse> GetTransactionsForAccount(string accountNumber);
-        TransactionResponse? GetTransactionByReference(int referenceNumber);
+        // Replaced simple account query with a flexible query API
+        Task<TransactionQueryResponse> QueryTransactions(TransactionQueryRequest request);
+        Task<TransactionResponse?> GetTransactionByReference(int referenceNumber);
     }
 }

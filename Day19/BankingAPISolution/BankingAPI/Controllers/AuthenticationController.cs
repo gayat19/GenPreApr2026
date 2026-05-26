@@ -19,11 +19,11 @@ namespace BankingAPI.Controllers
         }
 
         [HttpPost("Register")]
-        public ActionResult<RegisterUserResponse> RegisterUser(RegisterUserRequest request)
+        public async Task<ActionResult<RegisterUserResponse>> RegisterUser(RegisterUserRequest request)
         {
             try
             {
-                var result = _authenticationService.Register(request);
+                var result = await _authenticationService.Register(request);
                 return Ok(result);
             }
             catch(UnableToCreateEntityException ex)
@@ -37,11 +37,11 @@ namespace BankingAPI.Controllers
         }
 
         [HttpPost("Login")]
-        public ActionResult<LoginResponse> CustomerLogin(LoginRequest request)
+        public async Task<ActionResult<LoginResponse>> CustomerLogin(LoginRequest request)
         {
             try
             {
-                var result = _authenticationService.Login(request);
+                var result = await _authenticationService.Login(request);
                 return Ok(result);
             }
             catch (InvalidCredentialException ex)

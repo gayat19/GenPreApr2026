@@ -11,8 +11,8 @@ namespace BankingAPI.Interfaces
 {
     public interface ICustomerInteract
     {
-        public CreateAccountResponse OpensAccount(CreateAccountRequest account);
-        public GetAccountResponse GetAccountByAccountNumber(string accountNumber);
+        public Task<CreateAccountResponse> OpensAccount(CreateAccountRequest account);
+        public Task<GetAccountResponse> GetAccountByAccountNumber(string accountNumber);
 
     }
 }

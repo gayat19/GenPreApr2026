@@ -7,7 +7,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace BankingAPI.Migrations
 {
     /// <inheritdoc />
-    public partial class Initial : Migration
+    public partial class Init : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -71,6 +71,35 @@ namespace BankingAPI.Migrations
                         onDelete: ReferentialAction.Restrict);
                 });
 
+            migrationBuilder.CreateTable(
+                name: "Transactions",
+                columns: table => new
+                {
+                    TransactionReferenceNumber = table.Column<int>(type: "integer", nullable: false)
+                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
+                    TransactionDate = table.Column<DateTime>(type: "timestamp without time zone", nullable: false),
+                    FromAccountNumber = table.Column<string>(type: "text", nullable: true),
+                    ToAccountNumber = table.Column<string>(type: "text", nullable: true),
+                    Status = table.Column<string>(type: "text", nullable: false),
+                    Amount = table.Column<decimal>(type: "numeric", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_TransactionNumber", x => x.TransactionReferenceNumber);
+                    table.ForeignKey(
+                        name: "FK_Transaction_FromAccount",
+                        column: x => x.FromAccountNumber,
+                        principalTable: "Accounts",
+                        principalColumn: "AccountNumber",
+                        onDelete: ReferentialAction.Restrict);
+                    table.ForeignKey(
+                        name: "FK_Transaction_ToAccount",
+                        column: x => x.ToAccountNumber,
+                        principalTable: "Accounts",
+                        principalColumn: "AccountNumber",
+                        onDelete: ReferentialAction.Restrict);
+                });
+
             migrationBuilder.InsertData(
                 table: "Customers",
                 columns: new[] { "Id", "DateOfBirth", "Email", "Name", "Phone", "Status", "Username" },
@@ -91,11 +120,24 @@ namespace BankingAPI.Migrations
                 table: "Customers",
                 column: "Username",
                 unique: true);
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Transactions_FromAccountNumber",
+                table: "Transactions",
+                column: "FromAccountNumber");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Transactions_ToAccountNumber",
+                table: "Transactions",
+                column: "ToAccountNumber");
         }
 
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.DropTable(
+                name: "Transactions");
+
             migrationBuilder.DropTable(
                 name: "Accounts");
 

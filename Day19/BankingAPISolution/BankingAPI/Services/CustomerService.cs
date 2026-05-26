@@ -32,9 +32,9 @@ namespace BankingAPI.Services
             _tokenService = tokenService;
         }
 
-        public LoginResponse Login(LoginRequest request)
+        public async Task<LoginResponse> Login(LoginRequest request)
         {
-            var dbUser = _userRepository.Get(request.Username);
+            var dbUser = await _userRepository.Get(request.Username);
             if (dbUser == null)
                 throw new InvalidCredentialException("Invalid username or password");
             HMACSHA256 hMACSHA256 = new HMACSHA256(dbUser.HashKey);
@@ -44,7 +44,7 @@ namespace BankingAPI.Services
                     throw new InvalidCredentialException("Invalid username or password");
             var loginResponse = new LoginResponse();
             loginResponse.Username = request.Username;
-            string givenName = _customerRepository.GetAll().Where(c => c.Username == request.Username).ToList()[0].Name;
+            string givenName = (await _customerRepository.GetAll()).Where(c => c.Username == request.Username).ToList()[0].Name;
             loginResponse.Token = _tokenService.CreateNewToken(new TokenRequest
             {
                 Username = request.Username,
@@ -55,9 +55,9 @@ namespace BankingAPI.Services
 
         }
 
-        public CreateAccountResponse OpensAccount(CreateAccountRequest account)
+        public async Task<CreateAccountResponse> OpensAccount(CreateAccountRequest account)
         {
-            string newAccountNumber = GenerateAccountNumber();
+            string newAccountNumber = await GenerateAccountNumber();
             Account newAccount = new Account()
             {
                 AccountNumber = newAccountNumber,
@@ -66,7 +66,7 @@ namespace BankingAPI.Services
                 AccountType = account.AccountType,
                 Status = "Active"
             };
-            var result = _accountRespository.Create(newAccount);
+            var result = await _accountRespository.Create(newAccount);
             return new CreateAccountResponse
             {
                 AccountNumber = result.AccountNumber,
@@ -76,13 +76,13 @@ namespace BankingAPI.Services
             };
         }
 
-        public RegisterUserResponse Register(RegisterUserRequest request)
+        public async Task<RegisterUserResponse> Register(RegisterUserRequest request)
         {
-            User user = MapUserObjectFromRequest(request);
-            Customer customer = MapCustomerObjectFromRequest(request);
-            user = _userRepository.Create(user);
+            User user = await MapUserObjectFromRequest(request);
+            Customer customer = await MapCustomerObjectFromRequest(request);
+            user = await _userRepository.Create(user);
             customer.Username = user.Username;
-            customer = _customerRepository.Create(customer);
+            customer = await _customerRepository.Create(customer);
             if (user != null && customer != null)
                 return new RegisterUserResponse
                 {
@@ -92,7 +92,7 @@ namespace BankingAPI.Services
 
         }
 
-        private Customer MapCustomerObjectFromRequest(RegisterUserRequest request)
+        private async Task<Customer> MapCustomerObjectFromRequest(RegisterUserRequest request)
         {
             return  new Customer
             {
@@ -104,7 +104,7 @@ namespace BankingAPI.Services
             };
         }
 
-        private User MapUserObjectFromRequest(RegisterUserRequest request)
+        private async Task<User> MapUserObjectFromRequest(RegisterUserRequest request)
         {
             HMACSHA256 hMACSHA256 = new HMACSHA256();
             User user = new User();
@@ -115,12 +115,12 @@ namespace BankingAPI.Services
             return user;
         }
 
-  
 
-        private string GenerateAccountNumber()
+
+        private async Task<string> GenerateAccountNumber()
         {
             string newAccountNumber = "";
-            var maxAccountNumber = _accountRespository.GetAll().OrderByDescending(a => a.AccountNumber).ToList()[0].AccountNumber;
+            var maxAccountNumber = (await _accountRespository.GetAll()).OrderByDescending(a => a.AccountNumber).ToList()[0].AccountNumber;
             var number = Convert.ToInt64(maxAccountNumber);
             number++;
             if(number> 999999999)
@@ -130,9 +130,9 @@ namespace BankingAPI.Services
             return newAccountNumber;
         }
 
-        GetAccountResponse ICustomerInteract.GetAccountByAccountNumber(string accountNumber)
+        async Task<GetAccountResponse> ICustomerInteract.GetAccountByAccountNumber(string accountNumber)
         {
-            var account = _accountRespository.Get(accountNumber);
+            var account = await _accountRespository.Get(accountNumber);
             return new GetAccountResponse
             {
                 AccountNumber = accountNumber,

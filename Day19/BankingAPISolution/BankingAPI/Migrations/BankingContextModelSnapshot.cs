@@ -121,8 +121,10 @@ namespace BankingAPI.Migrations
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("TransactionReferenceNumber"));
 
+                    b.Property<decimal>("Amount")
+                        .HasColumnType("numeric");
+
                     b.Property<string>("FromAccountNumber")
-                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<string>("Status")
@@ -130,7 +132,6 @@ namespace BankingAPI.Migrations
                         .HasColumnType("text");
 
                     b.Property<string>("ToAccountNumber")
-                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<DateTime>("TransactionDate")
@@ -212,14 +213,12 @@ namespace BankingAPI.Migrations
                         .WithMany("FromTransactions")
                         .HasForeignKey("FromAccountNumber")
                         .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired()
                         .HasConstraintName("FK_Transaction_FromAccount");
 
                     b.HasOne("BankingAPI.Models.Account", "ToAccount")
                         .WithMany("ToTransactions")
                         .HasForeignKey("ToAccountNumber")
                         .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired()
                         .HasConstraintName("FK_Transaction_ToAccount");
 
                     b.Navigation("FromAccount");

@@ -19,11 +19,11 @@ namespace BankingAPI.Controllers
             _customerInteract = customerInteract;
         }
         [HttpPost]
-        public ActionResult<CreateAccountResponse> CreateAccount(CreateAccountRequest account)
+        public async Task<ActionResult<CreateAccountResponse>> CreateAccount(CreateAccountRequest account)
         {
             try
             {
-                var result  = _customerInteract.OpensAccount(account);
+                var result  = await _customerInteract.OpensAccount(account);
                 return Created("", result);
 
             }
@@ -34,11 +34,11 @@ namespace BankingAPI.Controllers
         }
         [Authorize]
         [HttpGet]
-        public ActionResult<GetAccountResponse> GetAccount(string   accountNumber)
+        public async Task<ActionResult<GetAccountResponse>> GetAccount(string   accountNumber)
         {
             try
             {
-                var account = _customerInteract.GetAccountByAccountNumber(accountNumber);
+                var account = await _customerInteract.GetAccountByAccountNumber(accountNumber);
                 if(account == null) 
                     return NotFound("No account with the given account number - "+accountNumber);
                 return Ok(account);

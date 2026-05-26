@@ -4,7 +4,7 @@ namespace BankingAPI.Interfaces
 {
     public interface IAuthenticationService
     {
-        public RegisterUserResponse Register(RegisterUserRequest request);
-        public LoginResponse Login(LoginRequest request);
+        public Task<RegisterUserResponse> Register(RegisterUserRequest request);
+        public Task<LoginResponse> Login(LoginRequest request);
     }
 }

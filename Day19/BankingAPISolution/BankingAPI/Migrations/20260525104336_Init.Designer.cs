@@ -12,8 +12,8 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace BankingAPI.Migrations
 {
     [DbContext(typeof(BankingContext))]
-    [Migration("20260525051705_Transaction")]
-    partial class Transaction
+    [Migration("20260525104336_Init")]
+    partial class Init
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -124,8 +124,10 @@ namespace BankingAPI.Migrations
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("TransactionReferenceNumber"));
 
+                    b.Property<decimal>("Amount")
+                        .HasColumnType("numeric");
+
                     b.Property<string>("FromAccountNumber")
-                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<string>("Status")
@@ -133,7 +135,6 @@ namespace BankingAPI.Migrations
                         .HasColumnType("text");
 
                     b.Property<string>("ToAccountNumber")
-                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<DateTime>("TransactionDate")
@@ -215,14 +216,12 @@ namespace BankingAPI.Migrations
                         .WithMany("FromTransactions")
                         .HasForeignKey("FromAccountNumber")
                         .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired()
                         .HasConstraintName("FK_Transaction_FromAccount");
 
                     b.HasOne("BankingAPI.Models.Account", "ToAccount")
                         .WithMany("ToTransactions")
                         .HasForeignKey("ToAccountNumber")
                         .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired()
                         .HasConstraintName("FK_Transaction_ToAccount");
 
                     b.Navigation("FromAccount");
