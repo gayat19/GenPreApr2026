@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Corp\\Genspark\\Presidio\\2026\\Participants\\Day19\\BankingAPISolution\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6134702D-9887-4B53-9983-ABFCA004AF9E}|BankingAPI\\BankingAPI.csproj|c:\\corp\\genspark\\presidio\\2026\\participants\\day19\\bankingapisolution\\bankingapi\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6134702D-9887-4B53-9983-ABFCA004AF9E}|BankingAPI\\BankingAPI.csproj|solutionrelative:bankingapi\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6134702D-9887-4B53-9983-ABFCA004AF9E}|BankingAPI\\BankingAPI.csproj|c:\\corp\\genspark\\presidio\\2026\\participants\\day19\\bankingapisolution\\bankingapi\\middlewares\\exceptionhandlingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6134702D-9887-4B53-9983-ABFCA004AF9E}|BankingAPI\\BankingAPI.csproj|solutionrelative:bankingapi\\middlewares\\exceptionhandlingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6134702D-9887-4B53-9983-ABFCA004AF9E}|BankingAPI\\BankingAPI.csproj|c:\\corp\\genspark\\presidio\\2026\\participants\\day19\\bankingapisolution\\bankingapi\\filters\\customexceptionfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6134702D-9887-4B53-9983-ABFCA004AF9E}|BankingAPI\\BankingAPI.csproj|solutionrelative:bankingapi\\filters\\customexceptionfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6134702D-9887-4B53-9983-ABFCA004AF9E}|BankingAPI\\BankingAPI.csproj|c:\\corp\\genspark\\presidio\\2026\\participants\\day19\\bankingapisolution\\bankingapi\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6134702D-9887-4B53-9983-ABFCA004AF9E}|BankingAPI\\BankingAPI.csproj|solutionrelative:bankingapi\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6134702D-9887-4B53-9983-ABFCA004AF9E}|BankingAPI\\BankingAPI.csproj|c:\\corp\\genspark\\presidio\\2026\\participants\\day19\\bankingapisolution\\bankingapi\\services\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6134702D-9887-4B53-9983-ABFCA004AF9E}|BankingAPI\\BankingAPI.csproj|solutionrelative:bankingapi\\services\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6134702D-9887-4B53-9983-ABFCA004AF9E}|BankingAPI\\BankingAPI.csproj|c:\\corp\\genspark\\presidio\\2026\\participants\\day19\\bankingapisolution\\bankingapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6134702D-9887-4B53-9983-ABFCA004AF9E}|BankingAPI\\BankingAPI.csproj|solutionrelative:bankingapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6134702D-9887-4B53-9983-ABFCA004AF9E}|BankingAPI\\BankingAPI.csproj|c:\\corp\\genspark\\presidio\\2026\\participants\\day19\\bankingapisolution\\bankingapi\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6134702D-9887-4B53-9983-ABFCA004AF9E}|BankingAPI\\BankingAPI.csproj|solutionrelative:bankingapi\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6134702D-9887-4B53-9983-ABFCA004AF9E}|BankingAPI\\BankingAPI.csproj|c:\\corp\\genspark\\presidio\\2026\\participants\\day19\\bankingapisolution\\bankingapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -31,10 +31,6 @@
       "RelativeMoniker": "D:0:0:{95CCECF7-D4EE-4E1C-B17D-F3706CB3C893}|BankingApiTest\\BankingApiTest.csproj|solutionrelative:bankingapitest\\customerservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6134702D-9887-4B53-9983-ABFCA004AF9E}|BankingAPI\\BankingAPI.csproj|c:\\corp\\genspark\\presidio\\2026\\participants\\day19\\bankingapisolution\\bankingapi\\services\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6134702D-9887-4B53-9983-ABFCA004AF9E}|BankingAPI\\BankingAPI.csproj|solutionrelative:bankingapi\\services\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6134702D-9887-4B53-9983-ABFCA004AF9E}|BankingAPI\\BankingAPI.csproj|c:\\corp\\genspark\\presidio\\2026\\participants\\day19\\bankingapisolution\\bankingapi\\models\\dtos\\registeruserrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6134702D-9887-4B53-9983-ABFCA004AF9E}|BankingAPI\\BankingAPI.csproj|solutionrelative:bankingapi\\models\\dtos\\registeruserrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -46,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -58,39 +54,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CustomExceptionFilter.cs",
-              "DocumentMoniker": "C:\\Corp\\Genspark\\Presidio\\2026\\Participants\\Day19\\BankingAPISolution\\BankingAPI\\Filters\\CustomExceptionFilter.cs",
-              "RelativeDocumentMoniker": "BankingAPI\\Filters\\CustomExceptionFilter.cs",
-              "ToolTip": "C:\\Corp\\Genspark\\Presidio\\2026\\Participants\\Day19\\BankingAPISolution\\BankingAPI\\Filters\\CustomExceptionFilter.cs",
-              "RelativeToolTip": "BankingAPI\\Filters\\CustomExceptionFilter.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAiwBAAAAANAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "ExceptionHandlingMiddleware.cs",
+              "DocumentMoniker": "C:\\Corp\\Genspark\\Presidio\\2026\\Participants\\Day19\\BankingAPISolution\\BankingAPI\\Middlewares\\ExceptionHandlingMiddleware.cs",
+              "RelativeDocumentMoniker": "BankingAPI\\Middlewares\\ExceptionHandlingMiddleware.cs",
+              "ToolTip": "C:\\Corp\\Genspark\\Presidio\\2026\\Participants\\Day19\\BankingAPISolution\\BankingAPI\\Middlewares\\ExceptionHandlingMiddleware.cs*",
+              "RelativeToolTip": "BankingAPI\\Middlewares\\ExceptionHandlingMiddleware.cs*",
+              "ViewState": "AgIAABoAAAAAAAAAAAAYwC0AAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-27T10:47:35.475Z",
+              "WhenOpened": "2026-05-27T10:59:29.064Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "C:\\Corp\\Genspark\\Presidio\\2026\\Participants\\Day19\\BankingAPISolution\\BankingAPI\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "BankingAPI\\Controllers\\AccountController.cs",
-              "ToolTip": "C:\\Corp\\Genspark\\Presidio\\2026\\Participants\\Day19\\BankingAPISolution\\BankingAPI\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "BankingAPI\\Controllers\\AccountController.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-27T10:45:46.261Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Corp\\Genspark\\Presidio\\2026\\Participants\\Day19\\BankingAPISolution\\BankingAPI\\Program.cs",
               "RelativeDocumentMoniker": "BankingAPI\\Program.cs",
               "ToolTip": "C:\\Corp\\Genspark\\Presidio\\2026\\Participants\\Day19\\BankingAPISolution\\BankingAPI\\Program.cs",
               "RelativeToolTip": "BankingAPI\\Program.cs",
-              "ViewState": "AgIAAGIAAAAAAAAAAAAAAHMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAGgAAAAAAAAAAAAAAHwAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-27T07:23:47.055Z",
               "EditorCaption": ""
@@ -109,7 +92,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 7,
               "Title": "RegisterUserRequest.cs",
               "DocumentMoniker": "C:\\Corp\\Genspark\\Presidio\\2026\\Participants\\Day19\\BankingAPISolution\\BankingAPI\\Models\\DTOs\\RegisterUserRequest.cs",
               "RelativeDocumentMoniker": "BankingAPI\\Models\\DTOs\\RegisterUserRequest.cs",
@@ -121,25 +104,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 1,
               "Title": "CustomerService.cs",
               "DocumentMoniker": "C:\\Corp\\Genspark\\Presidio\\2026\\Participants\\Day19\\BankingAPISolution\\BankingAPI\\Services\\CustomerService.cs",
               "RelativeDocumentMoniker": "BankingAPI\\Services\\CustomerService.cs",
               "ToolTip": "C:\\Corp\\Genspark\\Presidio\\2026\\Participants\\Day19\\BankingAPISolution\\BankingAPI\\Services\\CustomerService.cs",
               "RelativeToolTip": "BankingAPI\\Services\\CustomerService.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAUwC8AAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAABoAAAAAAAAAAAAUwCYAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-27T06:11:16.22Z"
+              "WhenOpened": "2026-05-27T06:11:16.22Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "AuthenticationController.cs",
               "DocumentMoniker": "C:\\Corp\\Genspark\\Presidio\\2026\\Participants\\Day19\\BankingAPISolution\\BankingAPI\\Controllers\\AuthenticationController.cs",
               "RelativeDocumentMoniker": "BankingAPI\\Controllers\\AuthenticationController.cs",
               "ToolTip": "C:\\Corp\\Genspark\\Presidio\\2026\\Participants\\Day19\\BankingAPISolution\\BankingAPI\\Controllers\\AuthenticationController.cs",
               "RelativeToolTip": "BankingAPI\\Controllers\\AuthenticationController.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAAAIwCoAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAACsAAAAAAAAAAAAUwDwAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-27T06:10:56.46Z",
               "EditorCaption": ""

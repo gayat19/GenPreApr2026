@@ -1,5 +1,6 @@
 using BankingAPI.Contexts;
 using BankingAPI.Interfaces;
+using BankingAPI.Middlewares;
 using BankingAPI.Models;
 using BankingAPI.Repositories;
 using BankingAPI.Services;
@@ -57,6 +58,9 @@ builder.Services.AddSwaggerGen(opt =>
         }
     });
 });
+
+
+
 
 #region Contexts
 builder.Services.AddDbContext<BankingContext>(options =>
@@ -117,6 +121,8 @@ app.UseHttpsRedirection();
 app.UseAuthentication();
 
 app.UseAuthorization();
+
+app.UseMiddleware<ExceptionHandlingMiddleware>();
 
 app.MapControllers();
 

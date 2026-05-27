@@ -40,7 +40,6 @@ namespace BankingAPI.Controllers
         }
 
         [HttpPost("Login")]
-        [CustomExceptionFilter]
         public async Task<ActionResult<LoginResponse>> CustomerLogin(LoginRequest request)
         {
             //try

@@ -51,3 +51,126 @@ LIMIT 1
 2026-05-27 16:20:36.637 +05:30 [INF] Executed action BankingAPI.Controllers.AuthenticationController.CustomerLogin (BankingAPI) in 4050.7479ms
 2026-05-27 16:20:36.646 +05:30 [INF] Executed endpoint 'BankingAPI.Controllers.AuthenticationController.CustomerLogin (BankingAPI)'
 2026-05-27 16:20:36.664 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7163/api/Authentication/Login - 401 null text/plain; charset=utf-8 4440.2169ms
+2026-05-27 16:34:49.635 +05:30 [INF] User profile is available. Using 'C:\Users\Gayathri Mahadevan\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-05-27 16:34:50.106 +05:30 [INF] Now listening on: https://localhost:7163
+2026-05-27 16:34:50.111 +05:30 [INF] Now listening on: http://localhost:5091
+2026-05-27 16:34:50.220 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-27 16:34:50.224 +05:30 [INF] Hosting environment: Development
+2026-05-27 16:34:50.228 +05:30 [INF] Content root path: C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingAPI
+2026-05-27 16:34:51.313 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7163/swagger/index.html - null null
+2026-05-27 16:34:51.799 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7163/swagger/index.html - 200 null text/html;charset=utf-8 499.6584ms
+2026-05-27 16:34:51.822 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7163/_vs/browserLink - null null
+2026-05-27 16:34:51.822 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7163/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-27 16:34:51.869 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7163/_framework/aspnetcore-browser-refresh.js - 200 16505 application/javascript; charset=utf-8 46.6833ms
+2026-05-27 16:34:51.963 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7163/_vs/browserLink - 200 null text/javascript; charset=UTF-8 141.2339ms
+2026-05-27 16:34:52.014 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7163/swagger/v1/swagger.json - null null
+2026-05-27 16:34:52.079 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7163/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 64.8382ms
+2026-05-27 16:34:58.950 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7163/api/Authentication/Login - application/json 50
+2026-05-27 16:34:59.139 +05:30 [INF] Executing endpoint 'BankingAPI.Controllers.AuthenticationController.CustomerLogin (BankingAPI)'
+2026-05-27 16:34:59.208 +05:30 [INF] Route matched with {action = "CustomerLogin", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BankingAPI.Models.DTOs.LoginResponse]] CustomerLogin(BankingAPI.Models.DTOs.LoginRequest) on controller BankingAPI.Controllers.AuthenticationController (BankingAPI).
+2026-05-27 16:35:02.408 +05:30 [INF] Executed DbCommand (152ms) [Parameters=[@__p_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Username", u."HashKey", u."Password", u."Role"
+FROM "Users" AS u
+WHERE u."Username" = @__p_0
+LIMIT 1
+2026-05-27 16:35:02.814 +05:30 [INF] Executed action BankingAPI.Controllers.AuthenticationController.CustomerLogin (BankingAPI) in 3585.5114ms
+2026-05-27 16:35:02.825 +05:30 [INF] Executed endpoint 'BankingAPI.Controllers.AuthenticationController.CustomerLogin (BankingAPI)'
+2026-05-27 16:35:02.994 +05:30 [ERR] An unhandled exception occurred while processing the request.
+System.Security.Authentication.InvalidCredentialException: Invalid username or password
+   at BankingAPI.Services.CustomerService.Login(LoginRequest request) in C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingAPI\Services\CustomerService.cs:line 39
+   at BankingAPI.Controllers.AuthenticationController.CustomerLogin(LoginRequest request) in C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingAPI\Controllers\AuthenticationController.cs:line 60
+   at lambda_method5(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at BankingAPI.Middlewares.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingAPI\Middlewares\ExceptionHandlingMiddleware.cs:line 16
+2026-05-27 16:35:03.087 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7163/api/Authentication/Login - 500 null application/json; charset=utf-8 4137.532ms
+2026-05-27 16:42:48.248 +05:30 [INF] User profile is available. Using 'C:\Users\Gayathri Mahadevan\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-05-27 16:42:48.596 +05:30 [INF] Now listening on: https://localhost:7163
+2026-05-27 16:42:48.601 +05:30 [INF] Now listening on: http://localhost:5091
+2026-05-27 16:42:48.722 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-27 16:42:48.726 +05:30 [INF] Hosting environment: Development
+2026-05-27 16:42:48.730 +05:30 [INF] Content root path: C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingAPI
+2026-05-27 16:42:49.517 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7163/swagger/index.html - null null
+2026-05-27 16:42:49.891 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7163/swagger/index.html - 200 null text/html;charset=utf-8 381.8963ms
+2026-05-27 16:42:49.945 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7163/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-27 16:42:49.945 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7163/_vs/browserLink - null null
+2026-05-27 16:42:49.979 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7163/_framework/aspnetcore-browser-refresh.js - 200 16505 application/javascript; charset=utf-8 34.9892ms
+2026-05-27 16:42:50.056 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7163/_vs/browserLink - 200 null text/javascript; charset=UTF-8 110.3647ms
+2026-05-27 16:42:50.109 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7163/swagger/v1/swagger.json - null null
+2026-05-27 16:42:50.177 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7163/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 69.0964ms
+2026-05-27 16:42:55.846 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7163/api/Authentication/Login - application/json 50
+2026-05-27 16:42:55.997 +05:30 [INF] Executing endpoint 'BankingAPI.Controllers.AuthenticationController.CustomerLogin (BankingAPI)'
+2026-05-27 16:42:56.061 +05:30 [INF] Route matched with {action = "CustomerLogin", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BankingAPI.Models.DTOs.LoginResponse]] CustomerLogin(BankingAPI.Models.DTOs.LoginRequest) on controller BankingAPI.Controllers.AuthenticationController (BankingAPI).
+2026-05-27 16:42:58.797 +05:30 [INF] Executed DbCommand (133ms) [Parameters=[@__p_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Username", u."HashKey", u."Password", u."Role"
+FROM "Users" AS u
+WHERE u."Username" = @__p_0
+LIMIT 1
+2026-05-27 16:42:59.118 +05:30 [INF] Executed action BankingAPI.Controllers.AuthenticationController.CustomerLogin (BankingAPI) in 3043.0553ms
+2026-05-27 16:42:59.126 +05:30 [INF] Executed endpoint 'BankingAPI.Controllers.AuthenticationController.CustomerLogin (BankingAPI)'
+2026-05-27 16:42:59.294 +05:30 [ERR] An unhandled exception occurred while processing the request.
+System.Security.Authentication.InvalidCredentialException: Invalid username or password
+   at BankingAPI.Services.CustomerService.Login(LoginRequest request) in C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingAPI\Services\CustomerService.cs:line 39
+   at BankingAPI.Controllers.AuthenticationController.CustomerLogin(LoginRequest request) in C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingAPI\Controllers\AuthenticationController.cs:line 60
+   at lambda_method5(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at BankingAPI.Middlewares.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingAPI\Middlewares\ExceptionHandlingMiddleware.cs:line 20
+2026-05-27 16:42:59.369 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7163/api/Authentication/Login - 500 null application/json 3524.446ms
+2026-05-27 16:43:58.219 +05:30 [INF] User profile is available. Using 'C:\Users\Gayathri Mahadevan\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-05-27 16:43:58.446 +05:30 [INF] Now listening on: https://localhost:7163
+2026-05-27 16:43:58.451 +05:30 [INF] Now listening on: http://localhost:5091
+2026-05-27 16:43:58.505 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-27 16:43:58.510 +05:30 [INF] Hosting environment: Development
+2026-05-27 16:43:58.513 +05:30 [INF] Content root path: C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingAPI
+2026-05-27 16:43:58.995 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7163/swagger/index.html - null null
+2026-05-27 16:43:59.327 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7163/swagger/index.html - 200 null text/html;charset=utf-8 342.7243ms
+2026-05-27 16:43:59.364 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7163/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-27 16:43:59.365 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7163/_vs/browserLink - null null
+2026-05-27 16:43:59.397 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7163/_framework/aspnetcore-browser-refresh.js - 200 16505 application/javascript; charset=utf-8 33.2051ms
+2026-05-27 16:43:59.480 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7163/_vs/browserLink - 200 null text/javascript; charset=UTF-8 116.63ms
+2026-05-27 16:43:59.535 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7163/swagger/v1/swagger.json - null null
+2026-05-27 16:43:59.603 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7163/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 68.7254ms
+2026-05-27 16:44:05.149 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7163/api/Authentication/Login - application/json 50
+2026-05-27 16:44:05.307 +05:30 [INF] Executing endpoint 'BankingAPI.Controllers.AuthenticationController.CustomerLogin (BankingAPI)'
+2026-05-27 16:44:05.364 +05:30 [INF] Route matched with {action = "CustomerLogin", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BankingAPI.Models.DTOs.LoginResponse]] CustomerLogin(BankingAPI.Models.DTOs.LoginRequest) on controller BankingAPI.Controllers.AuthenticationController (BankingAPI).
+2026-05-27 16:44:08.119 +05:30 [INF] Executed DbCommand (127ms) [Parameters=[@__p_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Username", u."HashKey", u."Password", u."Role"
+FROM "Users" AS u
+WHERE u."Username" = @__p_0
+LIMIT 1
+2026-05-27 16:44:08.551 +05:30 [INF] Executed action BankingAPI.Controllers.AuthenticationController.CustomerLogin (BankingAPI) in 3172.3714ms
+2026-05-27 16:44:08.560 +05:30 [INF] Executed endpoint 'BankingAPI.Controllers.AuthenticationController.CustomerLogin (BankingAPI)'
+2026-05-27 16:44:08.755 +05:30 [ERR] An unhandled exception occurred while processing the request.
+System.Security.Authentication.InvalidCredentialException: Invalid username or password
+   at BankingAPI.Services.CustomerService.Login(LoginRequest request) in C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingAPI\Services\CustomerService.cs:line 39
+   at BankingAPI.Controllers.AuthenticationController.CustomerLogin(LoginRequest request) in C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingAPI\Controllers\AuthenticationController.cs:line 60
+   at lambda_method5(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at BankingAPI.Middlewares.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingAPI\Middlewares\ExceptionHandlingMiddleware.cs:line 21
+2026-05-27 16:44:08.829 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7163/api/Authentication/Login - 401 null application/json 3681.0119ms
