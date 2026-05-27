@@ -131,3 +131,5 @@ C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingApiT
 C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingApiTest\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
 C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingApiTest\bin\Debug\net8.0\BankingAPI.dll
 C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingApiTest\bin\Debug\net8.0\BankingAPI.pdb
+C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingApiTest\bin\Debug\net8.0\Castle.Core.dll
+C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingApiTest\bin\Debug\net8.0\Moq.dll

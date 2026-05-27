@@ -12,10 +12,12 @@ namespace BankingAPI.Controllers
     public class AuthenticationController : ControllerBase
     {
         private readonly IAuthenticationService _authenticationService;
+        private readonly ILogger<AuthenticationController> _logger;
 
-        public AuthenticationController(IAuthenticationService authenticationService)
+        public AuthenticationController(IAuthenticationService authenticationService,ILogger<AuthenticationController> logger)
         {
             _authenticationService = authenticationService;
+            _logger = logger;
         }
 
         [HttpPost("Register")]
@@ -46,6 +48,7 @@ namespace BankingAPI.Controllers
             }
             catch (InvalidCredentialException ex)
             {
+                _logger.LogWarning("Failed login attempt for username: {Username}. Reason: {Message}", request.Username, ex.Message);
                 return Unauthorized(ex.Message);
             }
             catch (Exception ex)
