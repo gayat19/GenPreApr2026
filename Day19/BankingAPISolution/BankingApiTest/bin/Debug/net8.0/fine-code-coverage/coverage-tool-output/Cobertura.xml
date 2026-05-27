@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
-<coverage line-rate="0.153788447111778" branch-rate="0.102564102564103" lines-covered="205" lines-valid="1333" branches-covered="16" branches-valid="156" complexity="397" version="0" timestamp="1779883434">
+<coverage line-rate="0.154538634658665" branch-rate="0.0897435897435897" lines-covered="206" lines-valid="1333" branches-covered="14" branches-valid="156" complexity="397" version="0" timestamp="1779883903">
   <sources />
   <packages>
-    <package name="BankingAPI" line-rate="0.164" branch-rate="0.102564102564103" complexity="389">
+    <package name="BankingAPI" line-rate="0.1648" branch-rate="0.0897435897435897" complexity="389">
       <classes>
         <class name="BankingAPI.Contexts.BankingContext" filename="C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingAPI\Contexts\BankingContext.cs" line-rate="1" branch-rate="1" complexity="17">
           <methods>
@@ -267,7 +267,7 @@
             <line number="51" hits="0" branch="false" />
           </lines>
         </class>
-        <class name="BankingAPI.Controllers.AuthenticationController" filename="C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingAPI\Controllers\AuthenticationController.cs" line-rate="0.428571428571429" branch-rate="1" complexity="3">
+        <class name="BankingAPI.Controllers.AuthenticationController" filename="C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingAPI\Controllers\AuthenticationController.cs" line-rate="0.357142857142857" branch-rate="1" complexity="3">
           <methods>
             <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -278,19 +278,19 @@
                 <line number="21" hits="1" branch="false" />
               </lines>
             </method>
-            <method name="MoveNext" signature="()" line-rate="0.583333333333333" branch-rate="1" complexity="1">
+            <method name="MoveNext" signature="()" line-rate="0.416666666666667" branch-rate="1" complexity="1">
               <lines>
                 <line number="43" hits="1" branch="false" />
                 <line number="45" hits="1" branch="false" />
                 <line number="46" hits="1" branch="false" />
-                <line number="47" hits="0" branch="false" />
+                <line number="47" hits="1" branch="false" />
                 <line number="49" hits="0" branch="false" />
                 <line number="50" hits="0" branch="false" />
                 <line number="51" hits="0" branch="false" />
                 <line number="52" hits="0" branch="false" />
-                <line number="54" hits="1" branch="false" />
-                <line number="55" hits="1" branch="false" />
-                <line number="56" hits="1" branch="false" />
+                <line number="54" hits="0" branch="false" />
+                <line number="55" hits="0" branch="false" />
+                <line number="56" hits="0" branch="false" />
                 <line number="58" hits="1" branch="false" />
               </lines>
             </method>
@@ -330,14 +330,14 @@
             <line number="43" hits="1" branch="false" />
             <line number="45" hits="1" branch="false" />
             <line number="46" hits="1" branch="false" />
-            <line number="47" hits="0" branch="false" />
+            <line number="47" hits="1" branch="false" />
             <line number="49" hits="0" branch="false" />
             <line number="50" hits="0" branch="false" />
             <line number="51" hits="0" branch="false" />
             <line number="52" hits="0" branch="false" />
-            <line number="54" hits="1" branch="false" />
-            <line number="55" hits="1" branch="false" />
-            <line number="56" hits="1" branch="false" />
+            <line number="54" hits="0" branch="false" />
+            <line number="55" hits="0" branch="false" />
+            <line number="56" hits="0" branch="false" />
             <line number="58" hits="1" branch="false" />
           </lines>
         </class>
@@ -3040,7 +3040,7 @@
             <line number="20" hits="1" branch="false" />
           </lines>
         </class>
-        <class name="BankingAPI.Services.CustomerService" filename="C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingAPI\Services\CustomerService.cs" line-rate="0.537735849056604" branch-rate="0.333333333333333" complexity="23">
+        <class name="BankingAPI.Services.CustomerService" filename="C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingAPI\Services\CustomerService.cs" line-rate="0.556603773584906" branch-rate="0.333333333333333" complexity="23">
           <methods>
             <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -3089,7 +3089,7 @@
                 <line number="134" hits="0" branch="false" />
               </lines>
             </method>
-            <method name="MoveNext" signature="()" line-rate="0.8" branch-rate="0.666666666666667" complexity="6">
+            <method name="MoveNext" signature="()" line-rate="0.9" branch-rate="0.666666666666667" complexity="6">
               <lines>
                 <line number="36" hits="1" branch="false" />
                 <line number="37" hits="1" branch="false" />
@@ -3109,8 +3109,8 @@
                 <line number="51" hits="1" branch="false" />
                 <line number="52" hits="1" branch="false" />
                 <line number="53" hits="1" branch="false" />
-                <line number="54" hits="0" branch="false" />
-                <line number="56" hits="0" branch="false" />
+                <line number="54" hits="1" branch="false" />
+                <line number="56" hits="1" branch="false" />
               </lines>
             </method>
             <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
@@ -3210,8 +3210,8 @@
             <line number="51" hits="1" branch="false" />
             <line number="52" hits="1" branch="false" />
             <line number="53" hits="1" branch="false" />
-            <line number="54" hits="0" branch="false" />
-            <line number="56" hits="0" branch="false" />
+            <line number="54" hits="1" branch="false" />
+            <line number="56" hits="1" branch="false" />
             <line number="59" hits="0" branch="false" />
             <line number="60" hits="0" branch="false" />
             <line number="61" hits="0" branch="false" />
@@ -3290,19 +3290,19 @@
             <line number="147" hits="0" branch="false" />
           </lines>
         </class>
-        <class name="BankingAPI.Services.TokenService" filename="C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingAPI\Services\TokenService.cs" line-rate="0.956521739130435" branch-rate="1" complexity="7">
+        <class name="BankingAPI.Services.TokenService" filename="C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingAPI\Services\TokenService.cs" line-rate="1" branch-rate="0.666666666666667" complexity="7">
           <methods>
-            <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="6">
+            <method name=".ctor" signature="(...)" line-rate="1" branch-rate="0.666666666666667" complexity="6">
               <lines>
                 <line number="15" hits="1" branch="false" />
                 <line number="16" hits="1" branch="false" />
-                <line number="17" hits="1" branch="true" condition-coverage="100% (2/2)" />
-                <line number="18" hits="1" branch="true" condition-coverage="100% (2/2)" />
+                <line number="17" hits="1" branch="true" condition-coverage="50% (1/2)" />
+                <line number="18" hits="1" branch="true" condition-coverage="50% (1/2)" />
                 <line number="19" hits="1" branch="true" condition-coverage="100% (2/2)" />
                 <line number="20" hits="1" branch="false" />
               </lines>
             </method>
-            <method name="CreateNewToken" signature="(...)" line-rate="0.941176470588235" branch-rate="1" complexity="1">
+            <method name="CreateNewToken" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
                 <line number="22" hits="1" branch="false" />
                 <line number="23" hits="1" branch="false" />
@@ -3320,15 +3320,15 @@
                 <line number="38" hits="1" branch="false" />
                 <line number="39" hits="1" branch="false" />
                 <line number="41" hits="1" branch="false" />
-                <line number="43" hits="0" branch="false" />
+                <line number="43" hits="1" branch="false" />
               </lines>
             </method>
           </methods>
           <lines>
             <line number="15" hits="1" branch="false" />
             <line number="16" hits="1" branch="false" />
-            <line number="17" hits="1" branch="true" condition-coverage="100% (2/2)" />
-            <line number="18" hits="1" branch="true" condition-coverage="100% (2/2)" />
+            <line number="17" hits="1" branch="true" condition-coverage="50% (1/2)" />
+            <line number="18" hits="1" branch="true" condition-coverage="50% (1/2)" />
             <line number="19" hits="1" branch="true" condition-coverage="100% (2/2)" />
             <line number="20" hits="1" branch="false" />
             <line number="22" hits="1" branch="false" />
@@ -3347,7 +3347,7 @@
             <line number="38" hits="1" branch="false" />
             <line number="39" hits="1" branch="false" />
             <line number="41" hits="1" branch="false" />
-            <line number="43" hits="0" branch="false" />
+            <line number="43" hits="1" branch="false" />
           </lines>
         </class>
         <class name="BankingAPI.Services.TransactionService" filename="C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingAPI\Services\TransactionService.cs" line-rate="0" branch-rate="0" complexity="52">

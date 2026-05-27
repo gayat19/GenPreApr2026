@@ -32,17 +32,17 @@ namespace BankingApiTest
             customerRepository = new Repository<int, Customer>(bankingContext);
             accountRepository = new Repository<string, Account>(bankingContext);
             userRepository = new Repository<string, User>(bankingContext);
-            string configJson = """
-                {
-                  { "Key","ThisismySuperSecretKeyOn22052026Thisisabit longernow" },
-                  { "Issuer","G3 Server" },
-                  { "ExpiryInMinutes", "60" }
-                }
-                """;
-            var inMemorySettings = new Dictionary<string, string> {
-                   { "JWT",configJson}
+            var inMemorySettings = new Dictionary<string, string>
+            {
+                { "JWT:Key", "BankingAPI_JWT_SECRET_KEY_2026_SUPER_LONG_32_PLUS_CHARS" },
+                { "JWT:Issuer", "G3 Server" },
+                { "JWT:ExpiryInMinutes", "60" }
             };
-            IConfiguration configuration = new ConfigurationBuilder().AddInMemoryCollection(inMemorySettings).Build();
+
+            IConfiguration configuration = new ConfigurationBuilder()
+                .AddInMemoryCollection(inMemorySettings)
+                .Build();
+
             ITokenService tokenService = new TokenService(configuration);
 
             authenticationService = new CustomerService(accountRepository, userRepository, customerRepository, tokenService);
