@@ -7,10 +7,23 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
+using Serilog;
 using System.Security.AccessControl;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
+
+
+Log.Logger = new LoggerConfiguration()
+.ReadFrom.Configuration(builder.Configuration)
+.Enrich.FromLogContext()
+.WriteTo.Console()
+.WriteTo.File("logs/MyAppLog.txt")
+.CreateLogger();
+
+builder.Host.UseSerilog();
+
+
 
 // Add services to the container.
 

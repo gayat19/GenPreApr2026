@@ -120,3 +120,12 @@ C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingAPI\
 C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingAPI\obj\Debug\net8.0\BankingAPI.pdb
 C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingAPI\obj\Debug\net8.0\BankingAPI.genruntimeconfig.cache
 C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingAPI\obj\Debug\net8.0\ref\BankingAPI.dll
+C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingAPI\bin\Debug\net8.0\Serilog.dll
+C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingAPI\bin\Debug\net8.0\Serilog.AspNetCore.dll
+C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingAPI\bin\Debug\net8.0\Serilog.Extensions.Hosting.dll
+C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingAPI\bin\Debug\net8.0\Serilog.Extensions.Logging.dll
+C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingAPI\bin\Debug\net8.0\Serilog.Formatting.Compact.dll
+C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingAPI\bin\Debug\net8.0\Serilog.Settings.Configuration.dll
+C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingAPI\bin\Debug\net8.0\Serilog.Sinks.Console.dll
+C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingAPI\bin\Debug\net8.0\Serilog.Sinks.Debug.dll
+C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingAPI\bin\Debug\net8.0\Serilog.Sinks.File.dll
