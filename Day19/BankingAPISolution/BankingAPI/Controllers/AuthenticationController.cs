@@ -1,4 +1,5 @@
-﻿using BankingAPI.Interfaces;
+﻿using BankingAPI.Filters;
+using BankingAPI.Interfaces;
 using BankingAPI.Misc;
 using BankingAPI.Models.DTOs;
 using Microsoft.AspNetCore.Http;
@@ -39,22 +40,27 @@ namespace BankingAPI.Controllers
         }
 
         [HttpPost("Login")]
+        [CustomExceptionFilter]
         public async Task<ActionResult<LoginResponse>> CustomerLogin(LoginRequest request)
         {
-            try
-            {
-                var result = await _authenticationService.Login(request);
-                return Ok(result);
-            }
-            catch (InvalidCredentialException ex)
-            {
-                _logger.LogWarning("Failed login attempt for username: {Username}. Reason: {Message}", request.Username, ex.Message);
-                return Unauthorized(ex.Message);
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(ex.Message);
-            }
+            //try
+            //{
+            //    var result = await _authenticationService.Login(request);
+            //    return Ok(result);
+            //}
+            //catch (InvalidCredentialException ex)
+            //{
+            //    _logger.LogWarning("Failed login attempt for username: {Username}. Reason: {Message}", request.Username, ex.Message);
+            //    return Unauthorized(ex.Message);
+            //}
+            //catch (Exception ex)
+            //{
+            //    return BadRequest(ex.Message);
+            //}
+       
+            var result = await _authenticationService.Login(request);
+            return Ok(result);
+           
         }
     }
 }
