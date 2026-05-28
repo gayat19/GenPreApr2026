@@ -129,3 +129,9 @@ C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingAPI\
 C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingAPI\bin\Debug\net8.0\Serilog.Sinks.Console.dll
 C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingAPI\bin\Debug\net8.0\Serilog.Sinks.Debug.dll
 C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingAPI\bin\Debug\net8.0\Serilog.Sinks.File.dll
+C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingAPI\bin\Debug\net8.0\Microsoft.Extensions.Diagnostics.Abstractions.dll
+C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingAPI\bin\Debug\net8.0\Microsoft.Extensions.Hosting.Abstractions.dll
+C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingAPI\bin\Debug\net8.0\Microsoft.Extensions.ObjectPool.dll
+C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingAPI\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingAPI\bin\Debug\net8.0\System.Net.WebSockets.WebSocketProtocol.dll
+C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingAPI\bin\Debug\net8.0\BankingAPI.staticwebassets.runtime.json

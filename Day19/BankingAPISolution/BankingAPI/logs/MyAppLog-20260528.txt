@@ -1,0 +1,130 @@
+2026-05-28 11:44:14.285 +05:30 [INF] User profile is available. Using 'C:\Users\Gayathri Mahadevan\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-05-28 11:44:14.685 +05:30 [INF] Now listening on: https://localhost:7163
+2026-05-28 11:44:14.690 +05:30 [INF] Now listening on: http://localhost:5091
+2026-05-28 11:44:14.771 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-28 11:44:14.775 +05:30 [INF] Hosting environment: Development
+2026-05-28 11:44:14.781 +05:30 [INF] Content root path: C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingAPI
+2026-05-28 11:44:16.309 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7163/swagger/index.html - null null
+2026-05-28 11:44:16.826 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7163/swagger/index.html - 200 null text/html;charset=utf-8 532.9978ms
+2026-05-28 11:44:16.878 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7163/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-28 11:44:16.878 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7163/_vs/browserLink - null null
+2026-05-28 11:44:16.934 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7163/_framework/aspnetcore-browser-refresh.js - 200 16505 application/javascript; charset=utf-8 56.7258ms
+2026-05-28 11:44:17.628 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7163/_vs/browserLink - 200 null text/javascript; charset=UTF-8 751.0549ms
+2026-05-28 11:44:17.690 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7163/swagger/v1/swagger.json - null null
+2026-05-28 11:44:17.771 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7163/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 81.0069ms
+2026-05-28 11:44:36.988 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7163/htmlpage.html - null null
+2026-05-28 11:44:37.175 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7163/htmlpage.html - 404 0 null 187.6814ms
+2026-05-28 11:44:37.199 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7163/htmlpage.html, Response status code: 404
+2026-05-28 11:44:43.652 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7163/htmlpage.html - null null
+2026-05-28 11:44:43.675 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7163/htmlpage.html - 404 0 null 24.2583ms
+2026-05-28 11:44:43.692 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7163/htmlpage.html, Response status code: 404
+2026-05-28 11:44:45.074 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7163/htmlpage.html - null null
+2026-05-28 11:44:45.101 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7163/htmlpage.html - 404 0 null 26.5789ms
+2026-05-28 11:44:45.118 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7163/htmlpage.html, Response status code: 404
+2026-05-28 11:44:50.449 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7163/htmlpage.html - null null
+2026-05-28 11:44:50.471 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7163/htmlpage.html - 404 0 null 22.2694ms
+2026-05-28 11:44:50.492 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7163/htmlpage.html, Response status code: 404
+2026-05-28 11:47:42.500 +05:30 [INF] User profile is available. Using 'C:\Users\Gayathri Mahadevan\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-05-28 11:48:08.934 +05:30 [INF] User profile is available. Using 'C:\Users\Gayathri Mahadevan\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-05-28 11:48:09.196 +05:30 [INF] Now listening on: https://localhost:7163
+2026-05-28 11:48:09.200 +05:30 [INF] Now listening on: http://localhost:5091
+2026-05-28 11:48:09.244 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-28 11:48:09.249 +05:30 [INF] Hosting environment: Development
+2026-05-28 11:48:09.253 +05:30 [INF] Content root path: C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingAPI
+2026-05-28 11:48:10.584 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7163/swagger/index.html - null null
+2026-05-28 11:48:10.959 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7163/swagger/index.html - 200 null text/html;charset=utf-8 392.1702ms
+2026-05-28 11:48:10.995 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7163/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-28 11:48:10.995 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7163/_vs/browserLink - null null
+2026-05-28 11:48:11.026 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7163/_framework/aspnetcore-browser-refresh.js - 200 16505 application/javascript; charset=utf-8 31.9513ms
+2026-05-28 11:48:11.101 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7163/_vs/browserLink - 200 null text/javascript; charset=UTF-8 106.8215ms
+2026-05-28 11:48:11.158 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7163/swagger/v1/swagger.json - null null
+2026-05-28 11:48:11.240 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7163/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 82.578ms
+2026-05-28 11:48:24.798 +05:30 [INF] User profile is available. Using 'C:\Users\Gayathri Mahadevan\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-05-28 11:48:25.055 +05:30 [INF] Now listening on: https://localhost:7163
+2026-05-28 11:48:25.059 +05:30 [INF] Now listening on: http://localhost:5091
+2026-05-28 11:48:25.108 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-28 11:48:25.111 +05:30 [INF] Hosting environment: Development
+2026-05-28 11:48:25.115 +05:30 [INF] Content root path: C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingAPI
+2026-05-28 11:48:26.341 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7163/swagger/index.html - null null
+2026-05-28 11:48:26.739 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7163/swagger/index.html - 200 null text/html;charset=utf-8 408.379ms
+2026-05-28 11:48:26.790 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7163/_vs/browserLink - null null
+2026-05-28 11:48:26.790 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7163/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-28 11:48:26.878 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7163/_framework/aspnetcore-browser-refresh.js - 200 16505 application/javascript; charset=utf-8 88.075ms
+2026-05-28 11:48:26.938 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7163/_vs/browserLink - 200 null text/javascript; charset=UTF-8 147.9535ms
+2026-05-28 11:48:27.027 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7163/swagger/v1/swagger.json - null null
+2026-05-28 11:48:27.134 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7163/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 109.1145ms
+2026-05-28 11:48:40.971 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7163/htmlpage.html - null null
+2026-05-28 11:48:41.220 +05:30 [INF] Sending file. Request path: '/htmlpage.html'. Physical path: 'C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingAPI\wwwroot\htmlpage.html'
+2026-05-28 11:48:41.229 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7163/htmlpage.html - 200 null text/html 257.611ms
+2026-05-28 11:48:41.273 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7163/_vs/browserLink - null null
+2026-05-28 11:48:41.274 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7163/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-28 11:48:41.305 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7163/_framework/aspnetcore-browser-refresh.js - 200 16505 application/javascript; charset=utf-8 31.1663ms
+2026-05-28 11:48:41.337 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7163/_vs/browserLink - 200 null text/javascript; charset=UTF-8 65.158ms
+2026-05-28 11:48:41.358 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7163/chathub/negotiate?negotiateVersion=1 - text/plain;charset=UTF-8 0
+2026-05-28 11:48:41.382 +05:30 [INF] CORS policy execution failed.
+2026-05-28 11:48:41.386 +05:30 [INF] Request origin https://localhost:7163 does not have permission to access the resource.
+2026-05-28 11:48:41.397 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7163/favicon.ico - null null
+2026-05-28 11:48:41.400 +05:30 [INF] Executing endpoint '/chathub/negotiate'
+2026-05-28 11:48:41.422 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7163/favicon.ico - 404 0 null 25.8481ms
+2026-05-28 11:48:41.448 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7163/favicon.ico, Response status code: 404
+2026-05-28 11:48:41.455 +05:30 [INF] Executed endpoint '/chathub/negotiate'
+2026-05-28 11:48:41.464 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7163/chathub/negotiate?negotiateVersion=1 - 200 316 application/json 105.9404ms
+2026-05-28 11:48:41.470 +05:30 [INF] Request starting HTTP/2 CONNECT https://localhost:7163/chathub?id=dpemqbPDTqQ0-85-S1FuGA - null null
+2026-05-28 11:48:41.494 +05:30 [INF] CORS policy execution failed.
+2026-05-28 11:48:41.499 +05:30 [INF] Request origin https://localhost:7163 does not have permission to access the resource.
+2026-05-28 11:48:41.504 +05:30 [INF] Executing endpoint '/chathub'
+2026-05-28 11:48:44.553 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7163/.well-known/appspecific/com.chrome.devtools.json - null null
+2026-05-28 11:48:44.568 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7163/.well-known/appspecific/com.chrome.devtools.json - 404 0 null 15.686ms
+2026-05-28 11:48:44.578 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7163/.well-known/appspecific/com.chrome.devtools.json, Response status code: 404
+2026-05-28 11:55:35.095 +05:30 [INF] User profile is available. Using 'C:\Users\Gayathri Mahadevan\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-05-28 11:55:35.357 +05:30 [INF] Now listening on: https://localhost:7163
+2026-05-28 11:55:35.361 +05:30 [INF] Now listening on: http://localhost:5091
+2026-05-28 11:55:35.412 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-28 11:55:35.415 +05:30 [INF] Hosting environment: Development
+2026-05-28 11:55:35.418 +05:30 [INF] Content root path: C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingAPI
+2026-05-28 11:55:36.458 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7163/swagger/index.html - null null
+2026-05-28 11:55:36.829 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7163/swagger/index.html - 200 null text/html;charset=utf-8 382.2464ms
+2026-05-28 11:55:36.877 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7163/_vs/browserLink - null null
+2026-05-28 11:55:36.877 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7163/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-28 11:55:36.931 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7163/_framework/aspnetcore-browser-refresh.js - 200 16505 application/javascript; charset=utf-8 54.8928ms
+2026-05-28 11:55:36.987 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7163/_vs/browserLink - 200 null text/javascript; charset=UTF-8 110.4321ms
+2026-05-28 11:55:37.045 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7163/swagger/v1/swagger.json - null null
+2026-05-28 11:55:37.133 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7163/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 88.2198ms
+2026-05-28 11:55:45.163 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7163/htmlpage.html - null null
+2026-05-28 11:55:45.372 +05:30 [INF] Sending file. Request path: '/htmlpage.html'. Physical path: 'C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingAPI\wwwroot\htmlpage.html'
+2026-05-28 11:55:45.382 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7163/htmlpage.html - 200 null text/html 219.3887ms
+2026-05-28 11:55:45.421 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7163/_vs/browserLink - null null
+2026-05-28 11:55:45.422 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7163/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-28 11:55:45.450 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7163/chathub/negotiate?negotiateVersion=1 - text/plain;charset=UTF-8 0
+2026-05-28 11:55:45.452 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7163/_framework/aspnetcore-browser-refresh.js - 200 16505 application/javascript; charset=utf-8 30.1733ms
+2026-05-28 11:55:45.520 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7163/_vs/browserLink - 200 null text/javascript; charset=UTF-8 99.2183ms
+2026-05-28 11:55:45.521 +05:30 [INF] CORS policy execution failed.
+2026-05-28 11:55:45.537 +05:30 [INF] Request origin https://localhost:7163 does not have permission to access the resource.
+2026-05-28 11:55:45.546 +05:30 [INF] Executing endpoint '/chathub/negotiate'
+2026-05-28 11:55:45.588 +05:30 [INF] Executed endpoint '/chathub/negotiate'
+2026-05-28 11:55:45.593 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7163/chathub/negotiate?negotiateVersion=1 - 200 316 application/json 144.1066ms
+2026-05-28 11:55:45.604 +05:30 [INF] Request starting HTTP/2 CONNECT https://localhost:7163/chathub?id=sqiR6apCzH8SJhL7F-4XbA - null null
+2026-05-28 11:55:45.623 +05:30 [INF] CORS policy execution failed.
+2026-05-28 11:55:45.628 +05:30 [INF] Request origin https://localhost:7163 does not have permission to access the resource.
+2026-05-28 11:55:45.633 +05:30 [INF] Executing endpoint '/chathub'
+2026-05-28 11:55:49.407 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7163/.well-known/appspecific/com.chrome.devtools.json - null null
+2026-05-28 11:55:49.419 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7163/.well-known/appspecific/com.chrome.devtools.json - 404 0 null 11.9612ms
+2026-05-28 11:55:49.432 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7163/.well-known/appspecific/com.chrome.devtools.json, Response status code: 404
+2026-05-28 11:56:16.389 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7163/api/Chat/send - application/json 42
+2026-05-28 11:56:16.403 +05:30 [INF] CORS policy execution failed.
+2026-05-28 11:56:16.408 +05:30 [INF] Request origin https://localhost:7163 does not have permission to access the resource.
+2026-05-28 11:56:16.413 +05:30 [INF] Executing endpoint 'BankingAPI.Controllers.ChatController.Test (BankingAPI)'
+2026-05-28 11:56:16.463 +05:30 [INF] Route matched with {action = "Test", controller = "Chat"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Test(BankingAPI.Models.DTOs.ChatNotificationRequest) on controller BankingAPI.Controllers.ChatController (BankingAPI).
+2026-05-28 11:56:16.533 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-28 11:56:16.553 +05:30 [INF] Executed action BankingAPI.Controllers.ChatController.Test (BankingAPI) in 76.5239ms
+2026-05-28 11:56:16.560 +05:30 [INF] Executed endpoint 'BankingAPI.Controllers.ChatController.Test (BankingAPI)'
+2026-05-28 11:56:16.566 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7163/api/Chat/send - 200 null application/json; charset=utf-8 176.6568ms
+2026-05-28 11:56:42.829 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7163/api/Chat/send - application/json 39
+2026-05-28 11:56:42.847 +05:30 [INF] CORS policy execution failed.
+2026-05-28 11:56:42.854 +05:30 [INF] Request origin https://localhost:7163 does not have permission to access the resource.
+2026-05-28 11:56:42.858 +05:30 [INF] Executing endpoint 'BankingAPI.Controllers.ChatController.Test (BankingAPI)'
+2026-05-28 11:56:42.863 +05:30 [INF] Route matched with {action = "Test", controller = "Chat"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Test(BankingAPI.Models.DTOs.ChatNotificationRequest) on controller BankingAPI.Controllers.ChatController (BankingAPI).
+2026-05-28 11:56:42.870 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-28 11:56:42.875 +05:30 [INF] Executed action BankingAPI.Controllers.ChatController.Test (BankingAPI) in 6.9459ms
+2026-05-28 11:56:42.880 +05:30 [INF] Executed endpoint 'BankingAPI.Controllers.ChatController.Test (BankingAPI)'
+2026-05-28 11:56:42.883 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7163/api/Chat/send - 200 null application/json; charset=utf-8 54.918ms

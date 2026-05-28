@@ -1,3 +1,4 @@
+using BankingAPI;
 using BankingAPI.Contexts;
 using BankingAPI.Interfaces;
 using BankingAPI.Middlewares;
@@ -60,7 +61,18 @@ builder.Services.AddSwaggerGen(opt =>
 });
 
 
+builder.Services.AddSignalR();
 
+builder.Services.AddCors(options =>
+{
+    options.AddDefaultPolicy(builder =>
+    {
+        builder.WithOrigins("http://localhost:7163")
+               .AllowAnyHeader()
+               .AllowAnyMethod()
+               .AllowCredentials();// Allow credentials for SignalR
+    });
+});
 
 #region Contexts
 builder.Services.AddDbContext<BankingContext>(options =>
@@ -122,8 +134,16 @@ app.UseAuthentication();
 
 app.UseAuthorization();
 
+app.UseCors();
+
 app.UseMiddleware<ExceptionHandlingMiddleware>();
 
+app.UseStaticFiles();
+
 app.MapControllers();
+
+
+
+app.MapHub<ChatHub>("/chathub");
 
 app.Run();

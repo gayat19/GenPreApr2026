@@ -232,5 +232,21 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "BankingAPI.Controllers.ChatController",
+    "Method": "Test",
+    "RelativePath": "api/Chat/send",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "BankingAPI.Models.DTOs.ChatNotificationRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   }
 ]
