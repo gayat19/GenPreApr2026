@@ -452,15 +452,19 @@
   "components": {
     "schemas": {
       "ChatNotificationRequest": {
+        "required": [
+          "message",
+          "user"
+        ],
         "type": "object",
         "properties": {
           "user": {
-            "type": "string",
-            "nullable": true
+            "minLength": 1,
+            "type": "string"
           },
           "message": {
-            "type": "string",
-            "nullable": true
+            "minLength": 5,
+            "type": "string"
           }
         },
         "additionalProperties": false

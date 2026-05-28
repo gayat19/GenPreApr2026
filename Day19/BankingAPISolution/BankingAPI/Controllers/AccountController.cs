@@ -23,6 +23,8 @@ namespace BankingAPI.Controllers
         {
             try
             {
+                if(ModelState.IsValid == false)
+                    return BadRequest(ModelState);
                 var result  = await _customerInteract.OpensAccount(account);
                 return Created("", result);
 
