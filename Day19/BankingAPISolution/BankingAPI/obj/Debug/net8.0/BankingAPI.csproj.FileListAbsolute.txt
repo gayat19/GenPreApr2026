@@ -135,3 +135,6 @@ C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingAPI\
 C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingAPI\bin\Debug\net8.0\Newtonsoft.Json.dll
 C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingAPI\bin\Debug\net8.0\System.Net.WebSockets.WebSocketProtocol.dll
 C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingAPI\bin\Debug\net8.0\BankingAPI.staticwebassets.runtime.json
+C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingAPI\bin\Debug\net8.0\AutoMapper.dll
+C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingAPI\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
+C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingAPI\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll

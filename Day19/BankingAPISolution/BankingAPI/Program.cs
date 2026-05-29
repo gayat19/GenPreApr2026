@@ -1,12 +1,14 @@
 using BankingAPI;
 using BankingAPI.Contexts;
 using BankingAPI.Interfaces;
+using BankingAPI.Mappers;
 using BankingAPI.Middlewares;
 using BankingAPI.Models;
 using BankingAPI.Repositories;
 using BankingAPI.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using Serilog;
@@ -73,6 +75,10 @@ builder.Services.AddCors(options =>
                .AllowCredentials();// Allow credentials for SignalR
     });
 });
+
+#region Mappers
+builder.Services.AddAutoMapper(m=> m.AddProfile(new MappingProfile()));
+#endregion
 
 #region Contexts
 builder.Services.AddDbContext<BankingContext>(options =>
