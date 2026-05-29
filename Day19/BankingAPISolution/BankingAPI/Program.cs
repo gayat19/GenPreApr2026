@@ -7,6 +7,7 @@ using BankingAPI.Models;
 using BankingAPI.Repositories;
 using BankingAPI.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.RateLimiting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
@@ -14,6 +15,7 @@ using Microsoft.OpenApi.Models;
 using Serilog;
 using System.Security.AccessControl;
 using System.Text;
+using System.Threading.RateLimiting;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -75,6 +77,22 @@ builder.Services.AddCors(options =>
                .AllowCredentials();// Allow credentials for SignalR
     });
 });
+
+#region RateLimiter
+builder.Services.AddRateLimiter(options =>
+{
+    options.RejectionStatusCode = StatusCodes.Status429TooManyRequests;
+
+    options.AddFixedWindowLimiter("Fixed", limiterOptions =>
+    {
+        limiterOptions.Window = TimeSpan.FromMinutes(1);
+        limiterOptions.PermitLimit = 5;
+        limiterOptions.QueueProcessingOrder = QueueProcessingOrder.OldestFirst;
+        limiterOptions.QueueLimit = 0;
+    });
+});
+#endregion
+
 
 #region Mappers
 builder.Services.AddAutoMapper(m=> m.AddProfile(new MappingProfile()));
@@ -141,6 +159,8 @@ app.UseAuthentication();
 app.UseAuthorization();
 
 app.UseCors();
+
+app.UseRateLimiter();
 
 app.UseMiddleware<ExceptionHandlingMiddleware>();
 
