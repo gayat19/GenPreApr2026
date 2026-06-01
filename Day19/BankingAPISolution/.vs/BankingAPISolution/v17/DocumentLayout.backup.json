@@ -34,9 +34,9 @@
               "Title": "AuthenticationController.cs",
               "DocumentMoniker": "C:\\Corp\\Genspark\\Presidio\\2026\\Participants\\Day19\\BankingAPISolution\\BankingAPI\\Controllers\\AuthenticationController.cs",
               "RelativeDocumentMoniker": "BankingAPI\\Controllers\\AuthenticationController.cs",
-              "ToolTip": "C:\\Corp\\Genspark\\Presidio\\2026\\Participants\\Day19\\BankingAPISolution\\BankingAPI\\Controllers\\AuthenticationController.cs*",
-              "RelativeToolTip": "BankingAPI\\Controllers\\AuthenticationController.cs*",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAYwCgAAAANAAAAAAAAAA==",
+              "ToolTip": "C:\\Corp\\Genspark\\Presidio\\2026\\Participants\\Day19\\BankingAPISolution\\BankingAPI\\Controllers\\AuthenticationController.cs",
+              "RelativeToolTip": "BankingAPI\\Controllers\\AuthenticationController.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAYwCsAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-29T06:57:57.306Z",
               "EditorCaption": ""
@@ -47,12 +47,11 @@
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Corp\\Genspark\\Presidio\\2026\\Participants\\Day19\\BankingAPISolution\\BankingAPI\\Program.cs",
               "RelativeDocumentMoniker": "BankingAPI\\Program.cs",
-              "ToolTip": "C:\\Corp\\Genspark\\Presidio\\2026\\Participants\\Day19\\BankingAPISolution\\BankingAPI\\Program.cs*",
-              "RelativeToolTip": "BankingAPI\\Program.cs*",
+              "ToolTip": "C:\\Corp\\Genspark\\Presidio\\2026\\Participants\\Day19\\BankingAPISolution\\BankingAPI\\Program.cs",
+              "RelativeToolTip": "BankingAPI\\Program.cs",
               "ViewState": "AgIAAEQAAAAAAAAAAAAUwFUAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-29T06:54:45.973Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-29T06:54:45.973Z"
             }
           ]
         }

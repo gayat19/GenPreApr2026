@@ -1,0 +1,21 @@
+<h2 class="alert alert-info text-center">
+    <!-- interpolation -->
+    Welcome to the Customers Page, {{customer.name}}!
+    <i [class]="styclass" (click)="toggleLike()"></i>
+</h2>
+<table border="1">
+    <tr>
+       <td>
+            <!-- Property Binding -->
+            <input type = "text" [value]="customer.name"/>
+            <!-- Two-way Data Binding -->
+            <input type = "text" [(ngModel)]="customer.name"/>
+       </td>
+       <td>
+            <!-- Event Binding -->
+            <button (click)="handleChangeClick()">Click Me</button>
+       </td>
+    </tr>
+   
+    
+</table>

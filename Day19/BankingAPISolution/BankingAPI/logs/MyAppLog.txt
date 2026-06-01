@@ -685,3 +685,17 @@ FROM "Customers" AS c
 2026-05-29 12:30:15.140 +05:30 [INF] Executed action BankingAPI.Controllers.AuthenticationController.CustomerLogin (BankingAPI) in 51.207ms
 2026-05-29 12:30:15.148 +05:30 [INF] Executed endpoint 'BankingAPI.Controllers.AuthenticationController.CustomerLogin (BankingAPI)'
 2026-05-29 12:30:15.152 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7163/api/Authentication/Login - 200 null application/json; charset=utf-8 83.6823ms
+2026-06-01 11:50:05.404 +05:30 [INF] User profile is available. Using 'C:\Users\Gayathri Mahadevan\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-06-01 11:50:06.769 +05:30 [INF] Now listening on: https://localhost:7163
+2026-06-01 11:50:06.790 +05:30 [INF] Now listening on: http://localhost:5091
+2026-06-01 11:50:07.485 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-01 11:50:07.499 +05:30 [INF] Hosting environment: Development
+2026-06-01 11:50:07.509 +05:30 [INF] Content root path: C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingAPI
+2026-06-01 11:50:10.051 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7163/swagger/index.html - null null
+2026-06-01 11:50:11.193 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7163/swagger/index.html - 200 null text/html;charset=utf-8 1178.5569ms
+2026-06-01 11:50:11.242 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7163/_vs/browserLink - null null
+2026-06-01 11:50:11.242 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7163/_framework/aspnetcore-browser-refresh.js - null null
+2026-06-01 11:50:11.328 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7163/_framework/aspnetcore-browser-refresh.js - 200 16505 application/javascript; charset=utf-8 86.6184ms
+2026-06-01 11:50:11.495 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7163/_vs/browserLink - 200 null text/javascript; charset=UTF-8 253.3395ms
+2026-06-01 11:50:11.821 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7163/swagger/v1/swagger.json - null null
+2026-06-01 11:50:11.921 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7163/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 100.8763ms
