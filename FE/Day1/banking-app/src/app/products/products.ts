@@ -9,14 +9,14 @@ import { ProductApiService } from '../services/product.api.service';
   styleUrl: './products.css',
 })
 export class Products {
-  product = signal(new ProductModel());
+  products = signal<ProductModel[]>([]);
 
   constructor(private productApiService: ProductApiService) {
     this.productApiService.getProductsFromDummyJson()
       .subscribe({
       next:(response: any) => {
-        console.log(response.products[0]);
-        this.product.set(response.products[0]);
+        console.log(response.products);
+        this.products.set(response.products);
       },
       error:(error) => {
         console.error(error);
@@ -28,6 +28,6 @@ export class Products {
   }
 
   handleChangeClick(){
-    this.product().title = "New Product Name";
+    console.log("Change button clicked");
   }
 }
