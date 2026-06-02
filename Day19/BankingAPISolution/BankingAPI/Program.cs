@@ -71,7 +71,7 @@ builder.Services.AddCors(options =>
 {
     options.AddDefaultPolicy(builder =>
     {
-        builder.WithOrigins("http://localhost:7163")
+        builder.WithOrigins("http://localhost:7163", "http://localhost:4200")
                .AllowAnyHeader()
                .AllowAnyMethod()
                .AllowCredentials();// Allow credentials for SignalR

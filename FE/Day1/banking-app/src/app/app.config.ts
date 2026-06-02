@@ -4,12 +4,14 @@ import { provideRouter } from '@angular/router';
 import { routes } from './app.routes';
 import { provideHttpClient } from '@angular/common/http';
 import { ProductApiService } from './services/product.api.service';
+import { BankingApiService } from './services/bankingapi.service';
 
 export const appConfig: ApplicationConfig = {
   providers: [
     provideBrowserGlobalErrorListeners(),
     provideRouter(routes),
     provideHttpClient(),
-    ProductApiService
+    ProductApiService,
+    BankingApiService
   ]
 };
