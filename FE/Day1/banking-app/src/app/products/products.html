@@ -1,3 +1,10 @@
+
+@if(products().length === 0) {
+    <div class="spinner-border text-success" role="status">
+        <span class="sr-only"></span>
+    </div>
+} 
+ 
 <section class="products-container">
    @for (product of products(); track product.id) 
    {
@@ -11,3 +18,4 @@
         </div>
    }
 </section>
+

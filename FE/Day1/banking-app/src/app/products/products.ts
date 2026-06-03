@@ -15,19 +15,18 @@ export class Products {
     this.productApiService.getProductsFromDummyJson()
       .subscribe({
       next:(response: any) => {
-        console.log(response.products);
         this.products.set(response.products);
       },
       error:(error) => {
         console.error(error);
       },
       complete:()=>{
-        console.log("Request completed");
+        
       }
     });
   }
 
   handleChangeClick(){
-    console.log("Change button clicked");
+    
   }
 }

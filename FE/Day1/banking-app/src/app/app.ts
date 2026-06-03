@@ -3,10 +3,11 @@ import { RouterOutlet } from '@angular/router';
 import { Customers } from './customers/customers';
 import { Products } from "./products/products";
 import { Login } from "./login/login";
+import { Account } from "./account/account";
 
 @Component({
   selector: 'app-root',
-  imports: [Customers, Products, Login],
+  imports: [Customers, Products, Login, Account],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

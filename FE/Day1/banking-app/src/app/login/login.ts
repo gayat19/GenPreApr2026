@@ -11,22 +11,26 @@ import { BankingApiService } from '../services/bankingapi.service';
 })
 export class Login {
   loginModel = signal(new LoginModel());
-  
+  progress = signal(false);
   constructor(private bankingApiService: BankingApiService) {
   }
 
   handleLoginClick(){
-    console.log("Login button clicked");
+    this.progress.set(true);
     this.bankingApiService.loginApiCall(this.loginModel()).subscribe({
-      next: (response) => {
+      next: (response:any) => {
         console.log("Login successful", response);
+        sessionStorage.setItem('token', response.token);
         alert("Login successful!")
+        this.progress.set(false);
       },
       error: (error) => {
         console.error("Login failed", error);
         alert("Login failed. Please try again.");
+        this.progress.set(false);
       }
     });
+    
   }
 
 }

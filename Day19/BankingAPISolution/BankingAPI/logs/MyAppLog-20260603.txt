@@ -1,0 +1,81 @@
+2026-06-03 09:50:43.540 +05:30 [INF] User profile is available. Using 'C:\Users\Gayathri Mahadevan\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-06-03 09:50:44.318 +05:30 [INF] Now listening on: https://localhost:7163
+2026-06-03 09:50:44.324 +05:30 [INF] Now listening on: http://localhost:5091
+2026-06-03 09:50:44.467 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-03 09:50:44.476 +05:30 [INF] Hosting environment: Development
+2026-06-03 09:50:44.482 +05:30 [INF] Content root path: C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingAPI
+2026-06-03 09:50:48.755 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7163/swagger/index.html - null null
+2026-06-03 09:50:49.501 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7163/swagger/index.html - 200 null text/html;charset=utf-8 786.1581ms
+2026-06-03 09:50:49.579 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7163/_framework/aspnetcore-browser-refresh.js - null null
+2026-06-03 09:50:49.586 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7163/_vs/browserLink - null null
+2026-06-03 09:50:49.661 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7163/_framework/aspnetcore-browser-refresh.js - 200 16505 application/javascript; charset=utf-8 82.2078ms
+2026-06-03 09:50:49.888 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7163/_vs/browserLink - 200 null text/javascript; charset=UTF-8 301.7917ms
+2026-06-03 09:50:50.010 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7163/swagger/v1/swagger.json - null null
+2026-06-03 09:50:50.272 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7163/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 262.2285ms
+2026-06-03 09:54:00.999 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7163/api/Account?accountNumber=12312 - null null
+2026-06-03 09:54:01.260 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-06-03 09:54:01.277 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-06-03 09:54:01.293 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7163/api/Account?accountNumber=12312 - 401 0 null 294.0716ms
+2026-06-03 09:58:05.296 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7163/api/Account?accountNumber=qwr3454 - null null
+2026-06-03 09:58:05.323 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-06-03 09:58:05.327 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-06-03 09:58:05.331 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7163/api/Account?accountNumber=qwr3454 - 401 0 null 35.9161ms
+2026-06-03 09:58:20.067 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7163/api/Account?accountNumber=423423 - null null
+2026-06-03 09:58:20.080 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-06-03 09:58:20.086 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-06-03 09:58:20.093 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7163/api/Account?accountNumber=423423 - 401 0 null 26.4027ms
+2026-06-03 09:59:01.632 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7163/api/Authentication/Login - null null
+2026-06-03 09:59:01.675 +05:30 [INF] CORS policy execution successful.
+2026-06-03 09:59:01.681 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7163/api/Authentication/Login - 204 null null 52.1125ms
+2026-06-03 09:59:01.686 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7163/api/Authentication/Login - application/json 43
+2026-06-03 09:59:01.703 +05:30 [INF] CORS policy execution successful.
+2026-06-03 09:59:01.726 +05:30 [INF] Executing endpoint 'BankingAPI.Controllers.AuthenticationController.CustomerLogin (BankingAPI)'
+2026-06-03 09:59:01.781 +05:30 [INF] Route matched with {action = "CustomerLogin", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BankingAPI.Models.DTOs.LoginResponse]] CustomerLogin(BankingAPI.Models.DTOs.LoginRequest) on controller BankingAPI.Controllers.AuthenticationController (BankingAPI).
+2026-06-03 09:59:02.388 +05:30 [WRN] You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-06-03 09:59:05.375 +05:30 [INF] Executed DbCommand (157ms) [Parameters=[@__p_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Username", u."HashKey", u."Password", u."Role"
+FROM "Users" AS u
+WHERE u."Username" = @__p_0
+LIMIT 1
+2026-06-03 09:59:05.558 +05:30 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT c."Id", c."DateOfBirth", c."Email", c."Name", c."Phone", c."Status", c."Username"
+FROM "Customers" AS c
+2026-06-03 09:59:05.702 +05:30 [INF] Executing OkObjectResult, writing value of type 'BankingAPI.Models.DTOs.LoginResponse'.
+2026-06-03 09:59:05.722 +05:30 [INF] Executed action BankingAPI.Controllers.AuthenticationController.CustomerLogin (BankingAPI) in 3926.2233ms
+2026-06-03 09:59:05.729 +05:30 [INF] Executed endpoint 'BankingAPI.Controllers.AuthenticationController.CustomerLogin (BankingAPI)'
+2026-06-03 09:59:05.750 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7163/api/Authentication/Login - 200 null application/json; charset=utf-8 4064.873ms
+2026-06-03 09:59:13.293 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7163/api/Account?accountNumber=423423 - null null
+2026-06-03 09:59:13.304 +05:30 [INF] CORS policy execution successful.
+2026-06-03 09:59:13.308 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7163/api/Account?accountNumber=423423 - 204 null null 15.0036ms
+2026-06-03 09:59:13.312 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7163/api/Account?accountNumber=423423 - null null
+2026-06-03 09:59:13.437 +05:30 [INF] CORS policy execution successful.
+2026-06-03 09:59:13.441 +05:30 [INF] Executing endpoint 'BankingAPI.Controllers.AccountController.GetAccount (BankingAPI)'
+2026-06-03 09:59:13.454 +05:30 [INF] Route matched with {action = "GetAccount", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BankingAPI.Models.DTOs.GetAccountResponse]] GetAccount(System.String) on controller BankingAPI.Controllers.AccountController (BankingAPI).
+2026-06-03 09:59:13.579 +05:30 [INF] Executed DbCommand (8ms) [Parameters=[@__p_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."AccountNumber", a."AccountType", a."Balance", a."CustomerId", a."Status"
+FROM "Accounts" AS a
+WHERE a."AccountNumber" = @__p_0
+LIMIT 1
+2026-06-03 09:59:30.985 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'System.String'.
+2026-06-03 09:59:30.990 +05:30 [INF] Executed action BankingAPI.Controllers.AccountController.GetAccount (BankingAPI) in 17534.9609ms
+2026-06-03 09:59:30.995 +05:30 [INF] Executed endpoint 'BankingAPI.Controllers.AccountController.GetAccount (BankingAPI)'
+2026-06-03 09:59:30.999 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7163/api/Account?accountNumber=423423 - 400 null text/plain; charset=utf-8 17691.2562ms
+2026-06-03 10:00:47.646 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7163/api/Account?accountNumber=000999887712 - null null
+2026-06-03 10:00:47.657 +05:30 [INF] CORS policy execution successful.
+2026-06-03 10:00:47.660 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7163/api/Account?accountNumber=000999887712 - 204 null null 14.4859ms
+2026-06-03 10:00:47.667 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7163/api/Account?accountNumber=000999887712 - null null
+2026-06-03 10:00:47.681 +05:30 [INF] CORS policy execution successful.
+2026-06-03 10:00:47.684 +05:30 [INF] Executing endpoint 'BankingAPI.Controllers.AccountController.GetAccount (BankingAPI)'
+2026-06-03 10:00:47.694 +05:30 [INF] Route matched with {action = "GetAccount", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BankingAPI.Models.DTOs.GetAccountResponse]] GetAccount(System.String) on controller BankingAPI.Controllers.AccountController (BankingAPI).
+2026-06-03 10:00:47.729 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."AccountNumber", a."AccountType", a."Balance", a."CustomerId", a."Status"
+FROM "Accounts" AS a
+WHERE a."AccountNumber" = @__p_0
+LIMIT 1
+2026-06-03 10:00:47.757 +05:30 [INF] Executing OkObjectResult, writing value of type 'BankingAPI.Models.DTOs.GetAccountResponse'.
+2026-06-03 10:00:47.777 +05:30 [INF] Executed action BankingAPI.Controllers.AccountController.GetAccount (BankingAPI) in 76.7056ms
+2026-06-03 10:00:47.784 +05:30 [INF] Executed endpoint 'BankingAPI.Controllers.AccountController.GetAccount (BankingAPI)'
+2026-06-03 10:00:47.788 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7163/api/Account?accountNumber=000999887712 - 200 null application/json; charset=utf-8 121.2223ms

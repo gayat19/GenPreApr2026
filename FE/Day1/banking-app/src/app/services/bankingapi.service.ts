@@ -13,4 +13,9 @@ export class BankingApiService {
         let url = baseUrl+'/Authentication/Login';
         return this.http.post(url, loginModel);
     }
+
+    public getAccountDetails(accNumber:string){
+        let url = baseUrl+'/Account?accountNumber='+accNumber;
+        return this.http.get(url);
+    }
 }
