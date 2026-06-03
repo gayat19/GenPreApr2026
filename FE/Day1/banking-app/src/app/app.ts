@@ -23,5 +23,9 @@ export class App {
     })
   }
 
+  onDestroy(){
+    usernameSubject.unsubscribe();
+  }
+
   protected readonly title = signal('banking-app');
 }

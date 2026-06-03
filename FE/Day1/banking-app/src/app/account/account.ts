@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { BankingApiService } from '../services/bankingapi.service';
-import { Subject } from 'rxjs';
+import { debounceTime, distinctUntilChanged, Observable, of, Subject, switchMap } from 'rxjs';
 import { FormsModule } from '@angular/forms';
 
 @Component({
@@ -16,19 +16,26 @@ export class Account {
   private searchSubject = new Subject<string>();
   
   constructor(private bankingApiService: BankingApiService) {
-    this.searchSubject.subscribe({
-      next:(accNumber) => {
-        console.log("Fetching account details for account number:", accNumber);
+    this.searchSubject.pipe(
+      debounceTime(500),
+      distinctUntilChanged(),
+      switchMap(
+        accNumber=>{
+          if(accNumber.trim() === '')
+           return of({}); // Return an observable that emits null if the input is empty 
+          return this.bankingApiService.getAccountDetails(accNumber);
+        })
+      ).subscribe({
+      next: (response:any) => {
+        console.log("Account details", response);
+        
       },
       error: (error) => {
         console.error("Failed to fetch account details", error);
         
-      },
-      complete: () => {        
-        console.log("Account details fetched successfully!");
-      
       }
-    });
+    }
+    )
   }
 
   // getAccountDetails(accNumber:string){
@@ -55,3 +62,5 @@ export class Account {
     this.searchSubject.unsubscribe();
   }
 }
+
+
