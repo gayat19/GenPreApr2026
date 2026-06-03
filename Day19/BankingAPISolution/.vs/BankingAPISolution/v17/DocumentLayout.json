@@ -54,8 +54,7 @@
               "RelativeToolTip": "BankingAPI\\Models\\DTOs\\GetAccountResponse.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-03T04:21:45.083Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-03T04:21:45.083Z"
             },
             {
               "$type": "Document",
@@ -65,7 +64,7 @@
               "RelativeDocumentMoniker": "BankingAPI\\Controllers\\AccountController.cs",
               "ToolTip": "C:\\Corp\\Genspark\\Presidio\\2026\\Participants\\Day19\\BankingAPISolution\\BankingAPI\\Controllers\\AccountController.cs",
               "RelativeToolTip": "BankingAPI\\Controllers\\AccountController.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAYwCoAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAAAYwB4AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-03T04:21:20.469Z",
               "EditorCaption": ""
@@ -116,8 +115,7 @@
               "RelativeToolTip": "BankingAPI\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAEwAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-29T06:54:45.973Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-29T06:54:45.973Z"
             }
           ]
         }

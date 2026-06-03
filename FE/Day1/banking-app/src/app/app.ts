@@ -4,6 +4,7 @@ import { Customers } from './customers/customers';
 import { Products } from "./products/products";
 import { Login } from "./login/login";
 import { Account } from "./account/account";
+import { usernameSubject } from './rxjs/auth.operator';
 
 @Component({
   selector: 'app-root',
@@ -12,5 +13,15 @@ import { Account } from "./account/account";
   styleUrl: './app.css'
 })
 export class App {
+  username = signal('Guest');
+
+  constructor() {
+    usernameSubject.subscribe({
+      next:(un)=>{
+        this.username.set(un);
+      }
+    })
+  }
+
   protected readonly title = signal('banking-app');
 }
