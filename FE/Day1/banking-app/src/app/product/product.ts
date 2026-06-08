@@ -1,4 +1,4 @@
-import { Component, EventEmitter, input, Input, Output } from '@angular/core';
+import { Component, EventEmitter, input, Input, output, Output } from '@angular/core';
 import { ProductModel } from '../models/product.model';
 
 @Component({
@@ -10,7 +10,8 @@ import { ProductModel } from '../models/product.model';
 export class Product {
   //@Input() product:ProductModel = {} as ProductModel;
   product = input<ProductModel>();
-  @Output() buy = new EventEmitter<ProductModel>();
+ // @Output() buy = new EventEmitter<ProductModel>();
+ buy = output<ProductModel|undefined>();
 
   handleClick(){
     

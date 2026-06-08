@@ -24,7 +24,7 @@ export class Login {
         sessionStorage.setItem('token', response.token);
         alert("Login successful!")
         this.progress.set(false);
-        changeUsername(response.username);
+        changeUsername();
       },
       error: (error) => {
         console.error("Login failed", error);

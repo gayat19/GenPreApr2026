@@ -1029,3 +1029,147 @@ LIMIT 1
 2026-06-03 12:09:35.112 +05:30 [INF] Executed action BankingAPI.Controllers.AccountController.GetAccount (BankingAPI) in 47.4567ms
 2026-06-03 12:09:35.118 +05:30 [INF] Executed endpoint 'BankingAPI.Controllers.AccountController.GetAccount (BankingAPI)'
 2026-06-03 12:09:35.124 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7163/api/Account?accountNumber=000999887712 - 200 null application/json; charset=utf-8 93.2296ms
+2026-06-08 10:30:56.964 +05:30 [INF] User profile is available. Using 'C:\Users\Gayathri Mahadevan\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-06-08 10:30:57.635 +05:30 [INF] Now listening on: https://localhost:7163
+2026-06-08 10:30:57.640 +05:30 [INF] Now listening on: http://localhost:5091
+2026-06-08 10:30:57.761 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-08 10:30:57.774 +05:30 [INF] Hosting environment: Development
+2026-06-08 10:30:57.784 +05:30 [INF] Content root path: C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingAPI
+2026-06-08 10:31:02.645 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7163/swagger/index.html - null null
+2026-06-08 10:31:03.369 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7163/swagger/index.html - 200 null text/html;charset=utf-8 742.3108ms
+2026-06-08 10:31:03.511 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7163/_framework/aspnetcore-browser-refresh.js - null null
+2026-06-08 10:31:03.512 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7163/_vs/browserLink - null null
+2026-06-08 10:31:03.578 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7163/_framework/aspnetcore-browser-refresh.js - 200 16505 application/javascript; charset=utf-8 66.8631ms
+2026-06-08 10:31:03.796 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7163/_vs/browserLink - 200 null text/javascript; charset=UTF-8 284.9268ms
+2026-06-08 10:31:03.943 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7163/swagger/v1/swagger.json - null null
+2026-06-08 10:31:04.123 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7163/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 181.7225ms
+2026-06-08 10:31:04.147 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7163/swagger/favicon-32x32.png - null null
+2026-06-08 10:31:04.196 +05:30 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2026-06-08 10:31:04.204 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7163/swagger/favicon-32x32.png - 200 628 image/png 57.2314ms
+2026-06-08 10:31:09.585 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7163/api/Authentication/Login - null null
+2026-06-08 10:31:09.767 +05:30 [INF] CORS policy execution successful.
+2026-06-08 10:31:09.776 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7163/api/Authentication/Login - 204 null null 192.4963ms
+2026-06-08 10:31:09.780 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7163/api/Authentication/Login - application/json 42
+2026-06-08 10:31:09.812 +05:30 [INF] CORS policy execution successful.
+2026-06-08 10:31:09.836 +05:30 [INF] Executing endpoint 'BankingAPI.Controllers.AuthenticationController.CustomerLogin (BankingAPI)'
+2026-06-08 10:31:09.899 +05:30 [INF] Route matched with {action = "CustomerLogin", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BankingAPI.Models.DTOs.LoginResponse]] CustomerLogin(BankingAPI.Models.DTOs.LoginRequest) on controller BankingAPI.Controllers.AuthenticationController (BankingAPI).
+2026-06-08 10:31:10.494 +05:30 [WRN] You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-06-08 10:31:13.409 +05:30 [INF] Executed DbCommand (116ms) [Parameters=[@__p_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Username", u."HashKey", u."Password", u."Role"
+FROM "Users" AS u
+WHERE u."Username" = @__p_0
+LIMIT 1
+2026-06-08 10:31:13.917 +05:30 [INF] Executed action BankingAPI.Controllers.AuthenticationController.CustomerLogin (BankingAPI) in 4000.6131ms
+2026-06-08 10:31:13.934 +05:30 [INF] Executed endpoint 'BankingAPI.Controllers.AuthenticationController.CustomerLogin (BankingAPI)'
+2026-06-08 10:31:14.120 +05:30 [ERR] An unhandled exception occurred while processing the request.
+System.Security.Authentication.InvalidCredentialException: Invalid username or password
+   at BankingAPI.Services.CustomerService.Login(LoginRequest request) in C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingAPI\Services\CustomerService.cs:line 48
+   at BankingAPI.Controllers.AuthenticationController.CustomerLogin(LoginRequest request) in C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingAPI\Controllers\AuthenticationController.cs:line 64
+   at lambda_method13(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at BankingAPI.Middlewares.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingAPI\Middlewares\ExceptionHandlingMiddleware.cs:line 21
+2026-06-08 10:31:14.207 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7163/api/Authentication/Login - 401 null application/json 4427.1099ms
+2026-06-08 10:31:20.499 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7163/api/Authentication/Login - null null
+2026-06-08 10:31:20.524 +05:30 [INF] CORS policy execution successful.
+2026-06-08 10:31:20.528 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7163/api/Authentication/Login - 204 null null 28.6259ms
+2026-06-08 10:31:20.533 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7163/api/Authentication/Login - application/json 43
+2026-06-08 10:31:20.552 +05:30 [INF] CORS policy execution successful.
+2026-06-08 10:31:20.556 +05:30 [INF] Executing endpoint 'BankingAPI.Controllers.AuthenticationController.CustomerLogin (BankingAPI)'
+2026-06-08 10:31:20.559 +05:30 [INF] Route matched with {action = "CustomerLogin", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BankingAPI.Models.DTOs.LoginResponse]] CustomerLogin(BankingAPI.Models.DTOs.LoginRequest) on controller BankingAPI.Controllers.AuthenticationController (BankingAPI).
+2026-06-08 10:31:20.701 +05:30 [INF] Executed DbCommand (11ms) [Parameters=[@__p_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Username", u."HashKey", u."Password", u."Role"
+FROM "Users" AS u
+WHERE u."Username" = @__p_0
+LIMIT 1
+2026-06-08 10:31:20.743 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT c."Id", c."DateOfBirth", c."Email", c."Name", c."Phone", c."Status", c."Username"
+FROM "Customers" AS c
+2026-06-08 10:31:20.916 +05:30 [INF] Executing OkObjectResult, writing value of type 'BankingAPI.Models.DTOs.LoginResponse'.
+2026-06-08 10:31:20.928 +05:30 [INF] Executed action BankingAPI.Controllers.AuthenticationController.CustomerLogin (BankingAPI) in 362.9954ms
+2026-06-08 10:31:20.939 +05:30 [INF] Executed endpoint 'BankingAPI.Controllers.AuthenticationController.CustomerLogin (BankingAPI)'
+2026-06-08 10:31:20.945 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7163/api/Authentication/Login - 200 null application/json; charset=utf-8 412.6957ms
+2026-06-08 10:31:50.165 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7163/api/Authentication/Login - null null
+2026-06-08 10:31:50.188 +05:30 [INF] CORS policy execution successful.
+2026-06-08 10:31:50.204 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7163/api/Authentication/Login - 204 null null 38.199ms
+2026-06-08 10:31:50.212 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7163/api/Authentication/Login - application/json 43
+2026-06-08 10:31:50.320 +05:30 [INF] CORS policy execution successful.
+2026-06-08 10:31:50.325 +05:30 [INF] Executing endpoint 'BankingAPI.Controllers.AuthenticationController.CustomerLogin (BankingAPI)'
+2026-06-08 10:31:50.331 +05:30 [INF] Route matched with {action = "CustomerLogin", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BankingAPI.Models.DTOs.LoginResponse]] CustomerLogin(BankingAPI.Models.DTOs.LoginRequest) on controller BankingAPI.Controllers.AuthenticationController (BankingAPI).
+2026-06-08 10:31:50.375 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__p_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Username", u."HashKey", u."Password", u."Role"
+FROM "Users" AS u
+WHERE u."Username" = @__p_0
+LIMIT 1
+2026-06-08 10:31:50.390 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT c."Id", c."DateOfBirth", c."Email", c."Name", c."Phone", c."Status", c."Username"
+FROM "Customers" AS c
+2026-06-08 10:31:50.401 +05:30 [INF] Executing OkObjectResult, writing value of type 'BankingAPI.Models.DTOs.LoginResponse'.
+2026-06-08 10:31:50.411 +05:30 [INF] Executed action BankingAPI.Controllers.AuthenticationController.CustomerLogin (BankingAPI) in 72.5687ms
+2026-06-08 10:31:50.419 +05:30 [INF] Executed endpoint 'BankingAPI.Controllers.AuthenticationController.CustomerLogin (BankingAPI)'
+2026-06-08 10:31:50.425 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7163/api/Authentication/Login - 200 null application/json; charset=utf-8 213.1777ms
+2026-06-08 10:33:04.486 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7163/api/Authentication/Login - null null
+2026-06-08 10:33:04.533 +05:30 [INF] CORS policy execution successful.
+2026-06-08 10:33:04.547 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7163/api/Authentication/Login - 204 null null 60.5601ms
+2026-06-08 10:33:04.555 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7163/api/Authentication/Login - application/json 43
+2026-06-08 10:33:04.606 +05:30 [INF] CORS policy execution successful.
+2026-06-08 10:33:04.613 +05:30 [INF] Executing endpoint 'BankingAPI.Controllers.AuthenticationController.CustomerLogin (BankingAPI)'
+2026-06-08 10:33:04.623 +05:30 [INF] Route matched with {action = "CustomerLogin", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BankingAPI.Models.DTOs.LoginResponse]] CustomerLogin(BankingAPI.Models.DTOs.LoginRequest) on controller BankingAPI.Controllers.AuthenticationController (BankingAPI).
+2026-06-08 10:33:04.640 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__p_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Username", u."HashKey", u."Password", u."Role"
+FROM "Users" AS u
+WHERE u."Username" = @__p_0
+LIMIT 1
+2026-06-08 10:33:04.657 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT c."Id", c."DateOfBirth", c."Email", c."Name", c."Phone", c."Status", c."Username"
+FROM "Customers" AS c
+2026-06-08 10:33:04.669 +05:30 [INF] Executing OkObjectResult, writing value of type 'BankingAPI.Models.DTOs.LoginResponse'.
+2026-06-08 10:33:04.676 +05:30 [INF] Executed action BankingAPI.Controllers.AuthenticationController.CustomerLogin (BankingAPI) in 42.8574ms
+2026-06-08 10:33:04.683 +05:30 [INF] Executed endpoint 'BankingAPI.Controllers.AuthenticationController.CustomerLogin (BankingAPI)'
+2026-06-08 10:33:04.688 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7163/api/Authentication/Login - 200 null application/json; charset=utf-8 134.6883ms
+2026-06-08 10:34:37.565 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7163/api/Authentication/Login - null null
+2026-06-08 10:34:37.576 +05:30 [INF] CORS policy execution successful.
+2026-06-08 10:34:37.579 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7163/api/Authentication/Login - 204 null null 14.672ms
+2026-06-08 10:34:37.584 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7163/api/Authentication/Login - application/json 43
+2026-06-08 10:34:37.603 +05:30 [INF] CORS policy execution successful.
+2026-06-08 10:34:37.606 +05:30 [INF] Executing endpoint 'BankingAPI.Controllers.AuthenticationController.CustomerLogin (BankingAPI)'
+2026-06-08 10:34:37.611 +05:30 [INF] Route matched with {action = "CustomerLogin", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BankingAPI.Models.DTOs.LoginResponse]] CustomerLogin(BankingAPI.Models.DTOs.LoginRequest) on controller BankingAPI.Controllers.AuthenticationController (BankingAPI).
+2026-06-08 10:34:37.622 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Username", u."HashKey", u."Password", u."Role"
+FROM "Users" AS u
+WHERE u."Username" = @__p_0
+LIMIT 1
+2026-06-08 10:34:37.636 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT c."Id", c."DateOfBirth", c."Email", c."Name", c."Phone", c."Status", c."Username"
+FROM "Customers" AS c
+2026-06-08 10:34:37.647 +05:30 [INF] Executing OkObjectResult, writing value of type 'BankingAPI.Models.DTOs.LoginResponse'.
+2026-06-08 10:34:37.654 +05:30 [INF] Executed action BankingAPI.Controllers.AuthenticationController.CustomerLogin (BankingAPI) in 36.5845ms
+2026-06-08 10:34:37.660 +05:30 [INF] Executed endpoint 'BankingAPI.Controllers.AuthenticationController.CustomerLogin (BankingAPI)'
+2026-06-08 10:34:37.665 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7163/api/Authentication/Login - 200 null application/json; charset=utf-8 81.5493ms
+2026-06-08 10:36:43.379 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7163/api/Authentication/Login - null null
+2026-06-08 10:36:43.405 +05:30 [INF] CORS policy execution successful.
+2026-06-08 10:36:43.410 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7163/api/Authentication/Login - 204 null null 32.0626ms
+2026-06-08 10:36:43.415 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7163/api/Authentication/Login - application/json 43
+2026-06-08 10:36:43.432 +05:30 [INF] CORS policy execution successful.
+2026-06-08 10:36:43.436 +05:30 [INF] Executing endpoint 'BankingAPI.Controllers.AuthenticationController.CustomerLogin (BankingAPI)'
+2026-06-08 10:36:43.440 +05:30 [INF] Route matched with {action = "CustomerLogin", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BankingAPI.Models.DTOs.LoginResponse]] CustomerLogin(BankingAPI.Models.DTOs.LoginRequest) on controller BankingAPI.Controllers.AuthenticationController (BankingAPI).
+2026-06-08 10:36:43.516 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__p_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Username", u."HashKey", u."Password", u."Role"
+FROM "Users" AS u
+WHERE u."Username" = @__p_0
+LIMIT 1
+2026-06-08 10:36:43.529 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT c."Id", c."DateOfBirth", c."Email", c."Name", c."Phone", c."Status", c."Username"
+FROM "Customers" AS c
+2026-06-08 10:36:43.537 +05:30 [INF] Executing OkObjectResult, writing value of type 'BankingAPI.Models.DTOs.LoginResponse'.
+2026-06-08 10:36:43.546 +05:30 [INF] Executed action BankingAPI.Controllers.AuthenticationController.CustomerLogin (BankingAPI) in 99.4458ms
+2026-06-08 10:36:43.554 +05:30 [INF] Executed endpoint 'BankingAPI.Controllers.AuthenticationController.CustomerLogin (BankingAPI)'
+2026-06-08 10:36:43.561 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7163/api/Authentication/Login - 200 null application/json; charset=utf-8 145.911ms
