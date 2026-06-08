@@ -1,6 +1,48 @@
 <section>
     <h1>Login</h1>
-    <!-- <form (submit)="handleLoginClick()"> -->
+    <form  (ngSubmit)="handleLoginClick()">
+        <div>
+            <label for="username">Username:</label>
+            <input type="text" id="username" 
+            [formField]="loginForm.username">
+            @if(loginForm.username().errors()[0]) {
+                <div class="alert alert-danger">
+                    <span>Username is required.</span>
+                </div>
+            }
+            @if(loginForm.username().errors()[1]) {
+                <div class="alert alert-danger">
+                    <span>Username must be at least 3 characters long.</span>
+                </div>
+            }
+               
+     </div>
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" [(ngModel)]="loginModel().password" name="password" #password="ngModel" required>
+        </div>
+        <button [disabled]="progress()"  type="submit">Login
+            @if (progress()) {
+                <div class="spinner-border text-success" role="status">
+                <span class="sr-only"></span>
+            </div>
+            }
+        </button>
+    </form>
+</section>
+
+
+
+
+
+
+
+
+
+
+<!-- <section>
+    <h1>Login</h1>
+
         <div>
             <label for="username">Username:</label>
             <input type="text" id="username" 
@@ -29,5 +71,5 @@
             </div>
             }
         </button>
-    <!-- </form> -->
-</section>
+
+</section> -->
