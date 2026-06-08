@@ -24,8 +24,11 @@ export class Login {
    
   });
   handleLoginClick(){
- 
-  
+    if(this.loginForm().invalid()){
+      alert("Please fix the errors in the form before submitting.");
+      return;
+    }
+
     this.progress.set(true);
     this.bankingApiService.loginApiCall(this.loginModel()).subscribe({
       next: (response:any) => {

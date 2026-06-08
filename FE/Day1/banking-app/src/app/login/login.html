@@ -20,7 +20,7 @@
                 </div>
         }
         </div>
-        <button [disabled]="progress()"  type="submit">Login
+        <button [disabled]="progress() || loginForm().invalid()"  type="submit">Login
             @if (progress()) {
                 <div class="spinner-border text-success" role="status">
                 <span class="sr-only"></span>
