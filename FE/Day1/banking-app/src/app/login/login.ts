@@ -3,7 +3,7 @@ import { LoginModel } from '../models/login.model';
 import { FormsModule } from '@angular/forms';
 import { BankingApiService } from '../services/bankingapi.service';
 import { changeUsername } from '../rxjs/auth.operator';
-import { NgIf } from '@angular/common';
+
 
 @Component({
   selector: 'app-login',

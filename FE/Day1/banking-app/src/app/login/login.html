@@ -9,7 +9,12 @@
              minlength="3" required>
             @if (username.touched && username.invalid) {
                 <div class="alert alert-danger">
-                    Username is required and should be at least 3 characters long.
+                   @if (username.errors?.['required']) {
+                    <span>Username is required.</span>
+                   }
+                   @if (username.errors?.['minlength']) {
+                    <span>Username must be at least 3 characters long.</span>
+                   }
                 </div>
             }
         </div>
