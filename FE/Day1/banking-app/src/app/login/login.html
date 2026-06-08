@@ -5,21 +5,20 @@
             <label for="username">Username:</label>
             <input type="text" id="username" 
             [formField]="loginForm.username">
-            @if(loginForm.username().errors()[0]) {
+            @for (error of loginForm.username().errors(); track error.message)  {
                 <div class="alert alert-danger">
-                    <span>Username is required.</span>
+                    {{ error.message }}
                 </div>
-            }
-            @if(loginForm.username().errors()[1]) {
-                <div class="alert alert-danger">
-                    <span>Username must be at least 3 characters long.</span>
-                </div>
-            }
-               
+        }    
      </div>
         <div>
             <label for="password">Password:</label>
-            <input type="password" id="password" [(ngModel)]="loginModel().password" name="password" #password="ngModel" required>
+            <input type="password" id="password" [formField]="loginForm.password">
+             @for (error of loginForm.password().errors(); track error.message) {
+                <div class="alert alert-danger">
+                    {{ error.message }}
+                </div>
+        }
         </div>
         <button [disabled]="progress()"  type="submit">Login
             @if (progress()) {

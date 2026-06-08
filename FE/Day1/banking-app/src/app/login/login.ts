@@ -18,27 +18,29 @@ export class Login {
   constructor(private bankingApiService: BankingApiService) {
   }
   loginForm = form(this.loginModel,(path)=>{
-    required(path.username);
-    required(path.password);
-    minLength(path.username, 3);
+    required(path.username, {message:"Username is required"});
+    minLength(path.username, 4, {message:"Username must be at least 4 characters long"});
+    required(path.password, {message:"Password is required"});
+   
   });
   handleLoginClick(){
-    console.log("Login button clicked", this.loginForm.username().errors()[0]);
-    // this.progress.set(true);
-    // this.bankingApiService.loginApiCall(this.loginModel()).subscribe({
-    //   next: (response:any) => {
-    //     console.log("Login successful", response);
-    //     sessionStorage.setItem('token', response.token);
-    //     alert("Login successful!")
-    //     this.progress.set(false);
-    //     changeUsername();
-    //   },
-    //   error: (error) => {
-    //     console.error("Login failed", error);
-    //     alert("Login failed. Please try again.");
-    //     this.progress.set(false);
-    //   }
-    // });
+ 
+  
+    this.progress.set(true);
+    this.bankingApiService.loginApiCall(this.loginModel()).subscribe({
+      next: (response:any) => {
+        console.log("Login successful", response);
+        sessionStorage.setItem('token', response.token);
+        alert("Login successful!")
+        this.progress.set(false);
+        changeUsername();
+      },
+      error: (error) => {
+        console.error("Login failed", error);
+        alert("Login failed. Please try again.");
+        this.progress.set(false);
+      }
+    });
     
   }
 
