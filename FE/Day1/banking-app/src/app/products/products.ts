@@ -11,6 +11,7 @@ import { Product } from "../product/product";
 })
 export class Products {
   products = signal<ProductModel[]>([]);
+  cart = signal<ProductModel[]>([]);
 
   constructor(private productApiService: ProductApiService) {
     this.productApiService.getProductsFromDummyJson()
@@ -29,5 +30,10 @@ export class Products {
 
   handleChangeClick(){
     
+  }
+
+  handleBuy(product: ProductModel){
+    alert(`You bought ${product.title} for $${product.price}`);
+    this.cart().push(product);
   }
 }

@@ -1,4 +1,10 @@
 
+@if(cart().length > 0) {
+    <div class="alert alert-success" role="alert">
+        You have {{cart().length}} items in your cart!
+    </div>
+}
+
 @if(products().length === 0) {
     <div class="spinner-border text-success" role="status">
         <span class="sr-only"></span>
@@ -8,7 +14,7 @@
 <section class="products-container">
    @for (product of products(); track product.id) 
    {
-        <app-product [product]="product"/>
+        <app-product [product]="product" (buy)="handleBuy($event)"/>
    }
 </section>
 
