@@ -8,14 +8,7 @@
 <section class="products-container">
    @for (product of products(); track product.id) 
    {
-        <div class="card" style="width: 18rem;">
-        <img class="card-img-top" [src]="product.thumbnail" alt="Card image cap">
-        <div class="card-body">
-            <h5 class="card-title">{{product.title}}</h5>
-            <p class="card-text">{{product.description}}</p>
-            <a href="#" class="btn btn-primary">Buy for ${{product.price}}</a>
-        </div>
-        </div>
+        <app-product [product]="product"/>
    }
 </section>
 

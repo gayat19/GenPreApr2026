@@ -1,10 +1,11 @@
 import { Component, signal } from '@angular/core';
 import { ProductModel } from '../models/product.model';
 import { ProductApiService } from '../services/product.api.service';
+import { Product } from "../product/product";
 
 @Component({
   selector: 'app-products',
-  imports: [],
+  imports: [Product],
   templateUrl: './products.html',
   styleUrl: './products.css',
 })
