@@ -10,6 +10,7 @@ import { ActivatedRoute } from '@angular/router';
 export class Transaction {
   fromaccountNumber: string = '';
   constructor(private activeRoute:ActivatedRoute){
-    this.fromaccountNumber = this.activeRoute.snapshot.params['accNum'];
+   //this.fromaccountNumber = this.activeRoute.snapshot.params['accNum'];
+   this.fromaccountNumber = history.state.accNum || '';
   } 
 }

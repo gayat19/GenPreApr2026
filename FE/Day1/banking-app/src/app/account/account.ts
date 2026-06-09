@@ -43,7 +43,8 @@ export class Account {
   }
 
   handleSendMoneyClick(){
-    this.router.navigate(['/account/transaction/'+this.accountDetails.accountNumber]);
+    // this.router.navigate(['/account/transaction/'+this.accountDetails.accountNumber]);
+      this.router.navigate(['/account/transaction'],{state:{accNum:this.accountDetails.accountNumber}});
   }
 
   // getAccountDetails(accNumber:string){

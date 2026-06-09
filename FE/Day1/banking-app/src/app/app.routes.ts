@@ -8,7 +8,8 @@ export const routes: Routes = [
     {path:'',component:Login},
     {path:'home',component:Customers},
     {path:'account',component:Account,children:[
-        {path:'transaction/:accNum',component:Transaction}
+        // {path:'transaction/:accNum',component:Transaction}
+        {path:'transaction',component:Transaction}
     ]},
     {path:'products',loadComponent:()=>import('./products/products').then(m=>m.Products)},
     
