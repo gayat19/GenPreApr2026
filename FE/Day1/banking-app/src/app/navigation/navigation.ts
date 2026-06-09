@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { isLoggedIn, logout } from '../rxjs/auth.operator';
 
 @Component({
   selector: 'app-navigation',
@@ -7,4 +8,11 @@ import { RouterLink } from '@angular/router';
   templateUrl: './navigation.html',
   styleUrl: './navigation.css',
 })
-export class Navigation {}
+export class Navigation {
+
+
+  logout() {
+    logout();
+    
+  }
+}

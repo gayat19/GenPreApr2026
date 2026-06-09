@@ -16,7 +16,7 @@ export class App {
   constructor() {
     usernameSubject.subscribe({
       next:(un)=>{
-        this.username.set(un);
+        this.username.set(un?un:'Guest');
       }
     })
   }
