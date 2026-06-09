@@ -4,6 +4,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BankingApiService } from '../services/bankingapi.service';
 import { changeUsername } from '../rxjs/auth.operator';
 import { form, minLength, required, FormField } from '@angular/forms/signals';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -15,7 +16,9 @@ import { form, minLength, required, FormField } from '@angular/forms/signals';
 export class Login {
   loginModel = signal(new LoginModel());
   progress = signal(false);
-  constructor(private bankingApiService: BankingApiService) {
+  constructor(private bankingApiService: BankingApiService,
+              private router:Router
+  ) {
   }
   loginForm = form(this.loginModel,(path)=>{
     required(path.username, {message:"Username is required"});
@@ -37,6 +40,7 @@ export class Login {
         alert("Login successful!")
         this.progress.set(false);
         changeUsername();
+        this.router.navigate(['/home']);
       },
       error: (error) => {
         console.error("Login failed", error);

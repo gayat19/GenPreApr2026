@@ -1,21 +1,24 @@
 import { Component } from '@angular/core';
 import { BankingApiService } from '../services/bankingapi.service';
-import { debounceTime, distinctUntilChanged, Observable, of, Subject, switchMap } from 'rxjs';
+import { debounceTime, distinctUntilChanged,  of, Subject, switchMap } from 'rxjs';
 import { FormsModule } from '@angular/forms';
+import { Router, RouterOutlet } from '@angular/router';
+
 
 @Component({
   selector: 'app-account',
-  imports: [FormsModule],
+  imports: [FormsModule, RouterOutlet],
   templateUrl: './account.html',
   styleUrl: './account.css',
 })
 export class Account {
   
    searchAccountNumber: string = '';
+    accountDetails: any = null;
 
   private searchSubject = new Subject<string>();
   
-  constructor(private bankingApiService: BankingApiService) {
+  constructor(private bankingApiService: BankingApiService, private router: Router) {
     this.searchSubject.pipe(
       debounceTime(500),
       distinctUntilChanged(),
@@ -28,6 +31,7 @@ export class Account {
       ).subscribe({
       next: (response:any) => {
         console.log("Account details", response);
+        this.accountDetails = response;
         
       },
       error: (error) => {
@@ -36,6 +40,10 @@ export class Account {
       }
     }
     )
+  }
+
+  handleSendMoneyClick(){
+    this.router.navigate(['/account/transaction/'+this.accountDetails.accountNumber]);
   }
 
   // getAccountDetails(accNumber:string){

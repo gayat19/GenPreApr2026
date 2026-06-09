@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Corp\\Genspark\\Presidio\\2026\\Participants\\Day19\\BankingAPISolution\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{6134702D-9887-4B53-9983-ABFCA004AF9E}|BankingAPI\\BankingAPI.csproj|c:\\corp\\genspark\\presidio\\2026\\participants\\day19\\bankingapisolution\\bankingapi\\models\\dtos\\loginresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6134702D-9887-4B53-9983-ABFCA004AF9E}|BankingAPI\\BankingAPI.csproj|solutionrelative:bankingapi\\models\\dtos\\loginresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{6134702D-9887-4B53-9983-ABFCA004AF9E}|BankingAPI\\BankingAPI.csproj|c:\\corp\\genspark\\presidio\\2026\\participants\\day19\\bankingapisolution\\bankingapi\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6134702D-9887-4B53-9983-ABFCA004AF9E}|BankingAPI\\BankingAPI.csproj|solutionrelative:bankingapi\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -34,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,7 +50,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "LoginResponse.cs",
+              "DocumentMoniker": "C:\\Corp\\Genspark\\Presidio\\2026\\Participants\\Day19\\BankingAPISolution\\BankingAPI\\Models\\DTOs\\LoginResponse.cs",
+              "RelativeDocumentMoniker": "BankingAPI\\Models\\DTOs\\LoginResponse.cs",
+              "ToolTip": "C:\\Corp\\Genspark\\Presidio\\2026\\Participants\\Day19\\BankingAPISolution\\BankingAPI\\Models\\DTOs\\LoginResponse.cs",
+              "RelativeToolTip": "BankingAPI\\Models\\DTOs\\LoginResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-08T05:04:59.718Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "GetAccountResponse.cs",
               "DocumentMoniker": "C:\\Corp\\Genspark\\Presidio\\2026\\Participants\\Day19\\BankingAPISolution\\BankingAPI\\Models\\DTOs\\GetAccountResponse.cs",
               "RelativeDocumentMoniker": "BankingAPI\\Models\\DTOs\\GetAccountResponse.cs",
@@ -58,7 +75,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "AccountController.cs",
               "DocumentMoniker": "C:\\Corp\\Genspark\\Presidio\\2026\\Participants\\Day19\\BankingAPISolution\\BankingAPI\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "BankingAPI\\Controllers\\AccountController.cs",
@@ -66,12 +83,11 @@
               "RelativeToolTip": "BankingAPI\\Controllers\\AccountController.cs",
               "ViewState": "AgIAABgAAAAAAAAAAAAYwB4AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-03T04:21:20.469Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-03T04:21:20.469Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "LoginRequest.cs",
               "DocumentMoniker": "C:\\Corp\\Genspark\\Presidio\\2026\\Participants\\Day19\\BankingAPISolution\\BankingAPI\\Models\\DTOs\\LoginRequest.cs",
               "RelativeDocumentMoniker": "BankingAPI\\Models\\DTOs\\LoginRequest.cs",
@@ -83,7 +99,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "RegisterUserRequest.cs",
               "DocumentMoniker": "C:\\Corp\\Genspark\\Presidio\\2026\\Participants\\Day19\\BankingAPISolution\\BankingAPI\\Models\\DTOs\\RegisterUserRequest.cs",
               "RelativeDocumentMoniker": "BankingAPI\\Models\\DTOs\\RegisterUserRequest.cs",
@@ -95,7 +111,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "AuthenticationController.cs",
               "DocumentMoniker": "C:\\Corp\\Genspark\\Presidio\\2026\\Participants\\Day19\\BankingAPISolution\\BankingAPI\\Controllers\\AuthenticationController.cs",
               "RelativeDocumentMoniker": "BankingAPI\\Controllers\\AuthenticationController.cs",
@@ -107,7 +123,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Corp\\Genspark\\Presidio\\2026\\Participants\\Day19\\BankingAPISolution\\BankingAPI\\Program.cs",
               "RelativeDocumentMoniker": "BankingAPI\\Program.cs",
