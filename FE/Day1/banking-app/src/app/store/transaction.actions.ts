@@ -1,4 +1,4 @@
-import { createAction } from "@ngrx/store";
+import { createAction, props } from "@ngrx/store";
 import { TransactionFilter } from "../models/transaction.filter.model";
 import { TransactionList } from "../models/transaction.list.model";
 
@@ -12,12 +12,16 @@ export const clearTransactionFilter = createAction(
   "[TransactionList] Clear Filter"
 );
 
+export const loadTransaction = createAction(
+  "[TransactionList] Load"
+);
+
 export const loadTransactionSuccess = createAction(
   "[TransactionList] Load Success",
-    (transactionList: TransactionList) => ({ transactionList })
+    props<{ transactionList: TransactionList }>()
 );
 
 export const loadTransactionFailure = createAction(
   "[TransactionList] Load Failure",
-    (error: string) => ({ error })
+    props<{ error: string }>()
 );

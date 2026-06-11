@@ -1,7 +1,7 @@
 import { createReducer, on } from "@ngrx/store";
 import { TransactionFilter } from "../models/transaction.filter.model";
 import { TransactionList } from "../models/transaction.list.model";
-import { clearTransactionFilter, loadTransactionFailure, loadTransactionSuccess, updateTransactionFilter } from "./transaction.actions";
+import { clearTransactionFilter, loadTransaction, loadTransactionFailure, loadTransactionSuccess, updateTransactionFilter } from "./transaction.actions";
 
 
 
@@ -45,7 +45,12 @@ export const transactionReducer = createReducer(
         filter: initialTransactionFilter,
     })),
 
-    
+    on(loadTransaction, (state) => ({
+        ...state,
+        loading: true,
+        error: null
+    })),
+
     on(loadTransactionSuccess, (state, { transactionList }) => ({
         ...state,
         transactionList,

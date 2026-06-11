@@ -60,7 +60,7 @@
               "RelativeDocumentMoniker": "BankingAPI\\Models\\DTOs\\TransactionQueryRequest.cs",
               "ToolTip": "C:\\Corp\\Genspark\\Presidio\\2026\\Participants\\Day19\\BankingAPISolution\\BankingAPI\\Models\\DTOs\\TransactionQueryRequest.cs",
               "RelativeToolTip": "BankingAPI\\Models\\DTOs\\TransactionQueryRequest.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAA1wAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAA3wAwAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-11T04:25:46.785Z",
               "EditorCaption": ""
@@ -75,8 +75,7 @@
               "RelativeToolTip": "BankingAPI\\Models\\DTOs\\LoginResponse.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-08T05:04:59.718Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-08T05:04:59.718Z"
             },
             {
               "$type": "Document",
