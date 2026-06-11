@@ -1,0 +1,20 @@
+<div class ="filter-box">
+    <h3>Filter Transactions</h3>
+
+    <input type="text" 
+    placeholder="account Number" 
+    [(ngModel)]="filter().fromAccountNumber" (input)="onSearchChange()">
+
+    <br/>
+
+    <input type="number"
+    [(ngModel)]="filter().minAmount"
+    placeholder="min amount" (input)="onSearchChange()">
+
+    <input type="number"
+    [(ngModel)]="filter().maxAmount"
+    placeholder="max amount" (input)="onSearchChange()">
+
+    <button class="btn btn-danger" (click)="onClearFilter()">Clear Filter</button>
+
+</div>

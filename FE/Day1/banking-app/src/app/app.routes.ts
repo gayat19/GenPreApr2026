@@ -4,10 +4,11 @@ import { Account } from './account/account';
 import { Transaction } from './transaction/transaction';
 import { Login } from './login/login';
 import { authGuard } from './guards/authGuard';
-import { AccountHome } from './account-home/account-home';
+import { TransactionHome } from './transaction-home/transaction-home';
+
 
 export const routes: Routes = [
-     {path:'',component:AccountHome},
+     {path:'',component:TransactionHome},
     {path:'login',component:Login},
     {path:'home',component:Customers},
    

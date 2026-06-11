@@ -1,11 +1,11 @@
 export class TransactionFilter {
-    fromAccountNumber:string|undefined;
-    minAmount:number|undefined;
-    maxAmount:number|undefined;
-    fromDate:Date|undefined;
-    toDate:Date|undefined;
-    pageNumber:number = 1;
-    pageSize:number= 10;  
-    sortBy:string = "TransactionDate";
-    sortDirection:string = "desc";
+    public fromAccountNumber:string|undefined;
+    public minAmount:number|undefined;
+    public maxAmount:number|undefined;
+    public fromDate:Date|undefined;
+    public toDate:Date|undefined;
+    public pageNumber:number = 1;
+    public pageSize:number= 10;  
+    public sortBy:string = "TransactionDate";
+    public sortDirection:string = "desc";
 }

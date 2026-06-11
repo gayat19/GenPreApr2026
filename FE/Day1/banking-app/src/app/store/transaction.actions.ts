@@ -4,7 +4,7 @@ import { TransactionList } from "../models/transaction.list.model";
 
 export const updateTransactionFilter = createAction(
   "[TransactionList] Update Filter",
-  (filter: TransactionFilter) => ({ filter })
+  props<{ filter: TransactionFilter }>()
 );
 
 
