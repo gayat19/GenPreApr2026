@@ -1,23 +1,20 @@
-import { Injectable } from "@angular/core";
+import { inject, Injectable } from "@angular/core";
 import { Actions, createEffect, ofType } from "@ngrx/effects";
 import { clearTransactionFilter, loadTransaction, loadTransactionFailure, 
     loadTransactionSuccess, 
     updateTransactionFilter} from "./transaction.actions";
 import { catchError, debounceTime, map, of, switchMap, withLatestFrom } from "rxjs";
-import { ActionType, Store } from "@ngrx/store";
-import { selectTransactionList, slectTransactionFilter } from "./transaction.selector";
+import { Store } from "@ngrx/store";
+import { slectTransactionFilter } from "./transaction.selector";
 import { TransactionService } from "../services/transaction.service";
 
 
 @Injectable()
 export class TransactionEffects {
+    private actions$ = inject(Actions);
+    private store = inject(Store);
+    private transactionService = inject(TransactionService);
 
-    constructor(
-        private actions$: Actions,
-        private store: Store,
-        private transactionService: TransactionService
-
-    ){}
 loadTransactionListOnFilterChange$ = createEffect(()=>{
     return this.actions$.pipe(
         ofType(updateTransactionFilter,clearTransactionFilter),

@@ -3,17 +3,20 @@
 
     <input type="text" 
     placeholder="account Number" 
-    [(ngModel)]="filter().fromAccountNumber" (input)="onSearchChange()">
+    [ngModel]="filter().fromAccountNumber"
+    (ngModelChange)="updateFromAccountNumber($event)">
 
     <br/>
 
     <input type="number"
-    [(ngModel)]="filter().minAmount"
-    placeholder="min amount" (input)="onSearchChange()">
+    [ngModel]="filter().minAmount"
+    placeholder="min amount"
+    (ngModelChange)="updateMinAmount($event)">
 
     <input type="number"
-    [(ngModel)]="filter().maxAmount"
-    placeholder="max amount" (input)="onSearchChange()">
+    [ngModel]="filter().maxAmount"
+    placeholder="max amount"
+    (ngModelChange)="updateMaxAmount($event)">
 
     <button class="btn btn-danger" (click)="onClearFilter()">Clear Filter</button>
 

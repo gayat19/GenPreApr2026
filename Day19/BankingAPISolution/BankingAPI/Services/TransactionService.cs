@@ -6,6 +6,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 
 namespace BankingAPI.Services
 {
@@ -24,7 +25,7 @@ namespace BankingAPI.Services
             if (account == null)
                 throw new ArgumentException("Destination account not found: " + request.ToAccountNumber);
 
-            using var dbTxn = await _context.Database.BeginTransactionAsync();
+            await using var dbTxn = await _context.Database.BeginTransactionAsync();
             try
             {
                 // update balance
@@ -35,8 +36,8 @@ namespace BankingAPI.Services
                 // create transaction record
                 var tx = new Transaction
                 {
-                    TransactionDate = DateTime.Today,
-                    FromAccountNumber = null,
+                    TransactionDate = DateTime.UtcNow,
+                    FromAccountNumber = string.Empty,
                     ToAccountNumber = account.AccountNumber,
                     Amount = request.Amount,
                     Status = "Success"
@@ -47,7 +48,7 @@ namespace BankingAPI.Services
 
                 await dbTxn.CommitAsync();
 
-                return await Map(created.Entity);
+                return Map(created.Entity);
             }
             catch
             {
@@ -66,7 +67,7 @@ namespace BankingAPI.Services
             if (account.Balance < amt)
                 throw new InvalidOperationException("Insufficient funds");
 
-            using var dbTxn = await _context.Database.BeginTransactionAsync();
+            await using var dbTxn = await _context.Database.BeginTransactionAsync();
             try
             {
                 account.Balance -= amt;
@@ -75,9 +76,9 @@ namespace BankingAPI.Services
 
                 var tx = new Transaction
                 {
-                    TransactionDate = DateTime.Today,
+                    TransactionDate = DateTime.UtcNow,
                     FromAccountNumber = account.AccountNumber,
-                    ToAccountNumber = null,
+                    ToAccountNumber = string.Empty,
                     Amount = request.Amount,
                     Status = "Success"
                 };
@@ -85,9 +86,9 @@ namespace BankingAPI.Services
                 var created = _context.Transactions.Add(tx);
                 await _context.SaveChangesAsync();
 
-                dbTxn.Commit();
+                await dbTxn.CommitAsync();
 
-                return await Map(created.Entity);
+                return Map(created.Entity);
             }
             catch
             {
@@ -113,7 +114,7 @@ namespace BankingAPI.Services
             if (from.Balance < amt)
                 throw new InvalidOperationException("Insufficient funds in source account");
 
-            using var dbTxn = await _context.Database.BeginTransactionAsync();
+            await using var dbTxn = await _context.Database.BeginTransactionAsync();
             try
             {
                 from.Balance -= amt;
@@ -126,10 +127,9 @@ namespace BankingAPI.Services
                 // If after transfer source balance is below 1000, rollback entire transaction
                 if (from.Balance < 1000f)
                 {
-                    // create a failed transaction record before rollback (optional) or simply rollback
                     var failedTx = new Transaction
                     {
-                        TransactionDate = DateTime.Today,
+                        TransactionDate = DateTime.UtcNow,
                         FromAccountNumber = from.AccountNumber,
                         ToAccountNumber = to.AccountNumber,
                         Amount = request.Amount,
@@ -145,7 +145,7 @@ namespace BankingAPI.Services
 
                 var tx = new Transaction
                 {
-                    TransactionDate = DateTime.Now,
+                    TransactionDate = DateTime.UtcNow,
                     FromAccountNumber = from.AccountNumber,
                     ToAccountNumber = to.AccountNumber,
                     Amount = request.Amount,
@@ -155,21 +155,20 @@ namespace BankingAPI.Services
                 var created = _context.Transactions.Add(tx);
                 await _context.SaveChangesAsync();
 
-                dbTxn.Commit();
+                await dbTxn.CommitAsync();
 
-                return await Map(created.Entity);
+                return Map(created.Entity);
             }
             catch
             {
-                // ensure rollback on any exception
-                try { await dbTxn.RollbackAsync(); } catch { /* ignore errors on rollback */ }
+                try { await dbTxn.RollbackAsync(); } catch { /* ignore rollback errors */ }
                 throw;
             }
         }
 
         public async Task<TransactionQueryResponse> QueryTransactions(TransactionQueryRequest request)
         {
-            var q =  _context.Transactions.AsQueryable();
+            var q = _context.Transactions.AsQueryable();
 
             // filters
             if (!string.IsNullOrWhiteSpace(request.FromAccountNumber))
@@ -210,22 +209,22 @@ namespace BankingAPI.Services
             };
 
             // pagination
-            var totalCount = q.Count();
+            var totalCount = await q.CountAsync();
             var pageSize = Math.Max(1, request.PageSize);
             var pageNumber = Math.Max(1, request.PageNumber);
             var totalPages = (int)Math.Ceiling(totalCount / (double)pageSize);
 
-            var items = q
-                .Skip((pageNumber - 1) * pageSize)
+            var itemsEntities = await q
+                        .Skip((pageNumber - 1) * pageSize)
                 .Take(pageSize)
                 .AsNoTracking()
-                .ToList()
-                .Select(Map)
-                .ToList();
+                .ToListAsync();
+
+            var items = itemsEntities.Select(Map).ToList();
 
             return new TransactionQueryResponse
             {
-                Items = (IEnumerable<TransactionResponse>)items,
+                Items = items,
                 PageNumber = pageNumber,
                 PageSize = pageSize,
                 TotalCount = totalCount,
@@ -237,19 +236,19 @@ namespace BankingAPI.Services
         {
             var tx = await _context.Transactions.FindAsync(referenceNumber);
             if (tx == null) return null;
-            return await Map(tx);
+            return Map(tx);
         }
 
-        private async Task<TransactionResponse> Map(Transaction t)
+        private TransactionResponse Map(Transaction t)
         {
             return new TransactionResponse
             {
                 TransactionReferenceNumber = t.TransactionReferenceNumber,
                 TransactionDate = t.TransactionDate,
-                FromAccountNumber = t.FromAccountNumber,
-                ToAccountNumber = t.ToAccountNumber,
+                FromAccountNumber = t.FromAccountNumber ?? string.Empty,
+                ToAccountNumber = t.ToAccountNumber ?? string.Empty,
                 Amount = t.Amount,
-                Status = t.Status
+                Status = t.Status ?? string.Empty
             };
         }
     }

@@ -31,3 +31,857 @@
 DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
 2026-06-11 11:43:18.246 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
 2026-06-11 11:43:18.250 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7163/api/Banking/transactions/query - 401 0 null 261.9119ms
+2026-06-11 12:55:00.992 +05:30 [INF] User profile is available. Using 'C:\Users\Gayathri Mahadevan\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-06-11 12:55:02.247 +05:30 [INF] Now listening on: https://localhost:7163
+2026-06-11 12:55:02.253 +05:30 [INF] Now listening on: http://localhost:5091
+2026-06-11 12:55:02.396 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-11 12:55:02.402 +05:30 [INF] Hosting environment: Development
+2026-06-11 12:55:02.408 +05:30 [INF] Content root path: C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingAPI
+2026-06-11 12:55:03.507 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7163/swagger/index.html - null null
+2026-06-11 12:55:04.533 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7163/swagger/index.html - 200 null text/html;charset=utf-8 1080.0892ms
+2026-06-11 12:55:04.644 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7163/_vs/browserLink - null null
+2026-06-11 12:55:04.644 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7163/_framework/aspnetcore-browser-refresh.js - null null
+2026-06-11 12:55:04.980 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7163/_framework/aspnetcore-browser-refresh.js - 200 16505 application/javascript; charset=utf-8 360.2297ms
+2026-06-11 12:55:05.274 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7163/_vs/browserLink - 200 null text/javascript; charset=UTF-8 630.2002ms
+2026-06-11 12:55:05.393 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7163/swagger/v1/swagger.json - null null
+2026-06-11 12:55:05.907 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7163/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 518.5461ms
+2026-06-11 12:55:24.036 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7163/api/Authentication/Login - null null
+2026-06-11 12:55:24.228 +05:30 [INF] CORS policy execution successful.
+2026-06-11 12:55:24.236 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7163/api/Authentication/Login - 204 null null 200.302ms
+2026-06-11 12:55:24.241 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7163/api/Authentication/Login - application/json 43
+2026-06-11 12:55:24.271 +05:30 [INF] CORS policy execution successful.
+2026-06-11 12:55:24.292 +05:30 [INF] Executing endpoint 'BankingAPI.Controllers.AuthenticationController.CustomerLogin (BankingAPI)'
+2026-06-11 12:55:24.373 +05:30 [INF] Route matched with {action = "CustomerLogin", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BankingAPI.Models.DTOs.LoginResponse]] CustomerLogin(BankingAPI.Models.DTOs.LoginRequest) on controller BankingAPI.Controllers.AuthenticationController (BankingAPI).
+2026-06-11 12:55:25.050 +05:30 [WRN] You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-06-11 12:55:28.559 +05:30 [INF] Executed DbCommand (179ms) [Parameters=[@__p_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Username", u."HashKey", u."Password", u."Role"
+FROM "Users" AS u
+WHERE u."Username" = @__p_0
+LIMIT 1
+2026-06-11 12:55:28.859 +05:30 [INF] Executed DbCommand (16ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT c."Id", c."DateOfBirth", c."Email", c."Name", c."Phone", c."Status", c."Username"
+FROM "Customers" AS c
+2026-06-11 12:55:29.042 +05:30 [INF] Executing OkObjectResult, writing value of type 'BankingAPI.Models.DTOs.LoginResponse'.
+2026-06-11 12:55:29.062 +05:30 [INF] Executed action BankingAPI.Controllers.AuthenticationController.CustomerLogin (BankingAPI) in 4663.9732ms
+2026-06-11 12:55:29.070 +05:30 [INF] Executed endpoint 'BankingAPI.Controllers.AuthenticationController.CustomerLogin (BankingAPI)'
+2026-06-11 12:55:29.094 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7163/api/Authentication/Login - 200 null application/json; charset=utf-8 4853.8995ms
+2026-06-11 13:13:23.107 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7163/api/Banking/transactions/query - null null
+2026-06-11 13:13:23.148 +05:30 [INF] CORS policy execution successful.
+2026-06-11 13:13:23.156 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7163/api/Banking/transactions/query - 204 null null 49.2557ms
+2026-06-11 13:13:23.163 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7163/api/Banking/transactions/query - application/json 80
+2026-06-11 13:13:23.282 +05:30 [INF] CORS policy execution successful.
+2026-06-11 13:13:23.287 +05:30 [INF] Executing endpoint 'BankingAPI.Controllers.BankingController.QueryTransactions (BankingAPI)'
+2026-06-11 13:13:23.302 +05:30 [INF] Route matched with {action = "QueryTransactions", controller = "Banking"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BankingAPI.Models.DTOs.TransactionQueryResponse]] QueryTransactions(BankingAPI.Models.DTOs.TransactionQueryRequest) on controller BankingAPI.Controllers.BankingController (BankingAPI).
+2026-06-11 13:13:23.531 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7163/api/Banking/transactions/query - application/json 80
+2026-06-11 13:13:23.549 +05:30 [INF] CORS policy execution successful.
+2026-06-11 13:13:23.555 +05:30 [INF] Executing endpoint 'BankingAPI.Controllers.BankingController.QueryTransactions (BankingAPI)'
+2026-06-11 13:13:23.561 +05:30 [INF] Route matched with {action = "QueryTransactions", controller = "Banking"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BankingAPI.Models.DTOs.TransactionQueryResponse]] QueryTransactions(BankingAPI.Models.DTOs.TransactionQueryRequest) on controller BankingAPI.Controllers.BankingController (BankingAPI).
+2026-06-11 13:13:23.604 +05:30 [INF] Executed DbCommand (55ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM "Transactions" AS t
+2026-06-11 13:13:23.643 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM "Transactions" AS t
+2026-06-11 13:13:23.660 +05:30 [INF] Executed DbCommand (11ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT t."TransactionReferenceNumber", t."Amount", t."FromAccountNumber", t."Status", t."ToAccountNumber", t."TransactionDate"
+FROM "Transactions" AS t
+ORDER BY t."TransactionDate" DESC
+LIMIT @__p_1 OFFSET @__p_0
+2026-06-11 13:13:23.660 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT t."TransactionReferenceNumber", t."Amount", t."FromAccountNumber", t."Status", t."ToAccountNumber", t."TransactionDate"
+FROM "Transactions" AS t
+ORDER BY t."TransactionDate" DESC
+LIMIT @__p_1 OFFSET @__p_0
+2026-06-11 13:13:24.128 +05:30 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2026-06-11 13:13:24.128 +05:30 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2026-06-11 13:13:24.139 +05:30 [INF] Executed action BankingAPI.Controllers.BankingController.QueryTransactions (BankingAPI) in 568.4489ms
+2026-06-11 13:13:24.141 +05:30 [INF] Executed action BankingAPI.Controllers.BankingController.QueryTransactions (BankingAPI) in 831.7028ms
+2026-06-11 13:13:24.148 +05:30 [INF] Executed endpoint 'BankingAPI.Controllers.BankingController.QueryTransactions (BankingAPI)'
+2026-06-11 13:13:24.151 +05:30 [INF] Executed endpoint 'BankingAPI.Controllers.BankingController.QueryTransactions (BankingAPI)'
+2026-06-11 13:13:24.156 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7163/api/Banking/transactions/query - 500 null text/plain; charset=utf-8 625.2447ms
+2026-06-11 13:13:24.157 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7163/api/Banking/transactions/query - 500 null text/plain; charset=utf-8 993.6953ms
+2026-06-11 13:16:33.127 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7163/api/Banking/transactions/query - null null
+2026-06-11 13:16:33.141 +05:30 [INF] CORS policy execution successful.
+2026-06-11 13:16:33.145 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7163/api/Banking/transactions/query - 204 null null 17.8029ms
+2026-06-11 13:16:33.148 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7163/api/Banking/transactions/query - application/json 80
+2026-06-11 13:16:33.165 +05:30 [INF] CORS policy execution successful.
+2026-06-11 13:16:33.168 +05:30 [INF] Executing endpoint 'BankingAPI.Controllers.BankingController.QueryTransactions (BankingAPI)'
+2026-06-11 13:16:33.170 +05:30 [INF] Route matched with {action = "QueryTransactions", controller = "Banking"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BankingAPI.Models.DTOs.TransactionQueryResponse]] QueryTransactions(BankingAPI.Models.DTOs.TransactionQueryRequest) on controller BankingAPI.Controllers.BankingController (BankingAPI).
+2026-06-11 13:16:33.185 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM "Transactions" AS t
+2026-06-11 13:16:33.197 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT t."TransactionReferenceNumber", t."Amount", t."FromAccountNumber", t."Status", t."ToAccountNumber", t."TransactionDate"
+FROM "Transactions" AS t
+ORDER BY t."TransactionDate" DESC
+LIMIT @__p_1 OFFSET @__p_0
+2026-06-11 13:16:33.329 +05:30 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2026-06-11 13:16:33.332 +05:30 [INF] Executed action BankingAPI.Controllers.BankingController.QueryTransactions (BankingAPI) in 155.323ms
+2026-06-11 13:16:33.336 +05:30 [INF] Executed endpoint 'BankingAPI.Controllers.BankingController.QueryTransactions (BankingAPI)'
+2026-06-11 13:16:33.340 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7163/api/Banking/transactions/query - 500 null text/plain; charset=utf-8 192.506ms
+2026-06-11 13:16:56.887 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7163/api/Banking/transactions/query - null null
+2026-06-11 13:16:56.895 +05:30 [INF] CORS policy execution successful.
+2026-06-11 13:16:56.898 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7163/api/Banking/transactions/query - 204 null null 11.4588ms
+2026-06-11 13:16:56.901 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7163/api/Banking/transactions/query - application/json 80
+2026-06-11 13:16:56.915 +05:30 [INF] CORS policy execution successful.
+2026-06-11 13:16:56.919 +05:30 [INF] Executing endpoint 'BankingAPI.Controllers.BankingController.QueryTransactions (BankingAPI)'
+2026-06-11 13:16:56.922 +05:30 [INF] Route matched with {action = "QueryTransactions", controller = "Banking"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BankingAPI.Models.DTOs.TransactionQueryResponse]] QueryTransactions(BankingAPI.Models.DTOs.TransactionQueryRequest) on controller BankingAPI.Controllers.BankingController (BankingAPI).
+2026-06-11 13:16:56.933 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM "Transactions" AS t
+2026-06-11 13:16:56.945 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT t."TransactionReferenceNumber", t."Amount", t."FromAccountNumber", t."Status", t."ToAccountNumber", t."TransactionDate"
+FROM "Transactions" AS t
+ORDER BY t."TransactionDate" DESC
+LIMIT @__p_1 OFFSET @__p_0
+2026-06-11 13:16:57.093 +05:30 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2026-06-11 13:16:57.100 +05:30 [INF] Executed action BankingAPI.Controllers.BankingController.QueryTransactions (BankingAPI) in 170.3207ms
+2026-06-11 13:16:57.106 +05:30 [INF] Executed endpoint 'BankingAPI.Controllers.BankingController.QueryTransactions (BankingAPI)'
+2026-06-11 13:16:57.110 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7163/api/Banking/transactions/query - 500 null text/plain; charset=utf-8 208.6998ms
+2026-06-11 13:16:57.489 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7163/api/Banking/transactions/query - application/json 80
+2026-06-11 13:16:57.505 +05:30 [INF] CORS policy execution successful.
+2026-06-11 13:16:57.538 +05:30 [INF] Executing endpoint 'BankingAPI.Controllers.BankingController.QueryTransactions (BankingAPI)'
+2026-06-11 13:16:57.541 +05:30 [INF] Route matched with {action = "QueryTransactions", controller = "Banking"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BankingAPI.Models.DTOs.TransactionQueryResponse]] QueryTransactions(BankingAPI.Models.DTOs.TransactionQueryRequest) on controller BankingAPI.Controllers.BankingController (BankingAPI).
+2026-06-11 13:16:57.549 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM "Transactions" AS t
+2026-06-11 13:16:57.564 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT t."TransactionReferenceNumber", t."Amount", t."FromAccountNumber", t."Status", t."ToAccountNumber", t."TransactionDate"
+FROM "Transactions" AS t
+ORDER BY t."TransactionDate" DESC
+LIMIT @__p_1 OFFSET @__p_0
+2026-06-11 13:16:57.650 +05:30 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2026-06-11 13:16:57.654 +05:30 [INF] Executed action BankingAPI.Controllers.BankingController.QueryTransactions (BankingAPI) in 107.4657ms
+2026-06-11 13:16:57.658 +05:30 [INF] Executed endpoint 'BankingAPI.Controllers.BankingController.QueryTransactions (BankingAPI)'
+2026-06-11 13:16:57.660 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7163/api/Banking/transactions/query - 500 null text/plain; charset=utf-8 171.6232ms
+2026-06-11 13:20:23.784 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7163/api/Banking/transactions/query - null null
+2026-06-11 13:20:23.801 +05:30 [INF] CORS policy execution successful.
+2026-06-11 13:20:23.804 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7163/api/Banking/transactions/query - 204 null null 20.3983ms
+2026-06-11 13:20:23.810 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7163/api/Banking/transactions/query - application/json 80
+2026-06-11 13:20:23.835 +05:30 [INF] CORS policy execution successful.
+2026-06-11 13:20:23.838 +05:30 [INF] Executing endpoint 'BankingAPI.Controllers.BankingController.QueryTransactions (BankingAPI)'
+2026-06-11 13:20:23.841 +05:30 [INF] Route matched with {action = "QueryTransactions", controller = "Banking"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BankingAPI.Models.DTOs.TransactionQueryResponse]] QueryTransactions(BankingAPI.Models.DTOs.TransactionQueryRequest) on controller BankingAPI.Controllers.BankingController (BankingAPI).
+2026-06-11 13:20:23.901 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM "Transactions" AS t
+2026-06-11 13:20:23.909 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT t."TransactionReferenceNumber", t."Amount", t."FromAccountNumber", t."Status", t."ToAccountNumber", t."TransactionDate"
+FROM "Transactions" AS t
+ORDER BY t."TransactionDate" DESC
+LIMIT @__p_1 OFFSET @__p_0
+2026-06-11 13:20:24.000 +05:30 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2026-06-11 13:20:24.007 +05:30 [INF] Executed action BankingAPI.Controllers.BankingController.QueryTransactions (BankingAPI) in 147.6174ms
+2026-06-11 13:20:24.011 +05:30 [INF] Executed endpoint 'BankingAPI.Controllers.BankingController.QueryTransactions (BankingAPI)'
+2026-06-11 13:20:24.017 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7163/api/Banking/transactions/query - 500 null text/plain; charset=utf-8 207.0207ms
+2026-06-11 13:20:24.268 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7163/api/Banking/transactions/query - application/json 80
+2026-06-11 13:20:24.287 +05:30 [INF] CORS policy execution successful.
+2026-06-11 13:20:24.294 +05:30 [INF] Executing endpoint 'BankingAPI.Controllers.BankingController.QueryTransactions (BankingAPI)'
+2026-06-11 13:20:24.303 +05:30 [INF] Route matched with {action = "QueryTransactions", controller = "Banking"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BankingAPI.Models.DTOs.TransactionQueryResponse]] QueryTransactions(BankingAPI.Models.DTOs.TransactionQueryRequest) on controller BankingAPI.Controllers.BankingController (BankingAPI).
+2026-06-11 13:20:24.326 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM "Transactions" AS t
+2026-06-11 13:20:24.338 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT t."TransactionReferenceNumber", t."Amount", t."FromAccountNumber", t."Status", t."ToAccountNumber", t."TransactionDate"
+FROM "Transactions" AS t
+ORDER BY t."TransactionDate" DESC
+LIMIT @__p_1 OFFSET @__p_0
+2026-06-11 13:20:24.470 +05:30 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2026-06-11 13:20:24.478 +05:30 [INF] Executed action BankingAPI.Controllers.BankingController.QueryTransactions (BankingAPI) in 158.2981ms
+2026-06-11 13:20:24.483 +05:30 [INF] Executed endpoint 'BankingAPI.Controllers.BankingController.QueryTransactions (BankingAPI)'
+2026-06-11 13:20:24.486 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7163/api/Banking/transactions/query - 500 null text/plain; charset=utf-8 218.1479ms
+2026-06-11 13:20:32.665 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7163/api/Banking/transactions/query - null null
+2026-06-11 13:20:32.673 +05:30 [INF] CORS policy execution successful.
+2026-06-11 13:20:32.676 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7163/api/Banking/transactions/query - 204 null null 10.7283ms
+2026-06-11 13:20:32.678 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7163/api/Banking/transactions/query - application/json 80
+2026-06-11 13:20:32.692 +05:30 [INF] CORS policy execution successful.
+2026-06-11 13:20:32.696 +05:30 [INF] Executing endpoint 'BankingAPI.Controllers.BankingController.QueryTransactions (BankingAPI)'
+2026-06-11 13:20:32.698 +05:30 [INF] Route matched with {action = "QueryTransactions", controller = "Banking"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BankingAPI.Models.DTOs.TransactionQueryResponse]] QueryTransactions(BankingAPI.Models.DTOs.TransactionQueryRequest) on controller BankingAPI.Controllers.BankingController (BankingAPI).
+2026-06-11 13:20:32.709 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM "Transactions" AS t
+2026-06-11 13:20:32.719 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT t."TransactionReferenceNumber", t."Amount", t."FromAccountNumber", t."Status", t."ToAccountNumber", t."TransactionDate"
+FROM "Transactions" AS t
+ORDER BY t."TransactionDate" DESC
+LIMIT @__p_1 OFFSET @__p_0
+2026-06-11 13:20:32.853 +05:30 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2026-06-11 13:20:32.859 +05:30 [INF] Executed action BankingAPI.Controllers.BankingController.QueryTransactions (BankingAPI) in 153.2314ms
+2026-06-11 13:20:32.865 +05:30 [INF] Executed endpoint 'BankingAPI.Controllers.BankingController.QueryTransactions (BankingAPI)'
+2026-06-11 13:20:32.869 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7163/api/Banking/transactions/query - 500 null text/plain; charset=utf-8 190.7485ms
+2026-06-11 13:20:33.150 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7163/api/Banking/transactions/query - application/json 80
+2026-06-11 13:20:33.161 +05:30 [INF] CORS policy execution successful.
+2026-06-11 13:20:33.164 +05:30 [INF] Executing endpoint 'BankingAPI.Controllers.BankingController.QueryTransactions (BankingAPI)'
+2026-06-11 13:20:33.167 +05:30 [INF] Route matched with {action = "QueryTransactions", controller = "Banking"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BankingAPI.Models.DTOs.TransactionQueryResponse]] QueryTransactions(BankingAPI.Models.DTOs.TransactionQueryRequest) on controller BankingAPI.Controllers.BankingController (BankingAPI).
+2026-06-11 13:20:33.174 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM "Transactions" AS t
+2026-06-11 13:20:33.181 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT t."TransactionReferenceNumber", t."Amount", t."FromAccountNumber", t."Status", t."ToAccountNumber", t."TransactionDate"
+FROM "Transactions" AS t
+ORDER BY t."TransactionDate" DESC
+LIMIT @__p_1 OFFSET @__p_0
+2026-06-11 13:20:33.288 +05:30 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2026-06-11 13:20:33.293 +05:30 [INF] Executed action BankingAPI.Controllers.BankingController.QueryTransactions (BankingAPI) in 121.7924ms
+2026-06-11 13:20:33.298 +05:30 [INF] Executed endpoint 'BankingAPI.Controllers.BankingController.QueryTransactions (BankingAPI)'
+2026-06-11 13:20:33.303 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7163/api/Banking/transactions/query - 500 null text/plain; charset=utf-8 153.0484ms
+2026-06-11 13:20:36.280 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7163/api/Banking/transactions/query - application/json 80
+2026-06-11 13:20:36.295 +05:30 [INF] CORS policy execution successful.
+2026-06-11 13:20:36.300 +05:30 [INF] Executing endpoint 'BankingAPI.Controllers.BankingController.QueryTransactions (BankingAPI)'
+2026-06-11 13:20:36.305 +05:30 [INF] Route matched with {action = "QueryTransactions", controller = "Banking"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BankingAPI.Models.DTOs.TransactionQueryResponse]] QueryTransactions(BankingAPI.Models.DTOs.TransactionQueryRequest) on controller BankingAPI.Controllers.BankingController (BankingAPI).
+2026-06-11 13:20:36.319 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM "Transactions" AS t
+2026-06-11 13:20:36.328 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT t."TransactionReferenceNumber", t."Amount", t."FromAccountNumber", t."Status", t."ToAccountNumber", t."TransactionDate"
+FROM "Transactions" AS t
+ORDER BY t."TransactionDate" DESC
+LIMIT @__p_1 OFFSET @__p_0
+2026-06-11 13:20:36.452 +05:30 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2026-06-11 13:20:36.458 +05:30 [INF] Executed action BankingAPI.Controllers.BankingController.QueryTransactions (BankingAPI) in 143.2766ms
+2026-06-11 13:20:36.463 +05:30 [INF] Executed endpoint 'BankingAPI.Controllers.BankingController.QueryTransactions (BankingAPI)'
+2026-06-11 13:20:36.466 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7163/api/Banking/transactions/query - 500 null text/plain; charset=utf-8 187.6083ms
+2026-06-11 13:20:48.010 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7163/api/Banking/transactions/query - null null
+2026-06-11 13:20:48.018 +05:30 [INF] CORS policy execution successful.
+2026-06-11 13:20:48.020 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7163/api/Banking/transactions/query - 204 null null 10.8499ms
+2026-06-11 13:20:48.023 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7163/api/Banking/transactions/query - application/json 80
+2026-06-11 13:20:48.045 +05:30 [INF] CORS policy execution successful.
+2026-06-11 13:20:48.049 +05:30 [INF] Executing endpoint 'BankingAPI.Controllers.BankingController.QueryTransactions (BankingAPI)'
+2026-06-11 13:20:48.054 +05:30 [INF] Route matched with {action = "QueryTransactions", controller = "Banking"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BankingAPI.Models.DTOs.TransactionQueryResponse]] QueryTransactions(BankingAPI.Models.DTOs.TransactionQueryRequest) on controller BankingAPI.Controllers.BankingController (BankingAPI).
+2026-06-11 13:20:48.067 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM "Transactions" AS t
+2026-06-11 13:20:48.077 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT t."TransactionReferenceNumber", t."Amount", t."FromAccountNumber", t."Status", t."ToAccountNumber", t."TransactionDate"
+FROM "Transactions" AS t
+ORDER BY t."TransactionDate" DESC
+LIMIT @__p_1 OFFSET @__p_0
+2026-06-11 13:20:48.178 +05:30 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2026-06-11 13:20:48.184 +05:30 [INF] Executed action BankingAPI.Controllers.BankingController.QueryTransactions (BankingAPI) in 121.6873ms
+2026-06-11 13:20:48.188 +05:30 [INF] Executed endpoint 'BankingAPI.Controllers.BankingController.QueryTransactions (BankingAPI)'
+2026-06-11 13:20:48.191 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7163/api/Banking/transactions/query - 500 null text/plain; charset=utf-8 168.0336ms
+2026-06-11 13:20:48.754 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7163/api/Banking/transactions/query - application/json 80
+2026-06-11 13:20:48.768 +05:30 [INF] CORS policy execution successful.
+2026-06-11 13:20:48.773 +05:30 [INF] Executing endpoint 'BankingAPI.Controllers.BankingController.QueryTransactions (BankingAPI)'
+2026-06-11 13:20:48.777 +05:30 [INF] Route matched with {action = "QueryTransactions", controller = "Banking"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BankingAPI.Models.DTOs.TransactionQueryResponse]] QueryTransactions(BankingAPI.Models.DTOs.TransactionQueryRequest) on controller BankingAPI.Controllers.BankingController (BankingAPI).
+2026-06-11 13:20:48.786 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM "Transactions" AS t
+2026-06-11 13:20:48.799 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT t."TransactionReferenceNumber", t."Amount", t."FromAccountNumber", t."Status", t."ToAccountNumber", t."TransactionDate"
+FROM "Transactions" AS t
+ORDER BY t."TransactionDate" DESC
+LIMIT @__p_1 OFFSET @__p_0
+2026-06-11 13:20:48.912 +05:30 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2026-06-11 13:20:48.915 +05:30 [INF] Executed action BankingAPI.Controllers.BankingController.QueryTransactions (BankingAPI) in 130.3156ms
+2026-06-11 13:20:48.919 +05:30 [INF] Executed endpoint 'BankingAPI.Controllers.BankingController.QueryTransactions (BankingAPI)'
+2026-06-11 13:20:48.922 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7163/api/Banking/transactions/query - 500 null text/plain; charset=utf-8 168.8992ms
+2026-06-11 13:43:12.467 +05:30 [INF] User profile is available. Using 'C:\Users\Gayathri Mahadevan\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-06-11 13:43:12.863 +05:30 [INF] Now listening on: https://localhost:7163
+2026-06-11 13:43:12.866 +05:30 [INF] Now listening on: http://localhost:5091
+2026-06-11 13:43:12.955 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-11 13:43:12.960 +05:30 [INF] Hosting environment: Development
+2026-06-11 13:43:12.965 +05:30 [INF] Content root path: C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingAPI
+2026-06-11 13:43:13.738 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7163/swagger/index.html - null null
+2026-06-11 13:43:14.092 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7163/swagger/index.html - 200 null text/html;charset=utf-8 368.7345ms
+2026-06-11 13:43:14.119 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7163/_framework/aspnetcore-browser-refresh.js - null null
+2026-06-11 13:43:14.119 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7163/_vs/browserLink - null null
+2026-06-11 13:43:14.151 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7163/_framework/aspnetcore-browser-refresh.js - 200 16505 application/javascript; charset=utf-8 32.1909ms
+2026-06-11 13:43:14.222 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7163/_vs/browserLink - 200 null text/javascript; charset=UTF-8 103.2238ms
+2026-06-11 13:43:14.270 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7163/swagger/v1/swagger.json - null null
+2026-06-11 13:43:14.324 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7163/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 55.177ms
+2026-06-11 13:43:21.876 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7163/api/Banking/transactions/query - null null
+2026-06-11 13:43:22.070 +05:30 [INF] CORS policy execution successful.
+2026-06-11 13:43:22.078 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7163/api/Banking/transactions/query - 204 null null 202.6713ms
+2026-06-11 13:43:22.083 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7163/api/Banking/transactions/query - application/json 115
+2026-06-11 13:43:22.244 +05:30 [INF] CORS policy execution successful.
+2026-06-11 13:43:22.254 +05:30 [INF] Executing endpoint 'BankingAPI.Controllers.BankingController.QueryTransactions (BankingAPI)'
+2026-06-11 13:43:22.313 +05:30 [INF] Route matched with {action = "QueryTransactions", controller = "Banking"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BankingAPI.Models.DTOs.TransactionQueryResponse]] QueryTransactions(BankingAPI.Models.DTOs.TransactionQueryRequest) on controller BankingAPI.Controllers.BankingController (BankingAPI).
+2026-06-11 13:43:24.126 +05:30 [INF] Executed DbCommand (68ms) [Parameters=[@__request_FromAccountNumber_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM "Transactions" AS t
+WHERE t."FromAccountNumber" = @__request_FromAccountNumber_0
+2026-06-11 13:43:24.245 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__request_FromAccountNumber_0='?', @__p_2='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT t."TransactionReferenceNumber", t."Amount", t."FromAccountNumber", t."Status", t."ToAccountNumber", t."TransactionDate"
+FROM "Transactions" AS t
+WHERE t."FromAccountNumber" = @__request_FromAccountNumber_0
+ORDER BY t."TransactionDate" DESC
+LIMIT @__p_2 OFFSET @__p_1
+2026-06-11 13:43:24.488 +05:30 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2026-06-11 13:43:24.502 +05:30 [INF] Executed action BankingAPI.Controllers.BankingController.QueryTransactions (BankingAPI) in 2169.5297ms
+2026-06-11 13:43:24.512 +05:30 [INF] Executed endpoint 'BankingAPI.Controllers.BankingController.QueryTransactions (BankingAPI)'
+2026-06-11 13:43:24.537 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7163/api/Banking/transactions/query - 500 null text/plain; charset=utf-8 2454.5016ms
+2026-06-11 13:45:07.471 +05:30 [INF] User profile is available. Using 'C:\Users\Gayathri Mahadevan\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-06-11 13:45:07.986 +05:30 [INF] Now listening on: https://localhost:7163
+2026-06-11 13:45:07.990 +05:30 [INF] Now listening on: http://localhost:5091
+2026-06-11 13:45:08.067 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-11 13:45:08.070 +05:30 [INF] Hosting environment: Development
+2026-06-11 13:45:08.072 +05:30 [INF] Content root path: C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingAPI
+2026-06-11 13:45:08.725 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7163/swagger/index.html - null null
+2026-06-11 13:45:09.079 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7163/swagger/index.html - 200 null text/html;charset=utf-8 370.8438ms
+2026-06-11 13:45:09.100 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7163/_vs/browserLink - null null
+2026-06-11 13:45:09.100 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7163/_framework/aspnetcore-browser-refresh.js - null null
+2026-06-11 13:45:09.130 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7163/_framework/aspnetcore-browser-refresh.js - 200 16505 application/javascript; charset=utf-8 29.6262ms
+2026-06-11 13:45:09.180 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7163/_vs/browserLink - 200 null text/javascript; charset=UTF-8 79.9349ms
+2026-06-11 13:45:09.218 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7163/swagger/v1/swagger.json - null null
+2026-06-11 13:45:09.276 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7163/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 58.187ms
+2026-06-11 13:45:24.360 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7163/api/Banking/transactions/query - null null
+2026-06-11 13:45:24.581 +05:30 [INF] CORS policy execution successful.
+2026-06-11 13:45:24.587 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7163/api/Banking/transactions/query - 204 null null 226.9476ms
+2026-06-11 13:45:24.590 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7163/api/Banking/transactions/query - application/json 115
+2026-06-11 13:45:24.731 +05:30 [INF] CORS policy execution successful.
+2026-06-11 13:45:24.759 +05:30 [INF] Executing endpoint 'BankingAPI.Controllers.BankingController.QueryTransactions (BankingAPI)'
+2026-06-11 13:45:24.838 +05:30 [INF] Route matched with {action = "QueryTransactions", controller = "Banking"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BankingAPI.Models.DTOs.TransactionQueryResponse]] QueryTransactions(BankingAPI.Models.DTOs.TransactionQueryRequest) on controller BankingAPI.Controllers.BankingController (BankingAPI).
+2026-06-11 13:45:27.622 +05:30 [INF] Executed DbCommand (120ms) [Parameters=[@__request_FromAccountNumber_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM "Transactions" AS t
+WHERE t."FromAccountNumber" = @__request_FromAccountNumber_0
+2026-06-11 13:45:27.750 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[@__request_FromAccountNumber_0='?', @__p_2='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT t."TransactionReferenceNumber", t."Amount", t."FromAccountNumber", t."Status", t."ToAccountNumber", t."TransactionDate"
+FROM "Transactions" AS t
+WHERE t."FromAccountNumber" = @__request_FromAccountNumber_0
+ORDER BY t."TransactionDate" DESC
+LIMIT @__p_2 OFFSET @__p_1
+2026-06-11 13:45:28.125 +05:30 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2026-06-11 13:45:28.139 +05:30 [INF] Executed action BankingAPI.Controllers.BankingController.QueryTransactions (BankingAPI) in 3286.4239ms
+2026-06-11 13:45:28.144 +05:30 [INF] Executed endpoint 'BankingAPI.Controllers.BankingController.QueryTransactions (BankingAPI)'
+2026-06-11 13:45:28.169 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7163/api/Banking/transactions/query - 500 null text/plain; charset=utf-8 3578.5973ms
+2026-06-11 13:51:51.931 +05:30 [INF] User profile is available. Using 'C:\Users\Gayathri Mahadevan\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-06-11 13:51:52.555 +05:30 [INF] Now listening on: https://localhost:7163
+2026-06-11 13:51:52.557 +05:30 [INF] Now listening on: http://localhost:5091
+2026-06-11 13:51:52.798 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-11 13:51:52.803 +05:30 [INF] Hosting environment: Development
+2026-06-11 13:51:52.808 +05:30 [INF] Content root path: C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingAPI
+2026-06-11 13:51:53.340 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7163/swagger/index.html - null null
+2026-06-11 13:51:53.696 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7163/swagger/index.html - 200 null text/html;charset=utf-8 377.9004ms
+2026-06-11 13:51:53.734 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7163/_framework/aspnetcore-browser-refresh.js - null null
+2026-06-11 13:51:53.734 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7163/_vs/browserLink - null null
+2026-06-11 13:51:53.761 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7163/_framework/aspnetcore-browser-refresh.js - 200 16505 application/javascript; charset=utf-8 28.0562ms
+2026-06-11 13:51:53.825 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7163/_vs/browserLink - 200 null text/javascript; charset=UTF-8 92.1427ms
+2026-06-11 13:51:53.880 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7163/swagger/v1/swagger.json - null null
+2026-06-11 13:51:53.933 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7163/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 53.5751ms
+2026-06-11 13:52:15.571 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7163/api/Banking/transactions/query - null null
+2026-06-11 13:52:15.737 +05:30 [INF] CORS policy execution successful.
+2026-06-11 13:52:15.748 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7163/api/Banking/transactions/query - 204 null null 176.8456ms
+2026-06-11 13:52:15.753 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7163/api/Banking/transactions/query - application/json 114
+2026-06-11 13:52:15.885 +05:30 [INF] CORS policy execution successful.
+2026-06-11 13:52:15.892 +05:30 [INF] Executing endpoint 'BankingAPI.Controllers.BankingController.QueryTransactions (BankingAPI)'
+2026-06-11 13:52:15.935 +05:30 [INF] Route matched with {action = "QueryTransactions", controller = "Banking"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BankingAPI.Models.DTOs.TransactionQueryResponse]] QueryTransactions(BankingAPI.Models.DTOs.TransactionQueryRequest) on controller BankingAPI.Controllers.BankingController (BankingAPI).
+2026-06-11 13:52:16.109 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7163/api/Banking/transactions/query - application/json 115
+2026-06-11 13:52:16.146 +05:30 [INF] CORS policy execution successful.
+2026-06-11 13:52:16.153 +05:30 [INF] Executing endpoint 'BankingAPI.Controllers.BankingController.QueryTransactions (BankingAPI)'
+2026-06-11 13:52:16.162 +05:30 [INF] Route matched with {action = "QueryTransactions", controller = "Banking"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BankingAPI.Models.DTOs.TransactionQueryResponse]] QueryTransactions(BankingAPI.Models.DTOs.TransactionQueryRequest) on controller BankingAPI.Controllers.BankingController (BankingAPI).
+2026-06-11 13:52:16.445 +05:30 [INF] Executed action BankingAPI.Controllers.BankingController.QueryTransactions (BankingAPI) in 493.8658ms
+2026-06-11 13:52:16.467 +05:30 [INF] Executed endpoint 'BankingAPI.Controllers.BankingController.QueryTransactions (BankingAPI)'
+2026-06-11 13:52:16.655 +05:30 [ERR] An unhandled exception occurred while processing the request.
+System.IO.IOException: The client reset the request stream.
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpRequestStream.ReadAsyncInternal(Memory`1 destination, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Text.Json.Serialization.ReadBufferState.ReadFromStreamAsync(Stream utf8Json, CancellationToken cancellationToken, Boolean fillBuffer)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsync(Stream utf8Json, CancellationToken cancellationToken)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsObjectAsync(Stream utf8Json, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter.ReadRequestBodyAsync(InputFormatterContext context, Encoding encoding)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter.ReadRequestBodyAsync(InputFormatterContext context, Encoding encoding)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder.BindModelAsync(ModelBindingContext bindingContext)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder.BindModelAsync(ActionContext actionContext, IModelBinder modelBinder, IValueProvider valueProvider, ParameterDescriptor parameter, ModelMetadata metadata, Object value, Object container)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerBinderDelegateProvider.<>c__DisplayClass0_0.<<CreateBinderDelegate>g__Bind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at BankingAPI.Middlewares.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingAPI\Middlewares\ExceptionHandlingMiddleware.cs:line 21
+2026-06-11 13:52:16.748 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7163/api/Banking/transactions/query - 500 null application/json 995.6671ms
+2026-06-11 13:52:18.974 +05:30 [INF] Executed DbCommand (80ms) [Parameters=[@__request_FromAccountNumber_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM "Transactions" AS t
+WHERE t."FromAccountNumber" = @__request_FromAccountNumber_0
+2026-06-11 13:52:19.077 +05:30 [INF] Executed DbCommand (8ms) [Parameters=[@__request_FromAccountNumber_0='?', @__p_2='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT t."TransactionReferenceNumber", t."Amount", t."FromAccountNumber", t."Status", t."ToAccountNumber", t."TransactionDate"
+FROM "Transactions" AS t
+WHERE t."FromAccountNumber" = @__request_FromAccountNumber_0
+ORDER BY t."TransactionDate" DESC
+LIMIT @__p_2 OFFSET @__p_1
+2026-06-11 13:52:19.113 +05:30 [INF] Executing OkObjectResult, writing value of type 'BankingAPI.Models.DTOs.TransactionQueryResponse'.
+2026-06-11 13:52:19.139 +05:30 [INF] Executed action BankingAPI.Controllers.BankingController.QueryTransactions (BankingAPI) in 2962.5448ms
+2026-06-11 13:52:19.147 +05:30 [INF] Executed endpoint 'BankingAPI.Controllers.BankingController.QueryTransactions (BankingAPI)'
+2026-06-11 13:52:19.165 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7163/api/Banking/transactions/query - 200 null application/json; charset=utf-8 3056.3789ms
+2026-06-11 13:54:51.843 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7163/api/Banking/transactions/query - null null
+2026-06-11 13:54:51.864 +05:30 [INF] CORS policy execution successful.
+2026-06-11 13:54:51.868 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7163/api/Banking/transactions/query - 204 null null 25.5137ms
+2026-06-11 13:54:51.872 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7163/api/Banking/transactions/query - application/json 80
+2026-06-11 13:54:51.891 +05:30 [INF] CORS policy execution successful.
+2026-06-11 13:54:51.895 +05:30 [INF] Executing endpoint 'BankingAPI.Controllers.BankingController.QueryTransactions (BankingAPI)'
+2026-06-11 13:54:51.899 +05:30 [INF] Route matched with {action = "QueryTransactions", controller = "Banking"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BankingAPI.Models.DTOs.TransactionQueryResponse]] QueryTransactions(BankingAPI.Models.DTOs.TransactionQueryRequest) on controller BankingAPI.Controllers.BankingController (BankingAPI).
+2026-06-11 13:54:51.940 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM "Transactions" AS t
+2026-06-11 13:54:51.958 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT t."TransactionReferenceNumber", t."Amount", t."FromAccountNumber", t."Status", t."ToAccountNumber", t."TransactionDate"
+FROM "Transactions" AS t
+ORDER BY t."TransactionDate" DESC
+LIMIT @__p_1 OFFSET @__p_0
+2026-06-11 13:54:51.965 +05:30 [INF] Executing OkObjectResult, writing value of type 'BankingAPI.Models.DTOs.TransactionQueryResponse'.
+2026-06-11 13:54:51.969 +05:30 [INF] Executed action BankingAPI.Controllers.BankingController.QueryTransactions (BankingAPI) in 64.521ms
+2026-06-11 13:54:51.973 +05:30 [INF] Executed endpoint 'BankingAPI.Controllers.BankingController.QueryTransactions (BankingAPI)'
+2026-06-11 13:54:51.976 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7163/api/Banking/transactions/query - 200 null application/json; charset=utf-8 104.0144ms
+2026-06-11 13:54:52.508 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7163/api/Banking/transactions/query - application/json 80
+2026-06-11 13:54:52.521 +05:30 [INF] CORS policy execution successful.
+2026-06-11 13:54:52.526 +05:30 [INF] Executing endpoint 'BankingAPI.Controllers.BankingController.QueryTransactions (BankingAPI)'
+2026-06-11 13:54:52.530 +05:30 [INF] Route matched with {action = "QueryTransactions", controller = "Banking"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BankingAPI.Models.DTOs.TransactionQueryResponse]] QueryTransactions(BankingAPI.Models.DTOs.TransactionQueryRequest) on controller BankingAPI.Controllers.BankingController (BankingAPI).
+2026-06-11 13:54:52.664 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM "Transactions" AS t
+2026-06-11 13:54:52.696 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT t."TransactionReferenceNumber", t."Amount", t."FromAccountNumber", t."Status", t."ToAccountNumber", t."TransactionDate"
+FROM "Transactions" AS t
+ORDER BY t."TransactionDate" DESC
+LIMIT @__p_1 OFFSET @__p_0
+2026-06-11 13:54:52.707 +05:30 [INF] Executing OkObjectResult, writing value of type 'BankingAPI.Models.DTOs.TransactionQueryResponse'.
+2026-06-11 13:54:52.712 +05:30 [INF] Executed action BankingAPI.Controllers.BankingController.QueryTransactions (BankingAPI) in 174.6364ms
+2026-06-11 13:54:52.715 +05:30 [INF] Executed endpoint 'BankingAPI.Controllers.BankingController.QueryTransactions (BankingAPI)'
+2026-06-11 13:54:52.717 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7163/api/Banking/transactions/query - 200 null application/json; charset=utf-8 209.4423ms
+2026-06-11 13:54:53.666 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7163/api/Banking/transactions/query - application/json 80
+2026-06-11 13:54:53.676 +05:30 [INF] CORS policy execution successful.
+2026-06-11 13:54:53.680 +05:30 [INF] Executing endpoint 'BankingAPI.Controllers.BankingController.QueryTransactions (BankingAPI)'
+2026-06-11 13:54:53.684 +05:30 [INF] Route matched with {action = "QueryTransactions", controller = "Banking"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BankingAPI.Models.DTOs.TransactionQueryResponse]] QueryTransactions(BankingAPI.Models.DTOs.TransactionQueryRequest) on controller BankingAPI.Controllers.BankingController (BankingAPI).
+2026-06-11 13:54:53.695 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM "Transactions" AS t
+2026-06-11 13:54:53.705 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT t."TransactionReferenceNumber", t."Amount", t."FromAccountNumber", t."Status", t."ToAccountNumber", t."TransactionDate"
+FROM "Transactions" AS t
+ORDER BY t."TransactionDate" DESC
+LIMIT @__p_1 OFFSET @__p_0
+2026-06-11 13:54:53.711 +05:30 [INF] Executing OkObjectResult, writing value of type 'BankingAPI.Models.DTOs.TransactionQueryResponse'.
+2026-06-11 13:54:53.714 +05:30 [INF] Executed action BankingAPI.Controllers.BankingController.QueryTransactions (BankingAPI) in 24.1848ms
+2026-06-11 13:54:53.719 +05:30 [INF] Executed endpoint 'BankingAPI.Controllers.BankingController.QueryTransactions (BankingAPI)'
+2026-06-11 13:54:53.722 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7163/api/Banking/transactions/query - 200 null application/json; charset=utf-8 56.1102ms
+2026-06-11 13:54:54.508 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7163/api/Banking/transactions/query - application/json 80
+2026-06-11 13:54:54.527 +05:30 [INF] CORS policy execution successful.
+2026-06-11 13:54:54.532 +05:30 [INF] Executing endpoint 'BankingAPI.Controllers.BankingController.QueryTransactions (BankingAPI)'
+2026-06-11 13:54:54.537 +05:30 [INF] Route matched with {action = "QueryTransactions", controller = "Banking"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BankingAPI.Models.DTOs.TransactionQueryResponse]] QueryTransactions(BankingAPI.Models.DTOs.TransactionQueryRequest) on controller BankingAPI.Controllers.BankingController (BankingAPI).
+2026-06-11 13:54:54.550 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM "Transactions" AS t
+2026-06-11 13:54:54.567 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT t."TransactionReferenceNumber", t."Amount", t."FromAccountNumber", t."Status", t."ToAccountNumber", t."TransactionDate"
+FROM "Transactions" AS t
+ORDER BY t."TransactionDate" DESC
+LIMIT @__p_1 OFFSET @__p_0
+2026-06-11 13:54:54.573 +05:30 [INF] Executing OkObjectResult, writing value of type 'BankingAPI.Models.DTOs.TransactionQueryResponse'.
+2026-06-11 13:54:54.578 +05:30 [INF] Executed action BankingAPI.Controllers.BankingController.QueryTransactions (BankingAPI) in 34.0565ms
+2026-06-11 13:54:54.581 +05:30 [INF] Executed endpoint 'BankingAPI.Controllers.BankingController.QueryTransactions (BankingAPI)'
+2026-06-11 13:54:54.583 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7163/api/Banking/transactions/query - 200 null application/json; charset=utf-8 75.6996ms
+2026-06-11 14:02:57.638 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7163/api/Banking/transactions/query - null null
+2026-06-11 14:02:57.647 +05:30 [INF] CORS policy execution successful.
+2026-06-11 14:02:57.651 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7163/api/Banking/transactions/query - 204 null null 12.9785ms
+2026-06-11 14:02:57.654 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7163/api/Banking/transactions/query - application/json 115
+2026-06-11 14:02:57.673 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '11-06-2026 08:25:28', Current time (UTC): '11-06-2026 08:32:57'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2026-06-11 14:02:57.684 +05:30 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '11-06-2026 08:25:28', Current time (UTC): '11-06-2026 08:32:57'.
+2026-06-11 14:02:57.688 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-06-11 14:02:57.698 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-06-11 14:02:57.703 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7163/api/Banking/transactions/query - 401 0 null 49.1603ms
+2026-06-11 14:03:22.728 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7163/api/Banking/transactions/query - null null
+2026-06-11 14:03:22.738 +05:30 [INF] CORS policy execution successful.
+2026-06-11 14:03:22.741 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7163/api/Banking/transactions/query - 204 null null 14.1026ms
+2026-06-11 14:03:22.745 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7163/api/Banking/transactions/query - application/json 114
+2026-06-11 14:03:22.760 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '11-06-2026 08:25:28', Current time (UTC): '11-06-2026 08:33:22'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2026-06-11 14:03:22.769 +05:30 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '11-06-2026 08:25:28', Current time (UTC): '11-06-2026 08:33:22'.
+2026-06-11 14:03:22.773 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-06-11 14:03:22.776 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-06-11 14:03:22.779 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7163/api/Banking/transactions/query - 401 0 null 34.7829ms
+2026-06-11 14:03:23.311 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7163/api/Banking/transactions/query - application/json 115
+2026-06-11 14:03:23.322 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '11-06-2026 08:25:28', Current time (UTC): '11-06-2026 08:33:23'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2026-06-11 14:03:23.328 +05:30 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '11-06-2026 08:25:28', Current time (UTC): '11-06-2026 08:33:23'.
+2026-06-11 14:03:23.332 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-06-11 14:03:23.334 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-06-11 14:03:23.337 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7163/api/Banking/transactions/query - 401 0 null 26.57ms
+2026-06-11 14:03:31.155 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7163/api/Banking/transactions/query - null null
+2026-06-11 14:03:31.164 +05:30 [INF] CORS policy execution successful.
+2026-06-11 14:03:31.168 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7163/api/Banking/transactions/query - 204 null null 12.7766ms
+2026-06-11 14:03:31.172 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7163/api/Banking/transactions/query - application/json 114
+2026-06-11 14:03:31.189 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '11-06-2026 08:25:28', Current time (UTC): '11-06-2026 08:33:31'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2026-06-11 14:03:31.198 +05:30 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '11-06-2026 08:25:28', Current time (UTC): '11-06-2026 08:33:31'.
+2026-06-11 14:03:31.201 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-06-11 14:03:31.204 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-06-11 14:03:31.207 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7163/api/Banking/transactions/query - 401 0 null 35.4437ms
+2026-06-11 14:03:32.177 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7163/api/Banking/transactions/query - application/json 113
+2026-06-11 14:03:32.193 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '11-06-2026 08:25:28', Current time (UTC): '11-06-2026 08:33:32'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2026-06-11 14:03:32.200 +05:30 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '11-06-2026 08:25:28', Current time (UTC): '11-06-2026 08:33:32'.
+2026-06-11 14:03:32.207 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-06-11 14:03:32.211 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-06-11 14:03:32.214 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7163/api/Banking/transactions/query - 401 0 null 38.7572ms
+2026-06-11 14:03:32.716 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7163/api/Banking/transactions/query - application/json 112
+2026-06-11 14:03:32.728 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '11-06-2026 08:25:28', Current time (UTC): '11-06-2026 08:33:32'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2026-06-11 14:03:32.736 +05:30 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '11-06-2026 08:25:28', Current time (UTC): '11-06-2026 08:33:32'.
+2026-06-11 14:03:32.739 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-06-11 14:03:32.743 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-06-11 14:03:32.748 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7163/api/Banking/transactions/query - 401 0 null 33.0645ms
+2026-06-11 14:03:33.229 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7163/api/Banking/transactions/query - application/json 111
+2026-06-11 14:03:33.238 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '11-06-2026 08:25:28', Current time (UTC): '11-06-2026 08:33:33'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2026-06-11 14:03:33.279 +05:30 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '11-06-2026 08:25:28', Current time (UTC): '11-06-2026 08:33:33'.
+2026-06-11 14:03:33.285 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-06-11 14:03:33.298 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-06-11 14:03:33.302 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7163/api/Banking/transactions/query - 401 0 null 73.3958ms
+2026-06-11 14:03:44.239 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7163/api/Banking/transactions/query - null null
+2026-06-11 14:03:44.255 +05:30 [INF] CORS policy execution successful.
+2026-06-11 14:03:44.258 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7163/api/Banking/transactions/query - 204 null null 19.292ms
+2026-06-11 14:03:44.262 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7163/api/Banking/transactions/query - application/json 80
+2026-06-11 14:03:44.276 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '11-06-2026 08:25:28', Current time (UTC): '11-06-2026 08:33:44'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2026-06-11 14:03:44.283 +05:30 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '11-06-2026 08:25:28', Current time (UTC): '11-06-2026 08:33:44'.
+2026-06-11 14:03:44.286 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-06-11 14:03:44.290 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-06-11 14:03:44.293 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7163/api/Banking/transactions/query - 401 0 null 32.3435ms
+2026-06-11 14:03:44.721 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7163/api/Banking/transactions/query - application/json 80
+2026-06-11 14:03:44.733 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '11-06-2026 08:25:28', Current time (UTC): '11-06-2026 08:33:44'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2026-06-11 14:03:44.744 +05:30 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '11-06-2026 08:25:28', Current time (UTC): '11-06-2026 08:33:44'.
+2026-06-11 14:03:44.747 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-06-11 14:03:44.751 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-06-11 14:03:44.754 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7163/api/Banking/transactions/query - 401 0 null 34.0292ms
+2026-06-11 14:03:59.251 +05:30 [INF] User profile is available. Using 'C:\Users\Gayathri Mahadevan\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-06-11 14:03:59.875 +05:30 [INF] Now listening on: https://localhost:7163
+2026-06-11 14:03:59.880 +05:30 [INF] Now listening on: http://localhost:5091
+2026-06-11 14:03:59.969 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-11 14:03:59.973 +05:30 [INF] Hosting environment: Development
+2026-06-11 14:03:59.978 +05:30 [INF] Content root path: C:\Corp\Genspark\Presidio\2026\Participants\Day19\BankingAPISolution\BankingAPI
+2026-06-11 14:04:00.886 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7163/swagger/index.html - null null
+2026-06-11 14:04:01.256 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7163/swagger/index.html - 200 null text/html;charset=utf-8 382.3177ms
+2026-06-11 14:04:01.301 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7163/_vs/browserLink - null null
+2026-06-11 14:04:01.301 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7163/_framework/aspnetcore-browser-refresh.js - null null
+2026-06-11 14:04:01.350 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7163/_framework/aspnetcore-browser-refresh.js - 200 16505 application/javascript; charset=utf-8 45.8371ms
+2026-06-11 14:04:01.426 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7163/_vs/browserLink - 200 null text/javascript; charset=UTF-8 125.6679ms
+2026-06-11 14:04:01.491 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7163/swagger/v1/swagger.json - null null
+2026-06-11 14:04:01.551 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7163/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 61.1891ms
+2026-06-11 14:04:18.356 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7163/api/Banking/transactions/query - null null
+2026-06-11 14:04:18.539 +05:30 [INF] CORS policy execution successful.
+2026-06-11 14:04:18.546 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7163/api/Banking/transactions/query - 204 null null 190.4271ms
+2026-06-11 14:04:18.551 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7163/api/Banking/transactions/query - application/json 115
+2026-06-11 14:04:18.585 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-06-11 14:04:18.594 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-06-11 14:04:18.600 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7163/api/Banking/transactions/query - 401 0 null 48.3216ms
+2026-06-11 14:04:57.733 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7163/api/Authentication/Login - null null
+2026-06-11 14:04:57.747 +05:30 [INF] CORS policy execution successful.
+2026-06-11 14:04:57.757 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7163/api/Authentication/Login - 204 null null 24.7737ms
+2026-06-11 14:04:57.761 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7163/api/Authentication/Login - application/json 43
+2026-06-11 14:04:57.780 +05:30 [INF] CORS policy execution successful.
+2026-06-11 14:04:57.797 +05:30 [INF] Executing endpoint 'BankingAPI.Controllers.AuthenticationController.CustomerLogin (BankingAPI)'
+2026-06-11 14:04:57.855 +05:30 [INF] Route matched with {action = "CustomerLogin", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BankingAPI.Models.DTOs.LoginResponse]] CustomerLogin(BankingAPI.Models.DTOs.LoginRequest) on controller BankingAPI.Controllers.AuthenticationController (BankingAPI).
+2026-06-11 14:04:58.315 +05:30 [WRN] You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-06-11 14:05:00.867 +05:30 [INF] Executed DbCommand (104ms) [Parameters=[@__p_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Username", u."HashKey", u."Password", u."Role"
+FROM "Users" AS u
+WHERE u."Username" = @__p_0
+LIMIT 1
+2026-06-11 14:05:01.055 +05:30 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT c."Id", c."DateOfBirth", c."Email", c."Name", c."Phone", c."Status", c."Username"
+FROM "Customers" AS c
+2026-06-11 14:05:01.226 +05:30 [INF] Executing OkObjectResult, writing value of type 'BankingAPI.Models.DTOs.LoginResponse'.
+2026-06-11 14:05:01.247 +05:30 [INF] Executed action BankingAPI.Controllers.AuthenticationController.CustomerLogin (BankingAPI) in 3379.1561ms
+2026-06-11 14:05:01.254 +05:30 [INF] Executed endpoint 'BankingAPI.Controllers.AuthenticationController.CustomerLogin (BankingAPI)'
+2026-06-11 14:05:01.276 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7163/api/Authentication/Login - 200 null application/json; charset=utf-8 3515.6358ms
+2026-06-11 14:05:03.726 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7163/api/Banking/transactions/query - null null
+2026-06-11 14:05:03.735 +05:30 [INF] CORS policy execution successful.
+2026-06-11 14:05:03.737 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7163/api/Banking/transactions/query - 204 null null 12.6771ms
+2026-06-11 14:05:03.743 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7163/api/Banking/transactions/query - application/json 80
+2026-06-11 14:05:03.831 +05:30 [INF] CORS policy execution successful.
+2026-06-11 14:05:03.835 +05:30 [INF] Executing endpoint 'BankingAPI.Controllers.BankingController.QueryTransactions (BankingAPI)'
+2026-06-11 14:05:03.853 +05:30 [INF] Route matched with {action = "QueryTransactions", controller = "Banking"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BankingAPI.Models.DTOs.TransactionQueryResponse]] QueryTransactions(BankingAPI.Models.DTOs.TransactionQueryRequest) on controller BankingAPI.Controllers.BankingController (BankingAPI).
+2026-06-11 14:05:04.042 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM "Transactions" AS t
+2026-06-11 14:05:04.081 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT t."TransactionReferenceNumber", t."Amount", t."FromAccountNumber", t."Status", t."ToAccountNumber", t."TransactionDate"
+FROM "Transactions" AS t
+ORDER BY t."TransactionDate" DESC
+LIMIT @__p_1 OFFSET @__p_0
+2026-06-11 14:05:04.099 +05:30 [INF] Executing OkObjectResult, writing value of type 'BankingAPI.Models.DTOs.TransactionQueryResponse'.
+2026-06-11 14:05:04.127 +05:30 [INF] Executed action BankingAPI.Controllers.BankingController.QueryTransactions (BankingAPI) in 266.4422ms
+2026-06-11 14:05:04.132 +05:30 [INF] Executed endpoint 'BankingAPI.Controllers.BankingController.QueryTransactions (BankingAPI)'
+2026-06-11 14:05:04.135 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7163/api/Banking/transactions/query - 200 null application/json; charset=utf-8 393.2512ms
+2026-06-11 14:05:04.207 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7163/api/Banking/transactions/query - application/json 80
+2026-06-11 14:05:04.220 +05:30 [INF] CORS policy execution successful.
+2026-06-11 14:05:04.222 +05:30 [INF] Executing endpoint 'BankingAPI.Controllers.BankingController.QueryTransactions (BankingAPI)'
+2026-06-11 14:05:04.226 +05:30 [INF] Route matched with {action = "QueryTransactions", controller = "Banking"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BankingAPI.Models.DTOs.TransactionQueryResponse]] QueryTransactions(BankingAPI.Models.DTOs.TransactionQueryRequest) on controller BankingAPI.Controllers.BankingController (BankingAPI).
+2026-06-11 14:05:04.263 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM "Transactions" AS t
+2026-06-11 14:05:04.278 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT t."TransactionReferenceNumber", t."Amount", t."FromAccountNumber", t."Status", t."ToAccountNumber", t."TransactionDate"
+FROM "Transactions" AS t
+ORDER BY t."TransactionDate" DESC
+LIMIT @__p_1 OFFSET @__p_0
+2026-06-11 14:05:04.286 +05:30 [INF] Executing OkObjectResult, writing value of type 'BankingAPI.Models.DTOs.TransactionQueryResponse'.
+2026-06-11 14:05:04.291 +05:30 [INF] Executed action BankingAPI.Controllers.BankingController.QueryTransactions (BankingAPI) in 61.0172ms
+2026-06-11 14:05:04.295 +05:30 [INF] Executed endpoint 'BankingAPI.Controllers.BankingController.QueryTransactions (BankingAPI)'
+2026-06-11 14:05:04.297 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7163/api/Banking/transactions/query - 200 null application/json; charset=utf-8 90.6682ms
+2026-06-11 14:05:07.885 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7163/api/Banking/transactions/query - application/json 115
+2026-06-11 14:05:07.899 +05:30 [INF] CORS policy execution successful.
+2026-06-11 14:05:07.902 +05:30 [INF] Executing endpoint 'BankingAPI.Controllers.BankingController.QueryTransactions (BankingAPI)'
+2026-06-11 14:05:07.906 +05:30 [INF] Route matched with {action = "QueryTransactions", controller = "Banking"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BankingAPI.Models.DTOs.TransactionQueryResponse]] QueryTransactions(BankingAPI.Models.DTOs.TransactionQueryRequest) on controller BankingAPI.Controllers.BankingController (BankingAPI).
+2026-06-11 14:05:07.935 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[@__request_FromAccountNumber_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM "Transactions" AS t
+WHERE t."FromAccountNumber" = @__request_FromAccountNumber_0
+2026-06-11 14:05:07.951 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__request_FromAccountNumber_0='?', @__p_2='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT t."TransactionReferenceNumber", t."Amount", t."FromAccountNumber", t."Status", t."ToAccountNumber", t."TransactionDate"
+FROM "Transactions" AS t
+WHERE t."FromAccountNumber" = @__request_FromAccountNumber_0
+ORDER BY t."TransactionDate" DESC
+LIMIT @__p_2 OFFSET @__p_1
+2026-06-11 14:05:07.958 +05:30 [INF] Executing OkObjectResult, writing value of type 'BankingAPI.Models.DTOs.TransactionQueryResponse'.
+2026-06-11 14:05:07.962 +05:30 [INF] Executed action BankingAPI.Controllers.BankingController.QueryTransactions (BankingAPI) in 49.7752ms
+2026-06-11 14:05:07.967 +05:30 [INF] Executed endpoint 'BankingAPI.Controllers.BankingController.QueryTransactions (BankingAPI)'
+2026-06-11 14:05:07.971 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7163/api/Banking/transactions/query - 200 null application/json; charset=utf-8 85.8775ms
+2026-06-11 14:05:11.304 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7163/api/Banking/transactions/query - null null
+2026-06-11 14:05:11.314 +05:30 [INF] CORS policy execution successful.
+2026-06-11 14:05:11.316 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7163/api/Banking/transactions/query - 204 null null 12.8725ms
+2026-06-11 14:05:11.319 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7163/api/Banking/transactions/query - application/json 115
+2026-06-11 14:05:11.333 +05:30 [INF] CORS policy execution successful.
+2026-06-11 14:05:11.336 +05:30 [INF] Executing endpoint 'BankingAPI.Controllers.BankingController.QueryTransactions (BankingAPI)'
+2026-06-11 14:05:11.341 +05:30 [INF] Route matched with {action = "QueryTransactions", controller = "Banking"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BankingAPI.Models.DTOs.TransactionQueryResponse]] QueryTransactions(BankingAPI.Models.DTOs.TransactionQueryRequest) on controller BankingAPI.Controllers.BankingController (BankingAPI).
+2026-06-11 14:05:11.351 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__request_FromAccountNumber_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM "Transactions" AS t
+WHERE t."FromAccountNumber" = @__request_FromAccountNumber_0
+2026-06-11 14:05:11.362 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__request_FromAccountNumber_0='?', @__p_2='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT t."TransactionReferenceNumber", t."Amount", t."FromAccountNumber", t."Status", t."ToAccountNumber", t."TransactionDate"
+FROM "Transactions" AS t
+WHERE t."FromAccountNumber" = @__request_FromAccountNumber_0
+ORDER BY t."TransactionDate" DESC
+LIMIT @__p_2 OFFSET @__p_1
+2026-06-11 14:05:11.370 +05:30 [INF] Executing OkObjectResult, writing value of type 'BankingAPI.Models.DTOs.TransactionQueryResponse'.
+2026-06-11 14:05:11.376 +05:30 [INF] Executed action BankingAPI.Controllers.BankingController.QueryTransactions (BankingAPI) in 30.3814ms
+2026-06-11 14:05:11.383 +05:30 [INF] Executed endpoint 'BankingAPI.Controllers.BankingController.QueryTransactions (BankingAPI)'
+2026-06-11 14:05:11.386 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7163/api/Banking/transactions/query - 200 null application/json; charset=utf-8 67.4262ms
+2026-06-11 14:05:17.821 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7163/api/Banking/transactions/query - null null
+2026-06-11 14:05:17.831 +05:30 [INF] CORS policy execution successful.
+2026-06-11 14:05:17.835 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7163/api/Banking/transactions/query - 204 null null 13.6297ms
+2026-06-11 14:05:17.839 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7163/api/Banking/transactions/query - application/json 115
+2026-06-11 14:05:17.858 +05:30 [INF] CORS policy execution successful.
+2026-06-11 14:05:17.862 +05:30 [INF] Executing endpoint 'BankingAPI.Controllers.BankingController.QueryTransactions (BankingAPI)'
+2026-06-11 14:05:17.866 +05:30 [INF] Route matched with {action = "QueryTransactions", controller = "Banking"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BankingAPI.Models.DTOs.TransactionQueryResponse]] QueryTransactions(BankingAPI.Models.DTOs.TransactionQueryRequest) on controller BankingAPI.Controllers.BankingController (BankingAPI).
+2026-06-11 14:05:17.878 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__request_FromAccountNumber_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM "Transactions" AS t
+WHERE t."FromAccountNumber" = @__request_FromAccountNumber_0
+2026-06-11 14:05:17.892 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__request_FromAccountNumber_0='?', @__p_2='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT t."TransactionReferenceNumber", t."Amount", t."FromAccountNumber", t."Status", t."ToAccountNumber", t."TransactionDate"
+FROM "Transactions" AS t
+WHERE t."FromAccountNumber" = @__request_FromAccountNumber_0
+ORDER BY t."TransactionDate" DESC
+LIMIT @__p_2 OFFSET @__p_1
+2026-06-11 14:05:17.901 +05:30 [INF] Executing OkObjectResult, writing value of type 'BankingAPI.Models.DTOs.TransactionQueryResponse'.
+2026-06-11 14:05:17.906 +05:30 [INF] Executed action BankingAPI.Controllers.BankingController.QueryTransactions (BankingAPI) in 31.2822ms
+2026-06-11 14:05:17.911 +05:30 [INF] Executed endpoint 'BankingAPI.Controllers.BankingController.QueryTransactions (BankingAPI)'
+2026-06-11 14:05:17.914 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7163/api/Banking/transactions/query - 200 null application/json; charset=utf-8 76.4766ms
+2026-06-11 14:05:31.656 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7163/api/Banking/transactions/query - null null
+2026-06-11 14:05:31.671 +05:30 [INF] CORS policy execution successful.
+2026-06-11 14:05:31.677 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7163/api/Banking/transactions/query - 204 null null 21.3137ms
+2026-06-11 14:05:31.684 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7163/api/Banking/transactions/query - application/json 115
+2026-06-11 14:05:31.705 +05:30 [INF] CORS policy execution successful.
+2026-06-11 14:05:31.709 +05:30 [INF] Executing endpoint 'BankingAPI.Controllers.BankingController.QueryTransactions (BankingAPI)'
+2026-06-11 14:05:31.713 +05:30 [INF] Route matched with {action = "QueryTransactions", controller = "Banking"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BankingAPI.Models.DTOs.TransactionQueryResponse]] QueryTransactions(BankingAPI.Models.DTOs.TransactionQueryRequest) on controller BankingAPI.Controllers.BankingController (BankingAPI).
+2026-06-11 14:05:31.727 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__request_FromAccountNumber_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM "Transactions" AS t
+WHERE t."FromAccountNumber" = @__request_FromAccountNumber_0
+2026-06-11 14:05:31.741 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__request_FromAccountNumber_0='?', @__p_2='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT t."TransactionReferenceNumber", t."Amount", t."FromAccountNumber", t."Status", t."ToAccountNumber", t."TransactionDate"
+FROM "Transactions" AS t
+WHERE t."FromAccountNumber" = @__request_FromAccountNumber_0
+ORDER BY t."TransactionDate" DESC
+LIMIT @__p_2 OFFSET @__p_1
+2026-06-11 14:05:31.752 +05:30 [INF] Executing OkObjectResult, writing value of type 'BankingAPI.Models.DTOs.TransactionQueryResponse'.
+2026-06-11 14:05:31.757 +05:30 [INF] Executed action BankingAPI.Controllers.BankingController.QueryTransactions (BankingAPI) in 37.169ms
+2026-06-11 14:05:31.764 +05:30 [INF] Executed endpoint 'BankingAPI.Controllers.BankingController.QueryTransactions (BankingAPI)'
+2026-06-11 14:05:31.769 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7163/api/Banking/transactions/query - 200 null application/json; charset=utf-8 86.3376ms
+2026-06-11 14:05:58.739 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7163/api/Banking/transactions/query - null null
+2026-06-11 14:05:58.755 +05:30 [INF] CORS policy execution successful.
+2026-06-11 14:05:58.759 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7163/api/Banking/transactions/query - 204 null null 21.7055ms
+2026-06-11 14:05:58.764 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7163/api/Banking/transactions/query - application/json 115
+2026-06-11 14:05:58.784 +05:30 [INF] CORS policy execution successful.
+2026-06-11 14:05:58.790 +05:30 [INF] Executing endpoint 'BankingAPI.Controllers.BankingController.QueryTransactions (BankingAPI)'
+2026-06-11 14:05:58.794 +05:30 [INF] Route matched with {action = "QueryTransactions", controller = "Banking"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BankingAPI.Models.DTOs.TransactionQueryResponse]] QueryTransactions(BankingAPI.Models.DTOs.TransactionQueryRequest) on controller BankingAPI.Controllers.BankingController (BankingAPI).
+2026-06-11 14:05:58.805 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__request_FromAccountNumber_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM "Transactions" AS t
+WHERE t."FromAccountNumber" = @__request_FromAccountNumber_0
+2026-06-11 14:05:58.823 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__request_FromAccountNumber_0='?', @__p_2='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT t."TransactionReferenceNumber", t."Amount", t."FromAccountNumber", t."Status", t."ToAccountNumber", t."TransactionDate"
+FROM "Transactions" AS t
+WHERE t."FromAccountNumber" = @__request_FromAccountNumber_0
+ORDER BY t."TransactionDate" DESC
+LIMIT @__p_2 OFFSET @__p_1
+2026-06-11 14:05:58.830 +05:30 [INF] Executing OkObjectResult, writing value of type 'BankingAPI.Models.DTOs.TransactionQueryResponse'.
+2026-06-11 14:05:58.834 +05:30 [INF] Executed action BankingAPI.Controllers.BankingController.QueryTransactions (BankingAPI) in 33.7028ms
+2026-06-11 14:05:58.838 +05:30 [INF] Executed endpoint 'BankingAPI.Controllers.BankingController.QueryTransactions (BankingAPI)'
+2026-06-11 14:05:58.842 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7163/api/Banking/transactions/query - 200 null application/json; charset=utf-8 79.3737ms
+2026-06-11 14:12:52.265 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7163/api/Banking/transactions/query - null null
+2026-06-11 14:12:52.281 +05:30 [INF] CORS policy execution successful.
+2026-06-11 14:12:52.287 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7163/api/Banking/transactions/query - 204 null null 21.7066ms
+2026-06-11 14:12:52.300 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7163/api/Banking/transactions/query - application/json 80
+2026-06-11 14:12:52.345 +05:30 [INF] CORS policy execution successful.
+2026-06-11 14:12:52.350 +05:30 [INF] Executing endpoint 'BankingAPI.Controllers.BankingController.QueryTransactions (BankingAPI)'
+2026-06-11 14:12:52.357 +05:30 [INF] Route matched with {action = "QueryTransactions", controller = "Banking"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BankingAPI.Models.DTOs.TransactionQueryResponse]] QueryTransactions(BankingAPI.Models.DTOs.TransactionQueryRequest) on controller BankingAPI.Controllers.BankingController (BankingAPI).
+2026-06-11 14:12:52.451 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM "Transactions" AS t
+2026-06-11 14:12:52.475 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT t."TransactionReferenceNumber", t."Amount", t."FromAccountNumber", t."Status", t."ToAccountNumber", t."TransactionDate"
+FROM "Transactions" AS t
+ORDER BY t."TransactionDate" DESC
+LIMIT @__p_1 OFFSET @__p_0
+2026-06-11 14:12:52.492 +05:30 [INF] Executing OkObjectResult, writing value of type 'BankingAPI.Models.DTOs.TransactionQueryResponse'.
+2026-06-11 14:12:52.500 +05:30 [INF] Executed action BankingAPI.Controllers.BankingController.QueryTransactions (BankingAPI) in 132.8674ms
+2026-06-11 14:12:52.506 +05:30 [INF] Executed endpoint 'BankingAPI.Controllers.BankingController.QueryTransactions (BankingAPI)'
+2026-06-11 14:12:52.512 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7163/api/Banking/transactions/query - 200 null application/json; charset=utf-8 212.0482ms
+2026-06-11 14:12:52.514 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7163/api/Banking/transactions/query - application/json 80
+2026-06-11 14:12:52.540 +05:30 [INF] CORS policy execution successful.
+2026-06-11 14:12:52.545 +05:30 [INF] Executing endpoint 'BankingAPI.Controllers.BankingController.QueryTransactions (BankingAPI)'
+2026-06-11 14:12:52.550 +05:30 [INF] Route matched with {action = "QueryTransactions", controller = "Banking"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BankingAPI.Models.DTOs.TransactionQueryResponse]] QueryTransactions(BankingAPI.Models.DTOs.TransactionQueryRequest) on controller BankingAPI.Controllers.BankingController (BankingAPI).
+2026-06-11 14:12:52.566 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM "Transactions" AS t
+2026-06-11 14:12:52.583 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT t."TransactionReferenceNumber", t."Amount", t."FromAccountNumber", t."Status", t."ToAccountNumber", t."TransactionDate"
+FROM "Transactions" AS t
+ORDER BY t."TransactionDate" DESC
+LIMIT @__p_1 OFFSET @__p_0
+2026-06-11 14:12:52.597 +05:30 [INF] Executing OkObjectResult, writing value of type 'BankingAPI.Models.DTOs.TransactionQueryResponse'.
+2026-06-11 14:12:52.604 +05:30 [INF] Executed action BankingAPI.Controllers.BankingController.QueryTransactions (BankingAPI) in 45.8372ms
+2026-06-11 14:12:52.611 +05:30 [INF] Executed endpoint 'BankingAPI.Controllers.BankingController.QueryTransactions (BankingAPI)'
+2026-06-11 14:12:52.619 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7163/api/Banking/transactions/query - 200 null application/json; charset=utf-8 105.4859ms
+2026-06-11 14:13:07.428 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7163/api/Banking/transactions/query - null null
+2026-06-11 14:13:07.448 +05:30 [INF] CORS policy execution successful.
+2026-06-11 14:13:07.454 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7163/api/Banking/transactions/query - 204 null null 26.0401ms
+2026-06-11 14:13:07.461 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7163/api/Banking/transactions/query - application/json 115
+2026-06-11 14:13:07.478 +05:30 [INF] CORS policy execution successful.
+2026-06-11 14:13:07.481 +05:30 [INF] Executing endpoint 'BankingAPI.Controllers.BankingController.QueryTransactions (BankingAPI)'
+2026-06-11 14:13:07.485 +05:30 [INF] Route matched with {action = "QueryTransactions", controller = "Banking"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BankingAPI.Models.DTOs.TransactionQueryResponse]] QueryTransactions(BankingAPI.Models.DTOs.TransactionQueryRequest) on controller BankingAPI.Controllers.BankingController (BankingAPI).
+2026-06-11 14:13:07.499 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[@__request_FromAccountNumber_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM "Transactions" AS t
+WHERE t."FromAccountNumber" = @__request_FromAccountNumber_0
+2026-06-11 14:13:07.506 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__request_FromAccountNumber_0='?', @__p_2='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT t."TransactionReferenceNumber", t."Amount", t."FromAccountNumber", t."Status", t."ToAccountNumber", t."TransactionDate"
+FROM "Transactions" AS t
+WHERE t."FromAccountNumber" = @__request_FromAccountNumber_0
+ORDER BY t."TransactionDate" DESC
+LIMIT @__p_2 OFFSET @__p_1
+2026-06-11 14:13:07.513 +05:30 [INF] Executing OkObjectResult, writing value of type 'BankingAPI.Models.DTOs.TransactionQueryResponse'.
+2026-06-11 14:13:07.519 +05:30 [INF] Executed action BankingAPI.Controllers.BankingController.QueryTransactions (BankingAPI) in 28.6486ms
+2026-06-11 14:13:07.524 +05:30 [INF] Executed endpoint 'BankingAPI.Controllers.BankingController.QueryTransactions (BankingAPI)'
+2026-06-11 14:13:07.528 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7163/api/Banking/transactions/query - 200 null application/json; charset=utf-8 68.3054ms
+2026-06-11 14:13:08.782 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7163/api/Banking/transactions/query - application/json 114
+2026-06-11 14:13:08.794 +05:30 [INF] CORS policy execution successful.
+2026-06-11 14:13:08.797 +05:30 [INF] Executing endpoint 'BankingAPI.Controllers.BankingController.QueryTransactions (BankingAPI)'
+2026-06-11 14:13:08.802 +05:30 [INF] Route matched with {action = "QueryTransactions", controller = "Banking"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BankingAPI.Models.DTOs.TransactionQueryResponse]] QueryTransactions(BankingAPI.Models.DTOs.TransactionQueryRequest) on controller BankingAPI.Controllers.BankingController (BankingAPI).
+2026-06-11 14:13:08.814 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__request_FromAccountNumber_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM "Transactions" AS t
+WHERE t."FromAccountNumber" = @__request_FromAccountNumber_0
+2026-06-11 14:13:08.825 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__request_FromAccountNumber_0='?', @__p_2='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT t."TransactionReferenceNumber", t."Amount", t."FromAccountNumber", t."Status", t."ToAccountNumber", t."TransactionDate"
+FROM "Transactions" AS t
+WHERE t."FromAccountNumber" = @__request_FromAccountNumber_0
+ORDER BY t."TransactionDate" DESC
+LIMIT @__p_2 OFFSET @__p_1
+2026-06-11 14:13:08.831 +05:30 [INF] Executing OkObjectResult, writing value of type 'BankingAPI.Models.DTOs.TransactionQueryResponse'.
+2026-06-11 14:13:08.835 +05:30 [INF] Executed action BankingAPI.Controllers.BankingController.QueryTransactions (BankingAPI) in 25.9334ms
+2026-06-11 14:13:08.840 +05:30 [INF] Executed endpoint 'BankingAPI.Controllers.BankingController.QueryTransactions (BankingAPI)'
+2026-06-11 14:13:08.842 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7163/api/Banking/transactions/query - 200 null application/json; charset=utf-8 60.3715ms
+2026-06-11 14:13:09.541 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7163/api/Banking/transactions/query - application/json 115
+2026-06-11 14:13:09.550 +05:30 [INF] CORS policy execution successful.
+2026-06-11 14:13:09.553 +05:30 [INF] Executing endpoint 'BankingAPI.Controllers.BankingController.QueryTransactions (BankingAPI)'
+2026-06-11 14:13:09.558 +05:30 [INF] Route matched with {action = "QueryTransactions", controller = "Banking"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BankingAPI.Models.DTOs.TransactionQueryResponse]] QueryTransactions(BankingAPI.Models.DTOs.TransactionQueryRequest) on controller BankingAPI.Controllers.BankingController (BankingAPI).
+2026-06-11 14:13:09.569 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__request_FromAccountNumber_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM "Transactions" AS t
+WHERE t."FromAccountNumber" = @__request_FromAccountNumber_0
+2026-06-11 14:13:09.582 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__request_FromAccountNumber_0='?', @__p_2='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT t."TransactionReferenceNumber", t."Amount", t."FromAccountNumber", t."Status", t."ToAccountNumber", t."TransactionDate"
+FROM "Transactions" AS t
+WHERE t."FromAccountNumber" = @__request_FromAccountNumber_0
+ORDER BY t."TransactionDate" DESC
+LIMIT @__p_2 OFFSET @__p_1
+2026-06-11 14:13:09.590 +05:30 [INF] Executing OkObjectResult, writing value of type 'BankingAPI.Models.DTOs.TransactionQueryResponse'.
+2026-06-11 14:13:09.594 +05:30 [INF] Executed action BankingAPI.Controllers.BankingController.QueryTransactions (BankingAPI) in 29.5024ms
+2026-06-11 14:13:09.598 +05:30 [INF] Executed endpoint 'BankingAPI.Controllers.BankingController.QueryTransactions (BankingAPI)'
+2026-06-11 14:13:09.601 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7163/api/Banking/transactions/query - 200 null application/json; charset=utf-8 61.3003ms
+2026-06-11 14:13:12.893 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7163/api/Banking/transactions/query - null null
+2026-06-11 14:13:12.901 +05:30 [INF] CORS policy execution successful.
+2026-06-11 14:13:12.904 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7163/api/Banking/transactions/query - 204 null null 12.1862ms
+2026-06-11 14:13:12.913 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7163/api/Banking/transactions/query - application/json 115
+2026-06-11 14:13:12.927 +05:30 [INF] CORS policy execution successful.
+2026-06-11 14:13:12.930 +05:30 [INF] Executing endpoint 'BankingAPI.Controllers.BankingController.QueryTransactions (BankingAPI)'
+2026-06-11 14:13:12.933 +05:30 [INF] Route matched with {action = "QueryTransactions", controller = "Banking"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BankingAPI.Models.DTOs.TransactionQueryResponse]] QueryTransactions(BankingAPI.Models.DTOs.TransactionQueryRequest) on controller BankingAPI.Controllers.BankingController (BankingAPI).
+2026-06-11 14:13:12.942 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__request_FromAccountNumber_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM "Transactions" AS t
+WHERE t."FromAccountNumber" = @__request_FromAccountNumber_0
+2026-06-11 14:13:12.952 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__request_FromAccountNumber_0='?', @__p_2='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT t."TransactionReferenceNumber", t."Amount", t."FromAccountNumber", t."Status", t."ToAccountNumber", t."TransactionDate"
+FROM "Transactions" AS t
+WHERE t."FromAccountNumber" = @__request_FromAccountNumber_0
+ORDER BY t."TransactionDate" DESC
+LIMIT @__p_2 OFFSET @__p_1
+2026-06-11 14:13:12.958 +05:30 [INF] Executing OkObjectResult, writing value of type 'BankingAPI.Models.DTOs.TransactionQueryResponse'.
+2026-06-11 14:13:12.962 +05:30 [INF] Executed action BankingAPI.Controllers.BankingController.QueryTransactions (BankingAPI) in 22.8046ms
+2026-06-11 14:13:12.967 +05:30 [INF] Executed endpoint 'BankingAPI.Controllers.BankingController.QueryTransactions (BankingAPI)'
+2026-06-11 14:13:12.970 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7163/api/Banking/transactions/query - 200 null application/json; charset=utf-8 57.5599ms

@@ -4,3 +4,35 @@
     <p>Loading...</p>
 
  } 
+
+ @if(error$ | async)
+ {
+    <p>Error loading transactions.</p>
+
+ } 
+
+ @if (transactions$ | async; as transactions) 
+ {
+    <table class="table">
+        <thead>
+            <tr>
+                <th>From Account</th>
+                <th>To Account</th>
+                <th>Amount</th>
+                <th>Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (transaction of transactions.items; track transaction.id)
+             {
+                <tr>
+                    <td>{{ transaction.fromAccountNumber }}</td>
+                    <td>{{ transaction.toAccountNumber }}</td>
+                    <td>{{ transaction.amount }}</td>
+                    <td>{{ transaction.date | date:'short' }}</td>
+                </tr>
+             }
+        </tbody>
+    </table>
+
+ }

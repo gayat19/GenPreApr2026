@@ -1,7 +1,6 @@
 import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { TransactionFilter } from '../models/transaction.filter.model';
-import { FormField } from "@angular/forms/signals";
 import { Store } from '@ngrx/store';
 import { updateTransactionFilter } from '../store/transaction.actions';
 
@@ -21,9 +20,34 @@ export class TransactionFilterComponent {
   }
 
   onSearchChange(){
+    console.log('Filter updated:', this.filter());
     this.store.dispatch(
         updateTransactionFilter({ filter: this.filter() })
       )
+  }
+
+  updateFromAccountNumber(value: string) {
+    this.filter.update((current) => ({
+      ...current,
+      fromAccountNumber: value,
+    }));
+    this.onSearchChange();
+  }
+
+  updateMinAmount(value: number | null) {
+    this.filter.update((current) => ({
+      ...current,
+      minAmount: value ?? undefined,
+    }));
+    this.onSearchChange();
+  }
+
+  updateMaxAmount(value: number | null) {
+    this.filter.update((current) => ({
+      ...current,
+      maxAmount: value ?? undefined,
+    }));
+    this.onSearchChange();
   }
 
 
