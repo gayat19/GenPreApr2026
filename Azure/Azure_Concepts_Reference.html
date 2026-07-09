@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Azure Concepts Reference</title>
+<style>
+  :root {
+    --blue: #1F4E79;
+    --blue-mid: #2E75B6;
+    --blue-light: #BDD7EE;
+    --blue-pale: #EEF4FB;
+    --green: #375623;
+    --green-light: #E2EFDA;
+    --orange: #7F3F00;
+    --orange-light: #FCE4D6;
+    --purple: #44236A;
+    --purple-light: #EDE7F6;
+    --teal: #006064;
+    --teal-light: #E0F7FA;
+    --red: #7B1D1D;
+    --red-light: #FDECEA;
+    --gray: #444;
+    --gray-light: #F5F5F5;
+    --border: #DDD;
+    --code-bg: #1E1E1E;
+    --code-fg: #D4D4D4;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; color: var(--gray); background: #F0F4F8; }
+
+  /* NAV */
+  nav {
+    position: fixed; top: 0; left: 0; width: 220px; height: 100vh;
+    background: var(--blue); color: #fff; overflow-y: auto; padding: 20px 0;
+    z-index: 100;
+  }
+  nav h2 { font-size: 13px; text-transform: uppercase; letter-spacing: 1px; padding: 0 20px 12px; color: #BDD7EE; border-bottom: 1px solid rgba(255,255,255,0.15); }
+  nav ul { list-style: none; margin-top: 8px; }
+  nav ul li a {
+    display: flex; align-items: center; gap: 10px;
+    padding: 10px 20px; color: rgba(255,255,255,0.85); text-decoration: none;
+    font-size: 14px; border-left: 3px solid transparent; transition: all 0.2s;
+  }
+  nav ul li a:hover, nav ul li a.active {
+    background: rgba(255,255,255,0.1); border-left-color: #BDD7EE; color: #fff;
+  }
+  nav ul li a .icon { font-size: 18px; width: 22px; text-align: center; }
+
+  /* MAIN */
+  main { margin-left: 220px; padding: 40px; max-width: 960px; }
+
+  /* HERO */
+  .hero {
+    background: linear-gradient(135deg, var(--blue) 0%, var(--blue-mid) 100%);
+    color: #fff; border-radius: 12px; padding: 40px; margin-bottom: 40px;
+  }
+  .hero h1 { font-size: 32px; margin-bottom: 8px; }
+  .hero p { font-size: 16px; opacity: 0.85; max-width: 600px; line-height: 1.6; }
+
+  /* SECTIONS */
+  section { margin-bottom: 48px; scroll-margin-top: 80px; }
+  .section-header {
+    display: flex; align-items: center; gap: 14px;
+    padding: 16px 24px; border-radius: 10px 10px 0 0;
+    color: #fff; font-size: 22px; font-weight: 700;
+  }
+  .section-header .icon { font-size: 28px; }
+  .section-body { background: #fff; border-radius: 0 0 10px 10px; padding: 28px; border: 1px solid var(--border); border-top: none; }
+
+  .color-vault    { background: var(--blue); }
+  .color-blob     { background: #0078D4; }
+  .color-appservice { background: var(--teal); }
+  .color-rbac     { background: var(--purple); }
+  .color-functions { background: #E65100; }
+  .color-triggers { background: var(--green); }
+
+  /* WHAT IS */
+  .what-is {
+    background: var(--blue-pale); border-left: 4px solid var(--blue-mid);
+    border-radius: 6px; padding: 16px 20px; margin-bottom: 24px; font-size: 15px; line-height: 1.7;
+  }
+
+  /* CARDS */
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin: 20px 0; }
+  .card {
+    border: 1px solid var(--border); border-radius: 8px; padding: 16px;
+    background: var(--gray-light);
+  }
+  .card h4 { font-size: 14px; margin-bottom: 6px; color: var(--blue); }
+  .card p { font-size: 13px; line-height: 1.6; }
+
+  /* TABLE */
+  table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 14px; }
+  th { background: var(--blue-pale); color: var(--blue); text-align: left; padding: 10px 14px; font-weight: 600; border: 1px solid var(--border); }
+  td { padding: 9px 14px; border: 1px solid var(--border); vertical-align: top; line-height: 1.5; }
+  tr:nth-child(even) td { background: #FAFAFA; }
+
+  /* CODE */
+  pre {
+    background: var(--code-bg); color: var(--code-fg);
+    border-radius: 8px; padding: 18px 20px; overflow-x: auto;
+    font-family: 'Consolas', monospace; font-size: 13px; line-height: 1.6;
+    margin: 16px 0;
+  }
+  code { font-family: 'Consolas', monospace; background: #EEF; padding: 2px 6px; border-radius: 3px; font-size: 13px; color: var(--orange); }
+
+  /* FLOW */
+  .flow { display: flex; align-items: center; flex-wrap: wrap; gap: 0; margin: 20px 0; }
+  .flow-step {
+    background: var(--blue-pale); border: 1px solid var(--blue-light);
+    border-radius: 6px; padding: 10px 16px; font-size: 13px; font-weight: 600;
+    color: var(--blue); text-align: center; min-width: 100px;
+  }
+  .flow-arrow { font-size: 20px; color: #999; padding: 0 8px; }
+
+  /* CALLOUT */
+  .callout { border-radius: 6px; padding: 14px 18px; margin: 16px 0; font-size: 14px; line-height: 1.6; }
+  .callout-tip { background: #E8F5E9; border-left: 4px solid #4CAF50; }
+  .callout-warn { background: var(--red-light); border-left: 4px solid #E53935; }
+  .callout-info { background: var(--blue-pale); border-left: 4px solid var(--blue-mid); }
+  .callout strong { display: block; margin-bottom: 4px; }
+
+  /* COMPARISON */
+  .compare { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 16px 0; }
+  .compare-box { border-radius: 8px; padding: 16px 20px; }
+  .compare-box h4 { font-size: 14px; font-weight: 700; margin-bottom: 10px; }
+  .compare-box ul { padding-left: 18px; font-size: 13px; line-height: 1.8; }
+  .box-blue { background: var(--blue-pale); border: 1px solid var(--blue-light); }
+  .box-blue h4 { color: var(--blue); }
+  .box-purple { background: var(--purple-light); border: 1px solid #C9A8E0; }
+  .box-purple h4 { color: var(--purple); }
+  .box-green { background: var(--green-light); border: 1px solid #A8D08D; }
+  .box-green h4 { color: var(--green); }
+  .box-orange { background: var(--orange-light); border: 1px solid #F4B183; }
+  .box-orange h4 { color: var(--orange); }
+
+  h3 { font-size: 17px; color: var(--blue); margin: 24px 0 10px; }
+  p { font-size: 14px; line-height: 1.7; margin-bottom: 12px; }
+  ul, ol { padding-left: 20px; font-size: 14px; line-height: 1.8; margin-bottom: 12px; }
+
+  .badge {
+    display: inline-block; padding: 2px 10px; border-radius: 20px;
+    font-size: 12px; font-weight: 600; margin: 2px;
+  }
+  .badge-blue { background: var(--blue-light); color: var(--blue); }
+  .badge-green { background: var(--green-light); color: var(--green); }
+  .badge-orange { background: var(--orange-light); color: var(--orange); }
+  .badge-purple { background: var(--purple-light); color: var(--purple); }
+
+  @media (max-width: 700px) {
+    nav { display: none; }
+    main { margin-left: 0; padding: 20px; }
+    .compare { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <h2>Azure Concepts</h2>
+  <ul>
+    <li><a href="#vault" class="active"><span class="icon">🔐</span> Key Vault</a></li>
+    <li><a href="#blob"><span class="icon">📦</span> Blob Storage</a></li>
+    <li><a href="#appservice"><span class="icon">🌐</span> App Service</a></li>
+    <li><a href="#rbac"><span class="icon">🛡️</span> RBAC</a></li>
+    <li><a href="#functions"><span class="icon">⚡</span> Functions</a></li>
+    <li><a href="#triggers"><span class="icon">⏰</span> Triggers</a></li>
+  </ul>
+</nav>
+
+<main>
+
+  <div class="hero">
+    <h1>Azure Concepts Reference</h1>
+    <p>A practical guide to Key Vault, Blob Storage, App Service, RBAC, Azure Functions, and Triggers — built for developers learning the Azure CLI.</p>
+  </div>
+
+  <!-- ===== KEY VAULT ===== -->
+  <section id="vault">
+    <div class="section-header color-vault">
+      <span class="icon">🔐</span> Azure Key Vault
+    </div>
+    <div class="section-body">
+      <div class="what-is">
+        <strong>What is it?</strong> Azure Key Vault is a cloud service that safely stores and tightly controls access to secrets (passwords, connection strings), encryption keys, and certificates. Think of it as a bank vault for your application's sensitive data — only authorised identities can open it, and every access is logged.
+      </div>
+
+      <h3>Three Things Key Vault Stores</h3>
+      <div class="cards">
+        <div class="card">
+          <h4>🔑 Secrets</h4>
+          <p>Any string value you want to keep safe: connection strings, API keys, passwords. Retrieved at runtime, never stored in code.</p>
+        </div>
+        <div class="card">
+          <h4>🗝️ Keys</h4>
+          <p>Cryptographic keys (RSA, EC) used for encryption and signing. Azure manages the key material — your app never sees the raw key bytes.</p>
+        </div>
+        <div class="card">
+          <h4>📜 Certificates</h4>
+          <p>TLS/SSL certificates with automated renewal. Key Vault can generate, store, and rotate certificates for your domains.</p>
+        </div>
+      </div>
+
+      <h3>How Access Works</h3>
+      <div class="compare">
+        <div class="compare-box box-blue">
+          <h4>Access Policies (what we use in this lab)</h4>
+          <ul>
+            <li>Set directly on the vault resource</li>
+            <li>Only needs <strong>Contributor</strong> rights</li>
+            <li>Permissions: <code>get set list delete</code></li>
+            <li>Simpler for restricted environments</li>
+          </ul>
+        </div>
+        <div class="compare-box box-purple">
+          <h4>Azure RBAC (alternative)</h4>
+          <ul>
+            <li>Uses subscription-level role assignments</li>
+            <li>Requires <strong>User Access Administrator</strong></li>
+            <li>Roles: Secrets Officer, Secrets User</li>
+            <li>More granular, better for enterprise</li>
+          </ul>
+        </div>
+      </div>
+
+      <h3>The Security Pattern Used in This Lab</h3>
+      <div class="flow">
+        <div class="flow-step">Developer<br><small>az login</small></div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step">Key Vault<br><small>Access Policy</small></div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step">Secret<br><small>Connection String</small></div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step">.NET App<br><small>DefaultAzureCredential</small></div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step">Blob Storage<br><small>SDK Client</small></div>
+      </div>
+
+      <h3>Key CLI Commands</h3>
+      <pre>
+REM Create a vault
+az keyvault create --name %KV_NAME% --resource-group %RG% --location %LOCATION%
+
+REM Grant yourself access (Access Policy)
+az keyvault set-policy --name %KV_NAME% --object-id %MY_OID% --secret-permissions get set list delete
+
+REM Store a secret
+az keyvault secret set --vault-name %KV_NAME% --name "MySecret" --value "my-value"
+
+REM Read a secret
+az keyvault secret show --vault-name %KV_NAME% --name "MySecret" --query value -o tsv</pre>
+
+      <div class="callout callout-tip">
+        <strong>✅ Best Practice</strong>
+        Never store secrets in appsettings.json, environment variables, or source code. Put them in Key Vault and let <code>DefaultAzureCredential</code> fetch them at runtime.
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BLOB STORAGE ===== -->
+  <section id="blob">
+    <div class="section-header color-blob">
+      <span class="icon">📦</span> Azure Blob Storage
+    </div>
+    <div class="section-body">
+      <div class="what-is">
+        <strong>What is it?</strong> Blob Storage is Azure's object storage service — designed to store massive amounts of unstructured data: images, videos, documents, logs, backups. "Blob" stands for Binary Large Object. It's cheap, durable (replicated 3–6 times), and accessible from anywhere via HTTPS.
+      </div>
+
+      <h3>Structure</h3>
+      <div class="flow">
+        <div class="flow-step">Storage Account<br><small>clilabsa12345</small></div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step">Container<br><small>uploads / archive</small></div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step">Blob<br><small>logo.png</small></div>
+      </div>
+      <p>A <strong>Storage Account</strong> is the top-level namespace (globally unique name). Inside it you create <strong>Containers</strong> (like folders). Inside containers are <strong>Blobs</strong> (the actual files).</p>
+
+      <h3>Blob Types</h3>
+      <table>
+        <tr><th>Type</th><th>Best For</th><th>Notes</th></tr>
+        <tr><td><strong>Block Blob</strong></td><td>Files, images, videos, backups</td><td>What you use 95% of the time. Supports parallel upload of large files.</td></tr>
+        <tr><td><strong>Append Blob</strong></td><td>Log files</td><td>Optimised for append-only writes. Cannot modify existing content.</td></tr>
+        <tr><td><strong>Page Blob</strong></td><td>Virtual machine disks (VHD)</td><td>Random read/write access. Used internally by Azure VMs.</td></tr>
+      </table>
+
+      <h3>Access Tiers (Cost vs Speed)</h3>
+      <table>
+        <tr><th>Tier</th><th>Storage Cost</th><th>Access Cost</th><th>Use Case</th></tr>
+        <tr><td><strong>Hot</strong></td><td>Higher</td><td>Lower</td><td>Frequently accessed data</td></tr>
+        <tr><td><strong>Cool</strong></td><td>Lower</td><td>Higher</td><td>Data accessed monthly</td></tr>
+        <tr><td><strong>Archive</strong></td><td>Lowest</td><td>Highest + hours to rehydrate</td><td>Long-term backup, rarely accessed</td></tr>
+      </table>
+
+      <h3>.NET SDK Pattern</h3>
+      <pre>
+// Connect to storage
+var client = new BlobServiceClient(connectionString);
+
+// Get or create a container
+var container = client.GetBlobContainerClient("uploads");
+await container.CreateIfNotExistsAsync();
+
+// Upload a file
+var blob = container.GetBlobClient("logo.png");
+await blob.UploadAsync(fileStream, overwrite: true);
+
+// Download a file
+var download = await blob.DownloadContentAsync();
+byte[] data = download.Value.Content.ToArray();</pre>
+
+      <h3>Key CLI Commands</h3>
+      <pre>
+REM Create a storage account
+az storage account create --name %SA_NAME% --resource-group %RG% --sku Standard_LRS --kind StorageV2
+
+REM Create a container
+az storage container create --name uploads --account-name %SA_NAME% --auth-mode login
+
+REM Get the connection string
+az storage account show-connection-string --name %SA_NAME% --resource-group %RG% -o tsv
+
+REM List blobs in a container
+az storage blob list --container-name uploads --account-name %SA_NAME% --auth-mode login -o table</pre>
+
+      <div class="callout callout-warn">
+        <strong>⚠️ Connection String Security</strong>
+        A Blob Storage connection string gives full read/write access to everything in the account. Never commit it to source control. Store it in Key Vault and retrieve it at runtime.
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== APP SERVICE ===== -->
+  <section id="appservice">
+    <div class="section-header color-appservice">
+      <span class="icon">🌐</span> Azure App Service &amp; Deployment
+    </div>
+    <div class="section-body">
+      <div class="what-is">
+        <strong>What is it?</strong> Azure App Service is a fully managed platform for hosting web applications, REST APIs, and mobile backends. You give it your compiled app and it handles the OS, runtime, patching, scaling, and load balancing. You focus on code, not infrastructure.
+      </div>
+
+      <h3>Key Components</h3>
+      <div class="cards">
+        <div class="card">
+          <h4>App Service Plan</h4>
+          <p>Defines the VM size and pricing tier (F1 Free, B1 Basic, S1 Standard…). Multiple apps can share one plan and split the cost.</p>
+        </div>
+        <div class="card">
+          <h4>Web App</h4>
+          <p>The actual hosted application. Has its own hostname (<code>appname.azurewebsites.net</code>), app settings, and deployment slots.</p>
+        </div>
+        <div class="card">
+          <h4>Managed Identity</h4>
+          <p>A passwordless Azure AD identity attached to the app. Use it to access Key Vault, Storage, and other services — no credentials needed.</p>
+        </div>
+        <div class="card">
+          <h4>App Settings</h4>
+          <p>Key-value configuration injected as environment variables at runtime. Safer than hardcoding but less secure than Key Vault for secrets.</p>
+        </div>
+      </div>
+
+      <h3>Pricing Tiers</h3>
+      <table>
+        <tr><th>Tier</th><th>SKU</th><th>Use Case</th><th>Notes</th></tr>
+        <tr><td>Free</td><td>F1</td><td>Demos, learning</td><td>Shared compute, 60 min/day CPU, no custom domain</td></tr>
+        <tr><td>Basic</td><td>B1–B3</td><td>Dev/test, labs</td><td>Dedicated VM, no autoscale, no staging slots</td></tr>
+        <tr><td>Standard</td><td>S1–S3</td><td>Production</td><td>Autoscale, 5 deployment slots, custom domains + SSL</td></tr>
+        <tr><td>Premium</td><td>P1v3–P3v3</td><td>High-traffic production</td><td>Faster VMs, VNet integration, 20 slots</td></tr>
+      </table>
+
+      <h3>Deployment Methods</h3>
+      <div class="compare">
+        <div class="compare-box box-blue">
+          <h4>Zip Deploy (what we use)</h4>
+          <ul>
+            <li>Pre-compile locally with <code>dotnet publish</code></li>
+            <li>Zip the publish output</li>
+            <li>Push via <code>az webapp deploy --type zip</code></li>
+            <li>Fast, predictable, no server build</li>
+          </ul>
+        </div>
+        <div class="compare-box box-green">
+          <h4>Other Common Methods</h4>
+          <ul>
+            <li><strong>GitHub Actions</strong> — CI/CD on every push</li>
+            <li><strong>Azure DevOps Pipelines</strong> — enterprise CI/CD</li>
+            <li><strong>Git push</strong> — push to App Service's built-in git</li>
+            <li><strong>Docker container</strong> — deploy a container image</li>
+          </ul>
+        </div>
+      </div>
+
+      <h3>Managed Identity — The Passwordless Pattern</h3>
+      <div class="flow">
+        <div class="flow-step">App Service<br><small>System Identity</small></div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step">Azure AD<br><small>Token issued</small></div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step">Key Vault<br><small>Policy: get list</small></div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step">Secret<br><small>Connection string</small></div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step">Blob Storage<br><small>Files</small></div>
+      </div>
+
+      <h3>Key CLI Commands</h3>
+      <pre>
+REM Create plan and web app
+az appservice plan create --name cli-lab-plan --resource-group %RG% --sku B1 --is-linux
+az webapp create --name %APP_NAME% --resource-group %RG% --plan cli-lab-plan --runtime "DOTNETCORE:8.0"
+
+REM Set an app setting
+az webapp config appsettings set --name %APP_NAME% --resource-group %RG% --settings KeyVaultName=%KV_NAME%
+
+REM Assign Managed Identity
+az webapp identity assign --name %APP_NAME% --resource-group %RG%
+
+REM Deploy a zip
+az webapp deploy --name cli-lab-api-12345 --resource-group cli-lab-rg --src-path publish.zip --type zip
+
+REM Stream live logs
+az webapp log tail --name %APP_NAME% --resource-group %RG%</pre>
+    </div>
+  </section>
+
+  <!-- ===== RBAC ===== -->
+  <section id="rbac">
+    <div class="section-header color-rbac">
+      <span class="icon">🛡️</span> RBAC — Role-Based Access Control
+    </div>
+    <div class="section-body">
+      <div class="what-is">
+        <strong>What is it?</strong> RBAC is Azure's authorisation system. It controls <em>who</em> can do <em>what</em> on <em>which</em> resources. Instead of granting full admin access to everyone, you assign the smallest role that covers what someone actually needs. Every Azure resource — VMs, Key Vaults, Storage accounts, subscriptions — can have RBAC roles assigned to it.
+      </div>
+
+      <h3>Three Core Concepts</h3>
+      <div class="cards">
+        <div class="card">
+          <h4>Security Principal (Who)</h4>
+          <p>The identity being granted access: a <strong>User</strong>, a <strong>Group</strong>, a <strong>Service Principal</strong> (app identity), or a <strong>Managed Identity</strong> (passwordless app identity).</p>
+        </div>
+        <div class="card">
+          <h4>Role Definition (What)</h4>
+          <p>A named set of permissions. Built-in examples: Owner, Contributor, Reader, Key Vault Secrets User. You can also create custom roles.</p>
+        </div>
+        <div class="card">
+          <h4>Scope (Which Resource)</h4>
+          <p>How broadly the role applies: entire <strong>Subscription</strong>, a <strong>Resource Group</strong>, or a specific <strong>Resource</strong>. Narrower scope = safer.</p>
+        </div>
+      </div>
+
+      <h3>Scope Hierarchy</h3>
+      <div class="flow">
+        <div class="flow-step">Management Group<br><small>Widest</small></div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step">Subscription</div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step">Resource Group</div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step">Resource<br><small>Narrowest</small></div>
+      </div>
+      <p>Roles assigned at a higher scope are inherited by everything below it. Assigning <em>at the resource level</em> limits blast radius if something goes wrong.</p>
+
+      <h3>Common Built-in Roles</h3>
+      <table>
+        <tr><th>Role</th><th>Can Do</th><th>Cannot Do</th></tr>
+        <tr><td><strong>Owner</strong></td><td>Everything, including grant access to others</td><td>—</td></tr>
+        <tr><td><strong>Contributor</strong></td><td>Create and manage resources</td><td>Grant roles to others</td></tr>
+        <tr><td><strong>Reader</strong></td><td>View resources</td><td>Create, modify, or delete anything</td></tr>
+        <tr><td><strong>User Access Administrator</strong></td><td>Grant roles to others</td><td>Create or manage resources</td></tr>
+        <tr><td><strong>Key Vault Secrets Officer</strong></td><td>Read, write, delete secrets in a vault</td><td>Manage vault settings or keys/certs</td></tr>
+        <tr><td><strong>Key Vault Secrets User</strong></td><td>Read secrets only</td><td>Write or delete secrets</td></tr>
+      </table>
+
+      <h3>RBAC vs Key Vault Access Policies</h3>
+      <div class="compare">
+        <div class="compare-box box-purple">
+          <h4>Azure RBAC for Key Vault</h4>
+          <ul>
+            <li>Requires <code>--enable-rbac-authorization true</code> on vault</li>
+            <li>Needs <strong>User Access Administrator</strong> or Owner to assign roles</li>
+            <li>Unified with all other Azure RBAC — one place to manage all access</li>
+            <li>Recommended for enterprise environments</li>
+          </ul>
+        </div>
+        <div class="compare-box box-blue">
+          <h4>Key Vault Access Policies</h4>
+          <ul>
+            <li>Default mode (no extra flag needed)</li>
+            <li>Only needs <strong>Contributor</strong> on the vault resource</li>
+            <li>Set with <code>az keyvault set-policy</code></li>
+            <li>Simpler for labs and restricted subscriptions</li>
+          </ul>
+        </div>
+      </div>
+
+      <h3>Key CLI Commands</h3>
+      <pre>
+REM Check your current role assignments
+az role assignment list --assignee (az ad signed-in-user show --query id -o tsv) -o table
+
+REM Assign a role (requires User Access Administrator or Owner)
+az role assignment create ^
+  --role "Key Vault Secrets User" ^
+  --assignee &lt;principal-id&gt; ^
+  --scope /subscriptions/&lt;sub-id&gt;/resourceGroups/&lt;rg&gt;/providers/Microsoft.KeyVault/vaults/&lt;vault&gt;
+
+REM Set Key Vault access policy (only needs Contributor)
+az keyvault set-policy --name %KV_NAME% --object-id %PRINCIPAL_ID% --secret-permissions get list</pre>
+
+      <div class="callout callout-info">
+        <strong>💡 Principle of Least Privilege</strong>
+        Always grant the narrowest role at the narrowest scope. A running app should get <em>get list</em> on secrets — never <em>set delete</em>. A developer needs more during setup but the deployed app doesn't.
+      </div>
+
+      <h3>⚠️ Why Can't I Grant Access Even Though I'm "Owner"?</h3>
+      <p>This is one of the most common sources of confusion in Azure labs and enterprise environments. Being called an "owner" in everyday language does not always mean you hold the Azure RBAC <strong>Owner</strong> role. Here are all the reasons a user can be blocked from granting access:</p>
+
+      <table>
+        <tr><th>Reason</th><th>What's Happening</th><th>Fix</th></tr>
+        <tr>
+          <td><strong>Contributor, not Owner</strong></td>
+          <td>Contributor is extremely powerful — it can create and manage all resources — but it explicitly <em>cannot</em> perform <code>Microsoft.Authorization/roleAssignments/write</code>. Role assignment is reserved for Owner and User Access Administrator.</td>
+          <td>Grant the user <strong>Owner</strong> or <strong>User Access Administrator</strong> scoped to the resource group, or use Key Vault Access Policies instead (only needs Contributor).</td>
+        </tr>
+        <tr>
+          <td><strong>Owner at resource level, not subscription/RG level</strong></td>
+          <td>Scope matters. Being Owner of a specific Key Vault lets you manage that vault, but assigning roles at subscription or resource-group scope still requires Owner or User Access Administrator <em>at that level</em>.</td>
+          <td>Check the exact scope of the Owner assignment: <code>az role assignment list --assignee &lt;id&gt; -o table</code></td>
+        </tr>
+        <tr>
+          <td><strong>PIM — role not activated</strong></td>
+          <td>Many enterprise subscriptions use Privileged Identity Management (PIM). The Owner role is assigned "eligible" but must be explicitly activated for a time window before it takes effect. Outside that window, the user has no elevated rights.</td>
+          <td>Activate the role through the Azure Portal → PIM → My Roles → Activate. Wait a few minutes for propagation.</td>
+        </tr>
+        <tr>
+          <td><strong>Azure AD / Entra ID vs Azure RBAC are separate</strong></td>
+          <td>Azure RBAC controls access to Azure <em>resources</em> (VMs, Storage, Key Vault…). Azure AD controls directory objects (users, groups, app registrations). A user can be Owner on a subscription but still have no rights to read or create Azure AD objects. This is why <code>az ad signed-in-user show</code> can fail even for subscription Owners.</td>
+          <td>Azure AD operations require separate permissions — at minimum the <strong>Directory Readers</strong> role in Azure AD, or the Global Administrator grants the operation.</td>
+        </tr>
+        <tr>
+          <td><strong>Guest user in the tenant</strong></td>
+          <td>External accounts (e.g. someone invited via B2B) are Guest users in the tenant. Guests have restricted Azure AD permissions by default — they cannot enumerate users, groups, or service principals, even if they hold Owner on a subscription.</td>
+          <td>A tenant Global Administrator must elevate the guest's Azure AD permissions, or convert them to a Member user.</td>
+        </tr>
+        <tr>
+          <td><strong>Azure Policy deny assignment</strong></td>
+          <td>An Azure Policy at management group or subscription level can explicitly <em>deny</em> specific operations, overriding even Owner. This is common in enterprise environments with a central platform team managing guardrails.</td>
+          <td>Check <code>az policy assignment list -o table</code>. Contact the platform/cloud team to get an exemption or adjusted policy.</td>
+        </tr>
+        <tr>
+          <td><strong>Resource lock</strong></td>
+          <td>A <strong>ReadOnly</strong> lock on a resource group or subscription blocks all write operations — including role assignments — for everyone except those who can remove the lock (Owner at the lock scope).</td>
+          <td>Check: <code>az lock list --resource-group %RG% -o table</code>. Remove the lock if appropriate.</td>
+        </tr>
+        <tr>
+          <td><strong>Subscription type restrictions</strong></td>
+          <td>Free trial, Dev/Test, MSDN, and some sponsored subscriptions have quota and permission restrictions baked in by Microsoft. Certain operations (especially large role assignments or resource creation) are blocked at the platform level regardless of your RBAC role.</td>
+          <td>Upgrade to Pay-As-You-Go, or use Key Vault Access Policies which bypass role-assignment restrictions.</td>
+        </tr>
+        <tr>
+          <td><strong>Classic administrator (legacy)</strong></td>
+          <td>Old subscriptions have "Co-Administrator" and "Service Administrator" roles from the pre-RBAC era. These are not the same as modern Owner. A Co-Administrator cannot use <code>az role assignment create</code> — that command only works with the modern RBAC Owner role.</td>
+          <td>Assign the modern <strong>Owner</strong> RBAC role explicitly via the Portal or CLI.</td>
+        </tr>
+      </table>
+
+      <div class="callout callout-tip">
+        <strong>✅ Quick Diagnostic — Check What You Actually Have</strong>
+        Run this to see your exact role assignments and their scopes:
+        <pre style="margin-top:10px">for /f "delims=" %a in ('az ad signed-in-user show --query id -o tsv') do set MY_OID=%a
+az role assignment list --assignee %MY_OID% --all -o table</pre>
+        If you don't see <strong>Owner</strong> or <strong>User Access Administrator</strong> at the subscription or resource group scope, you cannot create role assignments — use <code>az keyvault set-policy</code> instead.
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FUNCTIONS ===== -->
+  <section id="functions">
+    <div class="section-header color-functions">
+      <span class="icon">⚡</span> Azure Functions
+    </div>
+    <div class="section-body">
+      <div class="what-is">
+        <strong>What is it?</strong> Azure Functions is a serverless compute service. You write a small, focused piece of code (a "function") and Azure runs it only when triggered — by an HTTP request, a timer, a new file in Blob Storage, a message in a queue, and more. You pay only for the execution time, and Azure handles all scaling automatically.
+      </div>
+
+      <h3>Functions vs App Service — When to Use Which</h3>
+      <table>
+        <tr><th></th><th>Azure Functions</th><th>App Service (Web API)</th></tr>
+        <tr><td><strong>Best for</strong></td><td>Short, event-driven tasks</td><td>Long-running request/response APIs</td></tr>
+        <tr><td><strong>Billing</strong></td><td>Per execution (first 1M free/month)</td><td>Always-on VM (hourly)</td></tr>
+        <tr><td><strong>Scaling</strong></td><td>Automatic, to thousands of instances</td><td>Manual or autoscale rules</td></tr>
+        <tr><td><strong>Startup</strong></td><td>Cold start possible (first invocation)</td><td>Always warm</td></tr>
+        <tr><td><strong>Max runtime</strong></td><td>10 min (Consumption), unlimited (Premium)</td><td>Unlimited</td></tr>
+        <tr><td><strong>State</strong></td><td>Stateless by design</td><td>Can hold in-memory state</td></tr>
+      </table>
+
+      <h3>Hosting Plans</h3>
+      <div class="cards">
+        <div class="card">
+          <h4>Consumption Plan</h4>
+          <p>Truly serverless. Pay per execution. Scales to zero when idle. Cold starts possible. Best for event-driven, unpredictable workloads.</p>
+        </div>
+        <div class="card">
+          <h4>Flex Consumption (new)</h4>
+          <p>Like Consumption but with faster cold starts, VNet support, and configurable instance size. The modern default.</p>
+        </div>
+        <div class="card">
+          <h4>Premium Plan</h4>
+          <p>Pre-warmed instances (no cold starts), VNet integration, unlimited execution time. Higher cost, enterprise features.</p>
+        </div>
+        <div class="card">
+          <h4>Dedicated (App Service Plan)</h4>
+          <p>Run Functions on a regular App Service plan. Share resources with Web Apps. No cold starts, always-on billing.</p>
+        </div>
+      </div>
+
+      <h3>Anatomy of a Function</h3>
+      <pre>
+// HTTP Trigger example (C# isolated worker model)
+[Function("UploadFile")]
+public async Task&lt;HttpResponseData&gt; Run(
+    [HttpTrigger(AuthorizationLevel.Anonymous, "post")] HttpRequestData req)
+{
+    // Your logic here
+    var response = req.CreateResponse(HttpStatusCode.OK);
+    await response.WriteStringAsync("File processed!");
+    return response;
+}
+
+// Timer Trigger example — runs every day at midnight UTC
+[Function("NightlyCleanup")]
+public void Run([TimerTrigger("0 0 0 * * *")] TimerInfo timer)
+{
+    _logger.LogInformation($"Cleanup ran at: {DateTime.UtcNow}");
+    // Archive old blobs, purge expired data, etc.
+}</pre>
+
+      <h3>Key CLI Commands</h3>
+      <pre>
+REM Install the Azure Functions Core Tools (run once)
+npm install -g azure-functions-core-tools@4 --unsafe-perm true
+
+REM Create a new Function App project
+func init MyFunctionApp --worker-runtime dotnet-isolated
+
+REM Add a new function
+func new --name NightlyCleanup --template "Timer trigger"
+
+REM Run locally
+func start
+
+REM Create a Function App in Azure
+az functionapp create ^
+  --name my-func-app ^
+  --resource-group %RG% ^
+  --storage-account %SA_NAME% ^
+  --consumption-plan-location %LOCATION% ^
+  --runtime dotnet-isolated ^
+  --functions-version 4
+
+REM Deploy
+func azure functionapp publish my-func-app</pre>
+    </div>
+  </section>
+
+  <!-- ===== TRIGGERS ===== -->
+  <section id="triggers">
+    <div class="section-header color-triggers">
+      <span class="icon">⏰</span> Triggers &amp; Bindings
+    </div>
+    <div class="section-body">
+      <div class="what-is">
+        <strong>What are they?</strong> A <strong>trigger</strong> defines what causes a function to run. Every function has exactly one trigger. <strong>Bindings</strong> are optional declarative connections to other services (read from a queue, write to a blob) — you declare them as attributes and Azure wires up the connection for you.
+      </div>
+
+      <h3>Common Triggers</h3>
+      <table>
+        <tr><th>Trigger</th><th>Fires When…</th><th>Typical Use Case</th></tr>
+        <tr>
+          <td><span class="badge badge-orange">HTTP</span></td>
+          <td>An HTTP request arrives</td>
+          <td>REST APIs, webhooks, on-demand processing</td>
+        </tr>
+        <tr>
+          <td><span class="badge badge-blue">Timer</span></td>
+          <td>A cron schedule fires</td>
+          <td>Nightly cleanup, daily reports, scheduled data sync</td>
+        </tr>
+        <tr>
+          <td><span class="badge badge-purple">Blob Storage</span></td>
+          <td>A blob is created or modified in a container</td>
+          <td>Image resizing, document processing, virus scanning on upload</td>
+        </tr>
+        <tr>
+          <td><span class="badge badge-green">Queue Storage</span></td>
+          <td>A message arrives in a Storage Queue</td>
+          <td>Background job processing, decoupling producers and consumers</td>
+        </tr>
+        <tr>
+          <td><span class="badge badge-orange">Service Bus</span></td>
+          <td>A message arrives in a Service Bus queue or topic</td>
+          <td>Enterprise messaging, ordered processing, dead-letter handling</td>
+        </tr>
+        <tr>
+          <td><span class="badge badge-blue">Event Grid</span></td>
+          <td>An Azure event fires (e.g. blob created, VM started)</td>
+          <td>Real-time event reactions across Azure services</td>
+        </tr>
+        <tr>
+          <td><span class="badge badge-purple">Cosmos DB</span></td>
+          <td>A document is inserted or updated in a Cosmos DB collection</td>
+          <td>Change feed processing, syncing data to search indexes</td>
+        </tr>
+      </table>
+
+      <h3>Timer Trigger — Cron Expression Format</h3>
+      <p>Azure Functions uses a 6-field cron expression: <code>{second} {minute} {hour} {day} {month} {day-of-week}</code></p>
+      <table>
+        <tr><th>Expression</th><th>Meaning</th></tr>
+        <tr><td><code>0 0 0 * * *</code></td><td>Every day at midnight UTC</td></tr>
+        <tr><td><code>0 0 9 * * 1-5</code></td><td>Weekdays at 9:00 AM UTC</td></tr>
+        <tr><td><code>0 */30 * * * *</code></td><td>Every 30 minutes</td></tr>
+        <tr><td><code>0 0 */6 * * *</code></td><td>Every 6 hours</td></tr>
+        <tr><td><code>0 0 8 1 * *</code></td><td>1st of every month at 8 AM UTC</td></tr>
+      </table>
+
+      <h3>Bindings Example — Timer + Blob Output</h3>
+      <pre>
+// Trigger: runs every day at midnight
+// Output binding: writes a report blob automatically
+[Function("DailyReport")]
+[BlobOutput("reports/{DateTime}.txt", Connection = "BlobStorageConnectionString")]
+public string Run([TimerTrigger("0 0 0 * * *")] TimerInfo timer)
+{
+    var report = $"Daily report generated at {DateTime.UtcNow}";
+    _logger.LogInformation(report);
+    return report;  // Azure writes this string to blob storage automatically
+}</pre>
+
+      <h3>HTTP Trigger — Authorization Levels</h3>
+      <div class="cards">
+        <div class="card">
+          <h4>Anonymous</h4>
+          <p>No key required. Anyone with the URL can call the function. Use for public APIs or when you handle auth yourself.</p>
+        </div>
+        <div class="card">
+          <h4>Function</h4>
+          <p>Requires a function-specific API key in the request header or query string. Good for service-to-service calls.</p>
+        </div>
+        <div class="card">
+          <h4>Admin</h4>
+          <p>Requires the master host key. For administrative operations that should never be called by regular clients.</p>
+        </div>
+      </div>
+
+      <h3>Tomorrow's Lab — What We Will Build</h3>
+      <div class="callout callout-info">
+        <strong>📋 Automated Blob Maintenance Service</strong>
+        A Timer Trigger function that runs nightly and moves files older than 7 days from the <code>uploads</code> container to an <code>archive</code> container — plus an HTTP Trigger function for on-demand testing. Both functions read the Blob connection string from Key Vault using the same Managed Identity pattern from today's lab.
+      </div>
+      <div class="flow">
+        <div class="flow-step">Timer Trigger<br><small>0 0 0 * * *</small></div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step">Key Vault<br><small>get connection string</small></div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step">Blob Storage<br><small>scan uploads/</small></div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step">Move old files<br><small>→ archive/</small></div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<script>
+  // Highlight active nav link on scroll
+  const sections = document.querySelectorAll('section');
+  const navLinks = document.querySelectorAll('nav a');
+  window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(s => {
+      if (window.scrollY >= s.offsetTop - 100) current = s.id;
+    });
+    navLinks.forEach(a => {
+      a.classList.toggle('active', a.getAttribute('href') === '#' + current);
+    });
+  });
+</script>
+</body>
+</html>

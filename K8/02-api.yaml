@@ -1,0 +1,85 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: api
+  labels:
+    app: api
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: api
+  template:
+    metadata:
+      labels:
+        app: api
+    spec:
+      containers:
+        - name: api
+          # IMPORTANT: Replace this with your actual .NET API image
+          # This is a Microsoft sample ASP.NET app for demonstration
+          image: myapi:latest
+          imagePullPolicy: Never
+          ports:
+            - containerPort: 8080
+              name: http
+          
+          # Inject config from ConfigMap
+          envFrom:
+            - configMapRef:
+                name: app-config
+          
+          # Inject secrets separately (you can also use envFrom with secrets)
+          env:
+            - name: DB_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: postgres-secret
+                  key: DB_PASSWORD
+          
+          # LIVENESS PROBE: "Is the process still alive?"
+          # If this fails, K8s kills the pod and creates a new one
+          # HTTP GET is the cleanest; your API needs a /health endpoint that returns 200
+          livenessProbe:
+            httpGet:
+              path: /
+              port: 8080
+            initialDelaySeconds: 10    # Wait 10s before first check
+            periodSeconds: 10          # Check every 10s after that
+            timeoutSeconds: 5
+            failureThreshold: 3        # Kill after 3 consecutive failures
+          
+          # READINESS PROBE: "Is the process ready to handle traffic?"
+          # If this fails, the Service stops routing traffic to this pod, but doesn't kill it
+          # Use this when your API needs time to warm up or initialize connections
+          readinessProbe:
+            httpGet:
+              path: /
+              port: 8080
+            initialDelaySeconds: 5
+            periodSeconds: 5
+            timeoutSeconds: 3
+            failureThreshold: 2
+          
+          # Resource requests (important for autoscaling - covered in Hour 4)
+          resources:
+            requests:
+              cpu: "100m"        # 100 millicores (0.1 of a CPU)
+              memory: "128Mi"    # 128 megabytes
+            limits:
+              cpu: "500m"        # Cap at 0.5 CPU
+              memory: "512Mi"    # Cap at 512MB
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: api
+spec:
+  selector:
+    app: api
+  ports:
+    - port: 8080
+      targetPort: 8080
+      name: http
+  type: ClusterIP

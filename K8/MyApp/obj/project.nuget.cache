@@ -1,0 +1,26 @@
+{
+  "version": 2,
+  "dgSpecHash": "V5aBLHTlZps=",
+  "success": true,
+  "projectFilePath": "C:\\Corp\\Genspark\\Presidio\\2026\\Participants\\K8\\MyApp\\MyApi.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Gayathri Mahadevan\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\Gayathri Mahadevan\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.0\\microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\Gayathri Mahadevan\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.22.1\\microsoft.visualstudio.azure.containers.tools.targets.1.22.1.nupkg.sha512",
+    "C:\\Users\\Gayathri Mahadevan\\.nuget\\packages\\npgsql\\8.0.0\\npgsql.8.0.0.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1903",
+      "level": "Warning",
+      "message": "Package 'Npgsql' 8.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-x9vc-6hfv-hg8c",
+      "projectPath": "C:\\Corp\\Genspark\\Presidio\\2026\\Participants\\K8\\MyApp\\MyApi.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Corp\\Genspark\\Presidio\\2026\\Participants\\K8\\MyApp\\MyApi.csproj",
+      "libraryId": "Npgsql",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    }
+  ]
+}

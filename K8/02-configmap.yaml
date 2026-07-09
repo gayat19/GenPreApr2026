@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: app-config
+data:
+  # Database connection details (non-sensitive)
+  DB_HOST: "postgres"  # Service DNS name - the magic part
+  DB_PORT: "5432"
+  DB_NAME: "appdb"
+  DB_USER: "appuser"
+  
+  # API configuration
+  API_PORT: "8080"
+  ASPNETCORE_URLS: "http://+:8080"

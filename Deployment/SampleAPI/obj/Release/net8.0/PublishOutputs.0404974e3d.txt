@@ -1,0 +1,11 @@
+C:\Corp\Genspark\Presidio\2026\Participants\Deployment\SampleAPI\obj\Release\net8.0\PubTmp\Out\SampleAPI.exe
+C:\Corp\Genspark\Presidio\2026\Participants\Deployment\SampleAPI\obj\Release\net8.0\PubTmp\Out\appsettings.Development.json
+C:\Corp\Genspark\Presidio\2026\Participants\Deployment\SampleAPI\obj\Release\net8.0\PubTmp\Out\appsettings.json
+C:\Corp\Genspark\Presidio\2026\Participants\Deployment\SampleAPI\obj\Release\net8.0\PubTmp\Out\SampleAPI.dll
+C:\Corp\Genspark\Presidio\2026\Participants\Deployment\SampleAPI\obj\Release\net8.0\PubTmp\Out\SampleAPI.deps.json
+C:\Corp\Genspark\Presidio\2026\Participants\Deployment\SampleAPI\obj\Release\net8.0\PubTmp\Out\SampleAPI.runtimeconfig.json
+C:\Corp\Genspark\Presidio\2026\Participants\Deployment\SampleAPI\obj\Release\net8.0\PubTmp\Out\SampleAPI.pdb
+C:\Corp\Genspark\Presidio\2026\Participants\Deployment\SampleAPI\obj\Release\net8.0\PubTmp\Out\Microsoft.OpenApi.dll
+C:\Corp\Genspark\Presidio\2026\Participants\Deployment\SampleAPI\obj\Release\net8.0\PubTmp\Out\Swashbuckle.AspNetCore.Swagger.dll
+C:\Corp\Genspark\Presidio\2026\Participants\Deployment\SampleAPI\obj\Release\net8.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Corp\Genspark\Presidio\2026\Participants\Deployment\SampleAPI\obj\Release\net8.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerUI.dll

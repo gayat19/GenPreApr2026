@@ -1,0 +1,6 @@
+@BlobVaultApi_HostAddress = http://localhost:5251
+
+GET {{BlobVaultApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
